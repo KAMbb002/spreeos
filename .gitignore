@@ -2,3 +2,4 @@ var
 app/etc/local.xml
 .git
 .ssh
+.bash_*
