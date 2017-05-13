@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package>
+    <name>ost</name>
+    <version>1.1.1</version>
+    <stability>stable</stability>
+    <license uri="http://www.gnu.org/licenses/gpl-2.0.html">GNU</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>This is responsive Instagram slider.</summary>
+    <description>This is responsive instagram slider. This displays instagram images in a slider.</description>
+    <notes>nstagram slider configuration settings are available in System-&amp;gt;Configuration-&amp;gt;Instagram Slider&amp;#xD;&#xD;
+&amp;#xD;&#xD;
+Instagram slider status needs to be enabled in configuration settings to be visible at front end.&amp;#xD;&#xD;
+&amp;#xD;&#xD;
+Short code to display slider at any page is:&amp;#xD;&#xD;
+&amp;#xD;&#xD;
+{{block type="instagramslider/instagramslider" name="instagramslider" template="instagramslider/instagramslider.phtml"}}</notes>
+    <authors><author><name>Manish Mittal</name><user>OSTechnologies</user><email>manish@opensourcetechnologies.com</email></author></authors>
+    <date>2016-06-29</date>
+    <time>11:21:01</time>
+    <contents><target name="magecommunity"><dir name="Ost"><dir name="Instagramslider"><dir name="Block"><file name="Instagramslider.php" hash="750386f493a7b94aa69963ee19526b36"/></dir><dir name="Helper"><file name="Data.php" hash="274151cd7b271ccb2ad5adec3ca67d20"/></dir><dir name="Model"><file name="Animationin.php" hash="2a72579a6a6f4b8451275656ffdde8aa"/><file name="Animationout.php" hash="9e5da3e7d4e842e5c991e67c18225007"/><file name="Dimension.php" hash="7a7794d290a6dfbc709828882e6c66d4"/><file name="Instagramslider.php" hash="55071b1f1ff13285ac1a96cd278dc085"/><file name="Instagramslider_model.php" hash="55071b1f1ff13285ac1a96cd278dc085"/></dir><dir name="controllers"><file name="IndexController.php" hash="8e5531f72d0301ad0fd1e29e8c2c6dfe"/></dir><dir name="etc"><file name="config.xml" hash="13bf6792edbb9b0cd67967461e178ac0"/><file name="system.xml" hash="531ae45d299294593a8efe47cd90469c"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Ost_Instagramslider.xml" hash="d748c61fec11cba65d236690b2ebbc8d"/></dir></target><target name="magemedia"><dir name="Ost_Instagramslider"><dir name="css"><file name="owl.carousel.css" hash="b51416af9e8adbe3d16f5f2526aba221"/><file name="owl.theme.default.min.css" hash="b952d10154608db5913b5fc543ae169f"/></dir><dir name="js"><file name="jquery-1.10.2.min.js" hash="841dc30647f93349b7d8ef61deebe411"/><file name="owl.carousel.min.js" hash="ffaa3c82ad2c6e216e68aca44746e1be"/></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="instagramslider.xml" hash="a48888cb57085828ce5ae3130ccc5b21"/></dir><dir name="template"><dir name="instagramslider"><file name="instagramslider.phtml" hash="92d0f535a43fabcafda03ee758ff5d79"/></dir></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.3.0</min><max>5.6.2</max></php></required></dependencies>
+</package>

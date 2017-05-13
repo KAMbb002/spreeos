@@ -1,0 +1,45 @@
+<?php if($this->quickshopEnabled()): ?>
+<?php
+$_themeHelper = $this->helper('themeframework');
+$thumbStyle = ($_themeHelper->getConfig('codazon_settings/product_view/more_view_thumb_style')==1)?'vertical':'horizontal';
+$minWidth = 450;
+$w = max($minWidth,$_themeHelper->getConfig('codazon_settings/product_view/base_image_width'));
+if($_themeHelper->getConfig('codazon_settings/product_view/keep_image_aspect_ratio')){
+	$h = round(($w/$_baseImg->getOriginalWidth())*$_baseImg->getOriginalHeight());
+}else{
+	$h = $_themeHelper->getConfig('codazon_settings/product_view/base_image_height');	
+}
+?>
+<style type="text/css" scoped>
+<?php if($thumbStyle == 'vertical'): ?>
+.royalSlider {height: <?php echo $minWidth*$h/$w ?>px; }
+.no-fullscreen .rsOverflow {max-width: <?php echo $minWidth ?>px !important; float: right;}
+.no-fullscreen .rsImg{width: auto !important; max-width:100%; height: auto !important; margin-left:0px !important;}
+.rsFullscreen .rsImg{height:100vh;}
+<?php else: ?>
+.royalSlider {height: <?php echo $minWidth*$h/$w ?>px }
+.no-fullscreen .rsOverflow {height: <?php echo $minWidth*$h/$w ?>px !important;}
+.rsSlide{display:table !important; width:100%;}
+.rsContent{display:table-cell; vertical-align:middle; text-align:center;}
+.rsImg{display: inline-block; height:auto; width:auto; max-height: 100%; max-width: 100%;}
+.no-fullscreen .rsImg{width: auto !important; max-width:100%; max-height: <?php echo $minWidth*$h/$w ?>px; height: auto !important; margin-left:0px !important;}
+<?php endif ?>
+.rsFullscreen .rsSlide{display:table !important; width:100%;}
+.rsFullscreen .rsContent{display:table-cell; vertical-align:middle; text-align:center;}
+.rsFullscreen .rsImg{display: inline; height:auto; width:auto; max-height: 100vh; max-width: 100%;}
+.rs-inner {display: inline-block; height:auto; width:auto; max-height: 100%; max-width: 100%; position: relative;}
+.map-popup{z-index:10000;} .cdz-qs-view .map-link{float:left;}
+</style>
+<script type="text/javascript">
+(function($){
+	$(document).ready(function(e) {
+        $('body').cdzQuickshop({
+			curUrl: '<?php echo $this->helper('core/url')->getCurrentUrl() ?>',
+			afterLoad: function(){
+				setUpMediaSlider('#viewmore-slider','<?php echo $thumbStyle ?>');
+			}
+		});
+    });
+})(jQuery)
+</script>
+<?php endif ?>

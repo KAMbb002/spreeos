@@ -1,0 +1,28 @@
+<?php
+$_themeHelper = $this->helper('themeframework');
+
+/* General Config */
+$root = $this->getLayout()->getBlock('root');
+if($_themeHelper->getConfig('codazon_settings/general/boxedwide') == 0)$root->addBodyClass('cdz-boxed');
+if($_themeHelper->getConfig('codazon_settings/general/enable_rtl') == 1)$root->addBodyClass('cdz-rtl');
+?>
+
+<script type="text/javascript">
+if(typeof Codazon == 'undefined'){
+	var Codazon = {};
+}
+Codazon.ajaxCartPro = {
+	enable: <?php echo ($_themeHelper->getConfig('codazon_settings/header/enable_ajaxcart') == 1)?'true':'false' ?>,
+}
+</script>
+
+<link href='https://fonts.googleapis.com/css?family=Poppins:400,300,500,600,700' rel='stylesheet' type='text/css'>
+<?php $product = Mage::registry('current_product');
+if ($product): ?>
+<meta property="og:title" content="<?php echo $product->getName(); ?>" />
+<meta property="og:type" content="product" />
+<meta property="og:url" content="<?php echo $this->helper('catalog/product')->getProductUrl($product); ?>" />
+<meta property="og:image" content="<?php echo $this->helper('catalog/image')->init($product, 'image')->resize(300, 300); ?>" />
+<meta property="og:description" content="<?php echo strip_tags($product->getShortDescription()); ?>" />
+<meta property="og:site_name" content="<?php echo Mage::app()->getStore()->getName() ?>" />
+<?php endif; ?>
