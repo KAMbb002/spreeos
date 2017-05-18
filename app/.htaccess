@@ -1,3 +1,5 @@
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{spreeos.com} [L,R=301,NE]
 #Force www:
 RewriteEngine on
 RewriteCond %{HTTP_HOST} ^spreeos.com [NC]
