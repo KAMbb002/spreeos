@@ -26537,7 +26537,7 @@ form .legend {
 .home-modern p{font-size:14px;font-family: 'Open Sans', sans-serif;color:#000;font-weight:300;padding:0 0 24px}
 .home-modern ul{ background:#f7f8f9; border:1px solid #f0f1f1; padding:14px 0;}
 .home-modern ul li{float:left;padding:0 24px;width:363px; box-sizing:border-box;} /* 63 width mobile */
-.home-modern ul li i{ width:51px; height:46px; display:block; margin:auto; background:url(http://i.imgur.com/WvUylq5.png) no-repeat 0 -1006px;}
+.home-modern ul li i{ width:51px; height:46px; display:block; margin:auto; background:url(https://i.imgur.com/WvUylq5.png) no-repeat 0 -1006px;}
 .home-modern ul li + li i{ background-position:-61px -1006px;}
 .home-modern ul li + li + li i{ background-position:-112px -1008px;}
 .home-modern ul li + li{ border-left:1px solid #e5e6e7;}
