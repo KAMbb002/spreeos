@@ -1,5 +1,8 @@
-var
-app/etc/local.xml
-.git
-.ssh
-.bash_*
+public_html/app/etc/local.xml
+public_html/var/*
+public_html/var
+.bash_history
+public_html/media
+public_html/media/*
+public_html/.ssh
+public_html/.viminfo
