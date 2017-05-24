@@ -2,7 +2,7 @@
 
 class Neklo_Core_Helper_Data extends Mage_Core_Helper_Abstract
 {
-    const DOMAIN = 'http://store.neklo.com/';
+    const DOMAIN = 'https://store.neklo.com/';
     const LOGO_IMG = 'neklo.png';
 
     public function __()
