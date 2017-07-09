@@ -26630,6 +26630,17 @@ form .legend {
    padding-bottom: 10px;}
    .page-footer .footer-link li a {line-height: 1;}
 
+  .inchoo-socialconnect-login-lower .inchoo-socialconnect-login-lower-google .buttons-set { margin-top: 0;  padding-top: 0;}
+ .inchoo-socialconnect-login-lower .inchoo-socialconnect-login-lower-facebook .buttons-set { margin-top: 0;  padding-top: 0;}
+ .fototer-tags .footer-box .fb_reset {display: none;}
+ .block-content .actions button.button:hover {  background: #282828;  border-color: #282828;  color: white; border: 3px solid #282828;}
+ .footer-box .block-content .input-box {width: 100%;}
+  .footer-box .block-content .actions button.button {width: 100%;}
+  .footer .footer-bottom .col-sm-5 { width: 20%;  margin: 0 2.5%;  padding: 0;}
+  .footer-bottom .footer-box .footer-link li a {    border-bottom: 1px solid #e4e4e4;}
+    .footer-bottom .footer-box .footer-link li.last a {    border-bottom: 1px solid #e4e4e4;}
+    .page-footer .footer-social .social {text-align: center;}
+    .footer-box .footer-social a {    margin: 0 20px 0px 0;}
 
 
 
