@@ -26699,6 +26699,28 @@ form .legend {
   .cdz-navbar .cdz-mobile-logo a {    width: 130px!important;}
 
 }
+.home-modern ul.clearfix {    text-align: center;  width: 100%; float: left;}
+.home-modern ul.clearfix li { float: none; display: inline-block; width: 33%; }
+
+@media only screen and (max-width: 767px) {
+
+ .home-modern ul.clearfix li { width: 32%; vertical-align: top;     padding: 0 12px;}
+  .home-modern ul.clearfix li span {    font-size: 15px;}
+}
+
+@media only screen and (max-width: 480px) {
+.home-modern ul.clearfix li  {    float: left;
+   padding: 0 12px;
+   width: 100%;
+   vertical-align: top;
+   box-sizing: border-box;
+   display: inline-block;
+   margin-bottom: 20px;
+}
+.home-modern ul.clearfix li i {    float: left;  width: 58px;}
+   .home-modern ul.clearfix li span {margin-left: 12px;}
+}
+
 
 
 
