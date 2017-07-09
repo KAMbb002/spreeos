@@ -26611,115 +26611,62 @@ form .legend {
 .account-login .registered-users ul.form-list .input-box {width: 100%;}
 .account-login .inchoo-socialconnect-login-lower {text-align: center; width: 100%; float: left; margin-bottom: 30px;}
 .account-login .inchoo-socialconnect-login-upper {display: none;}
-.account-login .inchoo-socialconnect-login-lower .inchoo-socialconnect-login-lower-google {    margin: 0;
-   width: auto;  float: none; display: inline-block;  padding: 0 20px;}
-.account-login .inchoo-socialconnect-login-lower .inchoo-socialconnect-login-lower-facebook {    margin: 0;
-   width: auto;  float: none; display: inline-block;  padding: 0 20px;}
-   .page-footer .footer-link li a {line-height: 1;}
+.account-login .inchoo-socialconnect-login-lower .inchoo-socialconnect-login-lower-google { margin: 0;
+width: auto;  float: none; display: inline-block;  padding: 0 20px;}
+.account-login .inchoo-socialconnect-login-lower .inchoo-socialconnect-login-lower-facebook {  margin: 0;
+width: auto;  float: none; display: inline-block;  padding: 0 20px;}
+.page-footer .footer-link li a {line-height: 1;}
 .footer-box .block-subscribe .block-title {border-bottom: 0;}
-.footer-bottom .col-sm-8 {    width: 25%;
-   padding: 0 15px; padding-left: 0;} 
-.footer-bottom .col-sm-5 {    width: 25%;
-   padding: 0 15px; } 
-   .fototer-tags {    width: 25%;
-   padding: 0 15px;
-   padding-right: 0;}
-   .page-footer p.h5 {    font: 500 16px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
-   border-bottom: 3px solid #121212;
-   display: inline-block;
-   padding-bottom: 10px;}
-   .page-footer .footer-link li a {line-height: 1;}
-
-  .inchoo-socialconnect-login-lower .inchoo-socialconnect-login-lower-google .buttons-set { margin-top: 0;  padding-top: 0;}
- .inchoo-socialconnect-login-lower .inchoo-socialconnect-login-lower-facebook .buttons-set { margin-top: 0;  padding-top: 0;}
- .fototer-tags .footer-box .fb_reset {display: none;}
- .block-content .actions button.button:hover {  background: #282828;  border-color: #282828;  color: white; border: 3px solid #282828;}
- .footer-box .block-content .input-box {width: 100%;}
-  .footer-box .block-content .actions button.button {width: 100%;}
-  .footer .footer-bottom .col-sm-5 { width: 20%;  margin: 0 2.5%;  padding: 0;}
-  .footer-bottom .footer-box .footer-link li a {    border-bottom: 1px solid #e4e4e4;}
-    .footer-bottom .footer-box .footer-link li.last a {    border-bottom: 1px solid #e4e4e4;}
-    .page-footer .footer-social .social {text-align: center;}
-    .footer-box .footer-social a {    margin: 0 20px 0px 0;}
-	.footer-bottom .footer-box .footer-social {margin: 0 0;}
+.footer-bottom .col-sm-8 { width: 25%; padding: 0 15px; padding-left: 0;} 
+.footer-bottom .col-sm-5 { width: 25%; padding: 0 15px; } 
+.fototer-tags { width: 25%; padding: 0 15px; padding-right: 0;}
+.page-footer p.h5 { font: 500 16px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+border-bottom: 3px solid #121212; display: inline-block; padding-bottom: 10px;}
+.page-footer .footer-link li a {line-height: 1;}
+.inchoo-socialconnect-login-lower .inchoo-socialconnect-login-lower-google .buttons-set { margin-top: 0;  padding-top: 0;}
+.inchoo-socialconnect-login-lower .inchoo-socialconnect-login-lower-facebook .buttons-set { margin-top: 0;  padding-top: 0;}
+.fototer-tags .footer-box .fb_reset {display: none;}
+.block-content .actions button.button:hover {  background: #282828;  border-color: #282828;  color: white; border: 3px solid #282828;}
+.footer-box .block-content .input-box {width: 100%;}
+.footer-box .block-content .actions button.button {width: 100%;}
+.footer .footer-bottom .col-sm-5 { width: 20%;  margin: 0 2.5%;  padding: 0;}
+.footer-bottom .footer-box .footer-link li a {    border-bottom: 1px solid #e4e4e4;}
+.footer-bottom .footer-box .footer-link li.last a {    border-bottom: 1px solid #e4e4e4;}
+.page-footer .footer-social .social {text-align: center;}
+.footer-box .footer-social a {    margin: 0 20px 0px 0;}
+.footer-bottom .footer-box .footer-social {margin: 0 0;}
 .bottom-footer-wrapper .footer-payment-logo {    float: none !important;  text-align: center;  margin: 0 auto;}
-.bottom-footer-wrapper .footer-payment-logo img {    float: none;  text-align: center;  margin: 0 auto;  text-align: center;}
-
-@media only screen and (max-width: 767px) {
-.footer-bottom .col-sm-8 {
-   width: 100%;
-   padding: 0 15px;
-   padding-left: 15px;
-   float: left;
-   margin-bottom: 30px;
-}
-
-.page-footer .footer-social .social {
-   margin: 20px 0 0 0;
-   text-align: center;
-}
-.footer .footer-bottom .col-sm-5 {
-   width: 50%; margin-bottom: 30px;
-   margin: 0;
-   padding: 0 30px;
-   float: left;
-}
-.footer-bottom .col-sm-6 {
-   margin: 0 0 15px;
-   width: 100%;
-   padding: 0 20px;
-   float: left;
-   text-align: left;
-}
-.page-footer p.h5 {
-   margin-bottom: 20px;
-   padding: 5px 0;
-   width: 100%;
-}
-
-}
-
-@media only screen and (max-width: 480px) {
-.footer .footer-bottom .col-sm-5 {
-   width: 50%;
-   margin: 0;
-   padding: 0 15px;
-   float: left;
-   margin-bottom: 30px;
-}
+.home-modern ul.clearfix { text-align: center;  width: 100%; float: left;}
+.home-modern ul.clearfix li { float: none; display: inline-block; width: 33%; }
 .bottom-footer-wrapper .footer-payment-logo img {float: right;}
 .header .logo {  margin: 0;  width: 180px;}
 
 @media only screen and (max-width: 767px) {
- .bottom-footer-wrapper .footer-payment-logo img {float: none!important;}
-  .cdz-navbar .cdz-mobile-logo a {    width: 160px;}
+.bottom-footer-wrapper .footer-payment-logo img {float: none!important;}
+.cdz-navbar .cdz-mobile-logo a {    width: 160px;}
+.home-modern ul.clearfix li { width: 32%; vertical-align: top;  padding: 0 12px;}
+.home-modern ul.clearfix li span { font-size: 15px;}
+.footer-bottom .col-sm-8 { width: 100%; padding: 0 15px; padding-left: 15px; float: left; margin-bottom: 30px;}
+.page-footer .footer-social .social { margin: 20px 0 0 0; text-align: center;}
+.footer .footer-bottom .col-sm-5 {width: 50%; margin-bottom: 30px; margin: 0; padding: 0 30px; float: left;}
+.footer-bottom .col-sm-6 { margin: 0 0 15px; width: 100%; padding: 0 20px; float: left; text-align: left;}
+.page-footer p.h5 { margin-bottom: 20px; padding: 5px 0;   width: 100%;}
 }
 
 @media only screen and (max-width: 480px) {
   .cdz-navbar .cdz-mobile-logo a {    width: 130px!important;}
+  .home-modern ul.clearfix li  { float: left; padding: 0 12px; width: 100%; vertical-align: top; box-sizing: border-box; display: inline-block; margin-bottom: 20px;}
+  .home-modern ul.clearfix li i {  float: left;  width: 58px;}
+  .home-modern ul.clearfix li span {margin-left: 12px;}
+  .footer .footer-bottom .col-sm-5 { width: 100%; margin: 0; padding: 0 15px; float: left; margin-bottom: 30px;}
 
 }
-.home-modern ul.clearfix {    text-align: center;  width: 100%; float: left;}
-.home-modern ul.clearfix li { float: none; display: inline-block; width: 33%; }
 
-@media only screen and (max-width: 767px) {
 
- .home-modern ul.clearfix li { width: 32%; vertical-align: top;     padding: 0 12px;}
-  .home-modern ul.clearfix li span {    font-size: 15px;}
-}
 
-@media only screen and (max-width: 480px) {
-.home-modern ul.clearfix li  {    float: left;
-   padding: 0 12px;
-   width: 100%;
-   vertical-align: top;
-   box-sizing: border-box;
-   display: inline-block;
-   margin-bottom: 20px;
-}
-.home-modern ul.clearfix li i {    float: left;  width: 58px;}
-   .home-modern ul.clearfix li span {margin-left: 12px;}
-}
+
+
+
 
 
 
