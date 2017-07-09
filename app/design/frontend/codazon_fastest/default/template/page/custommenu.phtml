@@ -1,0 +1,11 @@
+<?php 
+$categories = Mage::getModel('catalog/category')
+                    ->getCollection()
+                    ->addAttributeToSelect('*')
+                    ->addIsActiveFilter();
+					
+					?>
+					<?php foreach($categories as $category){
+						
+						<?php echo $category->getName(); ?>
+					}?>
