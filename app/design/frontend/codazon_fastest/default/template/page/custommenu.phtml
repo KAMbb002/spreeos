@@ -13,15 +13,17 @@
  
                         <?php foreach($categoryChildren as $_categoryChild) : ?>
                             <?php $_categoryChildModel = Mage::getModel('catalog/category')->load($_categoryChild->getId());?>
+							<?php echo Mage::getModel('catalog/category')->load($_categoryChild->getId())->getThumbnail();?>
                             <?php $categoryGrandchildren=$_categoryChild->getChildren(); ?>
                             <li>
                           <?php
+						  
                            $currentCategoryId===$_categoryChild->getId() ? $bold="style=\"font-weight:bold\"" : $bold='';
                              echo  '<a href="' . $_categoryChildModel->getUrl() . '"' . $bold . '>' .  $_categoryChild->getName() .'</a>';
-                               
-                      echo Mage::getModel('catalog/category')->load($_categoryChild)->getThumbnail();
+                               echo  Mage::getModel('catalog/category')->load($_categoryChild->getId())->getThumbnail();?>
+                      
 
-							   ?>
+							   
                             </li>
                             <?php if($categoryGrandchildren->count()) : ?>
                                 <?php foreach($categoryGrandchildren as $_categoryGrandchild) : ?>
