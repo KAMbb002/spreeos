@@ -26641,6 +26641,10 @@ form .legend {
     .footer-bottom .footer-box .footer-link li.last a {    border-bottom: 1px solid #e4e4e4;}
     .page-footer .footer-social .social {text-align: center;}
     .footer-box .footer-social a {    margin: 0 20px 0px 0;}
+	.footer-bottom .footer-box .footer-social {margin: 0 0;}
+.bottom-footer-wrapper .footer-payment-logo {    float: none !important;  text-align: center;  margin: 0 auto;}
+.bottom-footer-wrapper .footer-payment-logo img {    float: none;  text-align: center;  margin: 0 auto;  text-align: center;}
+
 
 
 
