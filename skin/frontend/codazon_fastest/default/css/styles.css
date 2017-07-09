@@ -26687,7 +26687,18 @@ form .legend {
    float: left;
    margin-bottom: 30px;
 }
+.bottom-footer-wrapper .footer-payment-logo img {float: right;}
+.header .logo {  margin: 0;  width: 180px;}
 
+@media only screen and (max-width: 767px) {
+ .bottom-footer-wrapper .footer-payment-logo img {float: none!important;}
+  .cdz-navbar .cdz-mobile-logo a {    width: 160px;}
+}
+
+@media only screen and (max-width: 480px) {
+  .cdz-navbar .cdz-mobile-logo a {    width: 130px!important;}
+
+}
 
 
 
