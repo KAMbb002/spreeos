@@ -21,32 +21,27 @@
                         <?php foreach($categoryChildren as $_categoryChild) : ?>
                             <?php $_categoryChildModel = Mage::getModel('catalog/category')->load($_categoryChild->getId());?>
 							<div class="groupdrop-banner space-s">
-							<img class="img-responsive" src="<?php echo Mage::getBaseUrl('media') . 'catalog/category/' .Mage::getModel('catalog/category')->load($_categoryChild->getId())->getThumbnail();?>"/>
+							<img  src="<?php echo Mage::getBaseUrl('media') . 'catalog/category/' .Mage::getModel('catalog/category')->load($_categoryChild->getId())->getThumbnail();?>"/>
 							</div>
 							
 							
                             <?php $categoryGrandchildren=$_categoryChild->getChildren(); ?>
                            
                           <?php
-						  if($currentCategoryId===$_categoryChild->getId()){?>
-							  <p class="groupdrop-title">
-							  
-<a href="<?php echo $_categoryChildModel->getUrl() ?>">
-<?php echo $_categoryChild->getName() ?></a>
-</p>
-							  
-						  <?php }	?>				  
+						  $currentCategoryId===$_categoryChild->getId() ? $bold="style=\"font-weight:bold\"" : $bold='';
+                             echo  '<a href="' . $_categoryChildModel->getUrl() . '"' . $bold . '>' .  $_categoryChild->getName() .'</a>';
+                              ?>
                       
 
 							   
-                           <ul class="groupdrop-link">
+                            </li>
                             <?php if($categoryGrandchildren->count()) : ?>
                                 <?php foreach($categoryGrandchildren as $_categoryGrandchild) : ?>
                                     <?php $_categoryGrandchildModel = Mage::getModel('catalog/category')->load($_categoryGrandchild->getId());?>
                                    
                                         <?php
-                                            $currentCategoryId===$_categoryChild->getId() ;
-                                            echo '&emsp;&emsp;' . '<a href="' . $_categoryGrandchildModel->getUrl() . '"' . $bold . '>' .  $_categoryGrandchild->getName().'</a>';
+                                            $currentCategoryId===$_categoryChild->getId() ? $bold="style=\"font-weight:bold\"" : $bold='';
+                                            echo '&emsp;&emsp;' . '<a href="' . $_categoryGrandchildModel->getUrl() . '"' . $bold . '>' .  $_categoryGrandchild->getName() . '(' . $_categoryGrandchildModel->getProductCount() . ')</a>';
                                         ?>
                                    
                                 <?php endforeach; ?>
