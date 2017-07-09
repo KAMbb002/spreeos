@@ -26605,30 +26605,7 @@ form .legend {
     margin: 0 auto;
 }
 
-/* 09/07/207  */
 
-.account-login .registered-users ul.form-list label.required {display: none;}
-.account-login .registered-users ul.form-list .input-box {width: 100%;}
-.account-login .inchoo-socialconnect-login-lower {text-align: center; width: 100%; float: left; margin-bottom: 30px;}
-.account-login .inchoo-socialconnect-login-upper {display: none;}
-.account-login .inchoo-socialconnect-login-lower .inchoo-socialconnect-login-lower-google {    margin: 0;
-   width: auto;  float: none; display: inline-block;  padding: 0 20px;}
-.account-login .inchoo-socialconnect-login-lower .inchoo-socialconnect-login-lower-facebook {    margin: 0;
-   width: auto;  float: none; display: inline-block;  padding: 0 20px;}
-   .page-footer .footer-link li a {line-height: 1;}
-.footer-box .block-subscribe .block-title {border-bottom: 0;}
-.footer-bottom .col-sm-8 {    width: 25%;
-   padding: 0 15px; padding-left: 0;} 
-.footer-bottom .col-sm-5 {    width: 25%;
-   padding: 0 15px; } 
-   .fototer-tags {    width: 25%;
-   padding: 0 15px;
-   padding-right: 0;}
-   .page-footer p.h5 {    font: 500 16px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
-   border-bottom: 3px solid #121212;
-   display: inline-block;
-   padding-bottom: 10px;}
-   .page-footer .footer-link li a {line-height: 1;}
 
 
 
