@@ -26645,7 +26645,48 @@ form .legend {
 .bottom-footer-wrapper .footer-payment-logo {    float: none !important;  text-align: center;  margin: 0 auto;}
 .bottom-footer-wrapper .footer-payment-logo img {    float: none;  text-align: center;  margin: 0 auto;  text-align: center;}
 
+@media only screen and (max-width: 767px) {
+.footer-bottom .col-sm-8 {
+   width: 100%;
+   padding: 0 15px;
+   padding-left: 15px;
+   float: left;
+   margin-bottom: 30px;
+}
 
+.page-footer .footer-social .social {
+   margin: 20px 0 0 0;
+   text-align: center;
+}
+.footer .footer-bottom .col-sm-5 {
+   width: 50%; margin-bottom: 30px;
+   margin: 0;
+   padding: 0 30px;
+   float: left;
+}
+.footer-bottom .col-sm-6 {
+   margin: 0 0 15px;
+   width: 100%;
+   padding: 0 20px;
+   float: left;
+   text-align: left;
+}
+.page-footer p.h5 {
+   margin-bottom: 20px;
+   padding: 5px 0;
+   width: 100%;
+}
+
+}
+
+@media only screen and (max-width: 480px) {
+.footer .footer-bottom .col-sm-5 {
+   width: 50%;
+   margin: 0;
+   padding: 0 15px;
+   float: left;
+   margin-bottom: 30px;
+}
 
 
 
