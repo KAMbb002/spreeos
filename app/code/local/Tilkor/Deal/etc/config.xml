@@ -1,0 +1,128 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+ * @category   Tilkor
+ * @package    Tilkor_Deal
+ * @author     ModuleCreator
+ * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+ -->
+<config>
+    <modules>
+        <Tilkor_Deal>
+            <version>0.1.0</version>
+        </Tilkor_Deal>
+    </modules>
+    <frontend>
+        <routers>
+            <deal>
+                <use>standard</use>
+                <args>
+                    <module>Tilkor_Deal</module>
+                    <frontName>deal</frontName>
+                </args>
+            </deal>
+        </routers>
+        <layout>
+            <updates>
+                <deal>
+                    <file>deal.xml</file>
+                </deal>
+            </updates>
+        </layout>
+    </frontend>
+    <admin>
+        <routers>
+			<deal>
+				<use>admin</use>
+				<args>
+					<module>Tilkor_Deal</module>
+					<frontName>deal</frontName>
+				</args>
+			</deal>
+        </routers>
+    </admin>
+    <adminhtml>
+		<menu>
+			<deal module="deal">
+				<title>Deal</title>
+				<sort_order>71</sort_order>               
+				<children>
+					<items module="deal">
+						<title>Manage Items</title>
+						<sort_order>0</sort_order>
+						<action>deal/adminhtml_deal</action>
+					</items>
+				</children>
+			</deal>
+		</menu>
+		<acl>
+			<resources>
+				<all>
+					<title>Allow Everything</title>
+				</all>
+				<admin>
+					<children>
+						<Tilkor_Deal>
+							<title>Deal Module</title>
+							<sort_order>10</sort_order>
+						</Tilkor_Deal>
+					</children>
+				</admin>
+			</resources>
+		</acl>
+		<layout>
+			<updates>
+				<deal>
+					<file>deal.xml</file>
+				</deal>
+			</updates>
+		</layout>
+    </adminhtml>   
+    <global>
+        <models>
+            <deal>
+                <class>Tilkor_Deal_Model</class>
+                <resourceModel>deal_mysql4</resourceModel>
+            </deal>
+            <deal_mysql4>
+                <class>Tilkor_Deal_Model_Mysql4</class>
+                <entities>
+                    <deal>
+                        <table>deal</table>
+                    </deal>
+                </entities>
+            </deal_mysql4>
+        </models>
+        <resources>
+            <deal_setup>
+                <setup>
+                    <module>Tilkor_Deal</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </deal_setup>
+            <deal_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </deal_write>
+            <deal_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </deal_read>
+        </resources>
+        <blocks>
+            <deal>
+                <class>Tilkor_Deal_Block</class>
+            </deal>
+        </blocks>
+        <helpers>
+            <deal>
+                <class>Tilkor_Deal_Helper</class>
+            </deal>
+        </helpers>
+    </global>
+</config>
