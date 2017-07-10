@@ -79,8 +79,27 @@
                                 <a href="<?php echo $_helper->getCategoryUrl($_subcategory) ?>">
                                     <?php echo $_subcategory->getName() ?>
                                 </a>
+								<?php $_subsubcategory = Mage::getModel('catalog/category')->load($_subcategory->getId()) ?>
+                <?php $_subsubcategory = $_category->getChildrenCategories() ?>
+				 <?php if (count($_subsubcategory) > 0): ?>
+				 <ul>
+				 <?php foreach($_subsubcategory as $_subsubcategorychild): ?>
+                            <li>
+                                <a href="<?php echo $_helper->getCategoryUrl($_subsubcategorychild) ?>">
+                                    <?php echo $_subsubcategorychild->getName() ?>
+                                </a>
+								</li>
+								 <?php endforeach; ?>
+				 </ul>
+				 
+				 
+				 <?php endif;?>
+								
                             </li>
                         <?php endforeach; ?>
+						
+						
+						
                     </ul>
                 <?php endif; ?>
             </li>
