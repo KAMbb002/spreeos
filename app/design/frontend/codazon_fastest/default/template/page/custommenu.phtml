@@ -12,12 +12,14 @@
 			<span><?php echo $_category->getName() ?></span>
 			</a>
 				
+                        
                 
                 <?php $_category = Mage::getModel('catalog/category')->load($_category->getId()) ?>
                 <?php $_subcategories = $_category->getChildrenCategories() ?>
                 <?php if (count($_subcategories) > 0): ?>
-				<div class="groupmenu-drop">
-					<div class="groupmenu-drop-content groupmenu-6" style="padding-bottom: 60px;">
+<div class="groupmenu-drop">
+				 
+                <div class="groupmenu-drop-content groupmenu-6" style="padding-bottom: 60px;">
 						<div class="row">
                         <?php foreach($_subcategories as $_subcategory): ?>
 						<div class="col-sm-4">
@@ -47,11 +49,12 @@
 						</div>
                         <?php endforeach; ?>
 						
-                    
-                <?php endif; ?>
+                    </div>
+				</div>
 				</div> <!--row div-->
-				</div>
-				</div>
+                <?php endif; ?>
+				
+				
             </li>
         <?php endforeach; ?>
     </ul>
