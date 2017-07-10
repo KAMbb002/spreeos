@@ -9,7 +9,7 @@ class Tilkor_Deal_Block_Adminhtml_Deal_Edit_Tab_Form extends Mage_Adminhtml_Bloc
       $fieldset = $form->addFieldset('deal_form', array('legend'=>Mage::helper('deal')->__('Item information')));
      
       $fieldset->addField('name', 'text', array(
-          'label'     => Mage::helper('deal')->__('Product Name'),
+          'label'     => Mage::helper('deal')->__('Name'),
           'class'     => 'required-entry',
           'required'  => true,
           'name'      => 'name',
