@@ -11,15 +11,14 @@
 		   <a class="menu-link" href="<?php echo $_helper->getCategoryUrl($_category) ?>">
 			<span><?php echo $_category->getName() ?></span>
 			</a>
-				<div class="groupmenu-drop">
-<div class="groupmenu-drop-content groupmenu-6" style="padding-bottom: 60px;">
-						<div class="row">
-                        
+				
                 
                 <?php $_category = Mage::getModel('catalog/category')->load($_category->getId()) ?>
                 <?php $_subcategories = $_category->getChildrenCategories() ?>
                 <?php if (count($_subcategories) > 0): ?>
-
+				<div class="groupmenu-drop">
+					<div class="groupmenu-drop-content groupmenu-6" style="padding-bottom: 60px;">
+						<div class="row">
                         <?php foreach($_subcategories as $_subcategory): ?>
 						<div class="col-sm-4">
 						<div class="groupdrop-banner space-s">
