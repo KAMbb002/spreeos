@@ -23,7 +23,11 @@
                         <?php foreach($_subcategories as $_subcategory): ?>
 						<div class="row">
                         <div class="col-sm-4">
-						<div class="groupdrop-banner space-s"><img class="img-responsive" alt="" src="https://www.spreeos.com/media/catalog/category/decor_2.jpg" width="80px" height="80px" /></div>
+						<div class="groupdrop-banner space-s">
+						<?php if(Mage::getModel('catalog/category')->load($_subcategory->getId())->getThumbnail()!=''){?>
+						<img  width="80px" height="80px" class="img-responsive" src="<?php echo Mage::getBaseUrl('media') . 'catalog/category/' .Mage::getModel('catalog/category')->load($_subcategory->getId())->getThumbnail();?>"/>
+						<?php }?>
+					</div>
                        <p class="groupdrop-title">
                             <a href="<?php echo $_helper->getCategoryUrl($_subcategory) ?>">                                    <?php echo $_subcategory->getName() ?>
                              </a>
