@@ -82,7 +82,7 @@
 								<?php $_subsubcategory = Mage::getModel('catalog/category')->load($_subcategory->getId()) ?>
                 <?php $_subsubcategory = $_category->getChildrenCategories() ?>
 				 <?php if (count($_subsubcategory) > 0): ?>
-				 <ul>
+				 <ul  class="levelthird">
 				 <?php foreach($_subsubcategory as $_subsubcategorychild): ?>
                             <li>
                                 <a href="<?php echo $_helper->getCategoryUrl($_subsubcategorychild) ?>">
