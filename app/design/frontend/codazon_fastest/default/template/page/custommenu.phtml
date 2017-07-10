@@ -13,16 +13,15 @@
 			</a>
 				<div class="groupmenu-drop">
 <div class="groupmenu-drop-content groupmenu-6" style="padding-bottom: 60px;">
+						<div class="row">
+                        
                 
                 <?php $_category = Mage::getModel('catalog/category')->load($_category->getId()) ?>
                 <?php $_subcategories = $_category->getChildrenCategories() ?>
                 <?php if (count($_subcategories) > 0): ?>
-                    
-					
 
                         <?php foreach($_subcategories as $_subcategory): ?>
-						<div class="row">
-                        <div class="col-sm-4">
+						<div class="col-sm-4">
 						<div class="groupdrop-banner space-s">
 						<?php if(Mage::getModel('catalog/category')->load($_subcategory->getId())->getThumbnail()!=''){?>
 						<img  width="80px" height="80px" class="img-responsive" src="<?php echo Mage::getBaseUrl('media') . 'catalog/category/' .Mage::getModel('catalog/category')->load($_subcategory->getId())->getThumbnail();?>"/>
@@ -45,12 +44,13 @@
 							 </ul>
 							 <?php endif; ?>
 
-							</div>
+							
 						</div>
                         <?php endforeach; ?>
 						
                     
                 <?php endif; ?>
+				</div> <!--row div-->
 				</div>
 				</div>
             </li>
