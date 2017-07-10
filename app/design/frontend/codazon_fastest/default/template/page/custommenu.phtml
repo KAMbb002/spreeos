@@ -1,95 +1,56 @@
-<?php /*<div class="cdz-main-menu cdz-main-menu-horizontal">
-<ul class="groupmenu">
-
-    <?php
-        $obj = new Mage_Catalog_Block_Navigation();
-        $storeCategories = $obj->getStoreCategories();
-        Mage::registry('current_category') ? $currentCategoryId = Mage::registry('current_category')->getId() : $currentCategoryId='';
-        foreach ($storeCategories as $_category):
-    ?>
-           <li class="level0 level-top parent">
-		   <span class="cdz-menu-toggle">toggle</span>
-<a class="menu-link" href="<?php echo $_category->getUrl(); ?>"><span><?php echo $_category->getName(); ?></span></a>
-		   <div class="groupmenu-drop">
-<div class="groupmenu-drop-content groupmenu-6" style="padding-bottom: 60px;">
-<div class="row">
-                
-                <?php $categoryChildren = $_category->getChildren(); ?>
-                <?php if($categoryChildren->count()) : ?>
-                    
- <div class="col-sm-4">
-                        <?php foreach($categoryChildren as $_categoryChild) : ?>
-                            <?php $_categoryChildModel = Mage::getModel('catalog/category')->load($_categoryChild->getId());?>
-							<div class="groupdrop-banner space-s">
-							<img  src="<?php echo Mage::getBaseUrl('media') . 'catalog/category/' .Mage::getModel('catalog/category')->load($_categoryChild->getId())->getThumbnail();?>"/>
-							</div>
-							
-							
-                            <?php $categoryGrandchildren=$_categoryChild->getChildren(); ?>
-                           
-                          <?php
-						  $currentCategoryId===$_categoryChild->getId() ? $bold="style=\"font-weight:bold\"" : $bold='';
-                             echo  '<a href="' . $_categoryChildModel->getUrl() . '"' . $bold . '>' .  $_categoryChild->getName() .'</a>';
-                              ?>
-                      
-
-							   
-                            </li>
-                            <?php if($categoryGrandchildren->count()) : ?>
-                                <?php foreach($categoryGrandchildren as $_categoryGrandchild) : ?>
-                                    <?php $_categoryGrandchildModel = Mage::getModel('catalog/category')->load($_categoryGrandchild->getId());?>
-                                   
-                                        <?php
-                                            $currentCategoryId===$_categoryChild->getId() ? $bold="style=\"font-weight:bold\"" : $bold='';
-                                            echo '&emsp;&emsp;' . '<a href="' . $_categoryGrandchildModel->getUrl() . '"' . $bold . '>' .  $_categoryGrandchild->getName() . '(' . $_categoryGrandchildModel->getProductCount() . ')</a>';
-                                        ?>
-                                   
-                                <?php endforeach; ?>
-                            <?php endif; ?>
-                        <?php endforeach; ?>
-                   
-                <?php endif; ?>
-           
-        <?php endforeach ?>
-		</div><!--row div-->
-</div>
-</div> 
-</ul>
-</div>
-
-*/?>
-
+<div class="cdz-main-menu cdz-main-menu-horizontal">
 
 <?php $_helper = Mage::helper('catalog/category') ?>
 <?php $_categories = $_helper->getStoreCategories() ?>
 <?php $currentCategory = Mage::registry('current_category') ?>
 <?php if (count($_categories) > 0): ?>
-    <ul>
+  <ul class="groupmenu">
         <?php foreach($_categories as $_category): ?>
-            <li>
-                <a href="<?php echo $_helper->getCategoryUrl($_category) ?>">
-                    <?php echo $_category->getName() ?>
-                </a>
+           <li class="level0 level-top parent">
+		   <span class="cdz-menu-toggle">toggle</span>
+		   <a class="menu-link" href="<?php echo $_helper->getCategoryUrl($_category) ?>">
+			<span><?php echo $_category->getName() ?></span>
+			</a>
+				<div class="groupmenu-drop">
+<div class="groupmenu-drop-content groupmenu-6" style="padding-bottom: 60px;">
+                
                 <?php $_category = Mage::getModel('catalog/category')->load($_category->getId()) ?>
                 <?php $_subcategories = $_category->getChildrenCategories() ?>
                 <?php if (count($_subcategories) > 0): ?>
-                    <ul>
+                    
+					
+
                         <?php foreach($_subcategories as $_subcategory): ?>
-                        <li>
+						<div class="row">
+                        <div class="col-sm-4">
+						<div class="groupdrop-banner space-s"><img class="img-responsive" alt="" src="https://www.spreeos.com/media/catalog/category/decor_2.jpg" width="80px" height="80px" /></div>
+                       <p class="groupdrop-title">
                             <a href="<?php echo $_helper->getCategoryUrl($_subcategory) ?>">                                    <?php echo $_subcategory->getName() ?>
-                                </a>
+                             </a>
+							 </p>
+
 							<?php  $_subsubcategory = Mage::getModel('catalog/category')->load($_subcategory->getId());
 		 
-		 $_subsubcategories = $_subsubcategory->getChildrenCategories() ;	?>
-		 <?php foreach($_subsubcategories as $_subsubcategory){?>
-								<?php echo  $_subsubcategory->getName();?>
-		 <?php }?>
+							 $_subsubcategories = $_subsubcategory->getChildrenCategories() ;	?>
+							 <?php if (count($_subcategories) > 0): ?>
+							 <ul class="groupdrop-link">
+							 <?php foreach($_subsubcategories as $_subsubcategory){?>
+							 <li class="item"><a href="<?php echo $_helper->getCategoryUrl($_subsubcategory) ?>">
+							<?php echo  $_subsubcategory->getName();?></a></li>
+							 <?php }?>
+							 </ul>
+							 <?php endif; ?>
 
-		 </li>
+							</div>
+						</div>
                         <?php endforeach; ?>
-                    </ul>
+						
+                    
                 <?php endif; ?>
+				</div>
+				</div>
             </li>
         <?php endforeach; ?>
     </ul>
 <?php endif; ?>
+</div>
