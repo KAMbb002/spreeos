@@ -75,18 +75,17 @@
                 <?php if (count($_subcategories) > 0): ?>
                     <ul>
                         <?php foreach($_subcategories as $_subcategory): ?>
-                            <li>
-                          <a href="<?php echo $_helper->getCategoryUrl($_subcategory) ?>">
-                         <?php echo $_subcategory->getName().$_subcategory->getId(); ?>
+                        <li>
+                            <a href="<?php echo $_helper->getCategoryUrl($_subcategory) ?>">                                    <?php echo $_subcategory->getName() ?>
                                 </a>
-						 <?php $_subsubcategory = Mage::getModel('catalog/category')->load($_subcategory->getId()); ?>
-						<?php echo (count($_subsubcategory) ) ?>
-								<?php if (count($_subsubcategory) > 0): ?>
-								 <?php foreach($_subsubcategory as $_subcategory1): ?>
-								 <?php  // echo '3rd level--'. $_subcategory1->getName(); ?>
-								<?php endforeach; ?>
-								<?php endif;?>
-                            </li>
+							<?php  $_subsubcategory = Mage::getModel('catalog/category')->load($_subcategory->getId());
+		 
+		 $_subsubcategories = $_subsubcategory->getChildrenCategories() ;	?>
+		 <?php foreach($_subsubcategories as $_subsubcategory){?>
+								<?php echo  $_subsubcategory->getName();?>
+		 <?php }?>
+
+		 </li>
                         <?php endforeach; ?>
                     </ul>
                 <?php endif; ?>
