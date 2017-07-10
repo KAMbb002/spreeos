@@ -47,15 +47,15 @@ class Tilkor_Deal_Block_Adminhtml_Deal_Grid extends Mage_Adminhtml_Block_Widget_
       ));
 	 
 
-      $this->addColumn('Deal type', array(
-          'header'    => Mage::helper('deal')->__('Status'),
+      $this->addColumn('status', array(
+          'header'    => Mage::helper('deal')->__('deal'),
           'align'     => 'left',
           'width'     => '80px',
           'index'     => 'status',
           'type'      => 'options',
           'options'   => array(
-              1 => 'Enabled',
-              2 => 'Disabled',
+              1 => 'deal of day',
+              2 => 'deal of month',
           ),
       ));
 	  
