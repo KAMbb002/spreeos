@@ -8,7 +8,11 @@
         <?php foreach($_categories as $_category): ?>
            <li class="level0 level-top parent">
 		   <span class="cdz-menu-toggle">toggle</span>
-		       <?php                                        $_category->getId()===166 ? $bold="background:#f54444" : $bold='';
+		       <?php   
+               if($_category->getId()==166){
+				   $bold="background:#f54444" ;else{$bold=""}
+			   }
+			   
                ?>
 		   <a class="menu-link"  style="<?php echo $bold; ?>" href="<?php echo $_helper->getCategoryUrl($_category) ?>">
 			<span><?php echo $_category->getName() ?></span>
