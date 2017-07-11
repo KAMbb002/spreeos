@@ -9,14 +9,14 @@ class Tilkor_Deal_Block_Adminhtml_Deal_Edit_Tab_Form extends Mage_Adminhtml_Bloc
       $fieldset = $form->addFieldset('deal_form', array('legend'=>Mage::helper('deal')->__('Item information')));
      
       $fieldset->addField('name', 'text', array(
-          'label'     => Mage::helper('deal')->__('Name'),
+          'label'     => Mage::helper('deal')->__('Product Name'),
           'class'     => 'required-entry',
           'required'  => true,
           'name'      => 'name',
       ));
 	 
 
-      $fieldset->addField('filename', 'file', array(
+      $fieldset->addField('filename', 'image', array(
           'label'     => Mage::helper('deal')->__('File'),
           'required'  => false,
           'name'      => 'filename',
@@ -25,17 +25,11 @@ class Tilkor_Deal_Block_Adminhtml_Deal_Edit_Tab_Form extends Mage_Adminhtml_Bloc
       $fieldset->addField('status', 'select', array(
           'label'     => Mage::helper('deal')->__('select deal type'),
           'name'      => 'status',
-          'values'    => array(
-              array(
-                  'value'     => 1,
-                  'label'     => Mage::helper('deal')->__('deal of day'),
-              ),
-
-              array(
-                  'value'     => 2,
-                  'label'     => Mage::helper('deal')->__('deal of month'),
-              ),
-          ),
+		  'values' => array('-1'=>'Please Select..',
+		  '1' => 'day deal',
+		  '2' => 'spreeos sale', 
+		  '3' => 'editor pics'),
+          
       ));
      
       $fieldset->addField('url', 'editor', array(

@@ -79,6 +79,15 @@ class Tilkor_Deal_Adminhtml_DealController extends Mage_Adminhtml_Controller_act
 		        //this way the name is saved in DB
 	  			$data['filename'] = $_FILES['filename']['name'];
 			}
+			else if((isset($data['filename']['delete']) && $data['filename']['delete'] == 1)){
+
+					//set path to null and save to database
+					$data['filename'] = '';
+
+					//can also delete file from fs
+					unlink(Mage::getBaseDir('media') . DS . $data['filename']['value']);
+				}
+
 	  			
 	  			
 			$model = Mage::getModel('deal/deal');		
