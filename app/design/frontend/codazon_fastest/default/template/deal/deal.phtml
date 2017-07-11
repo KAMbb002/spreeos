@@ -1,45 +1,35 @@
-      		<div class="std">
-		   <div class="row'>
+      	
+			
 			<?php 
 			$collection = Mage::getModel('deal/deal')->getCollection();
              foreach ($collection as $item) {?>		
-		<div class="nested-container">
-			<div class="page-banners clearer">
-			
+		
 				<?php  if($item->getStatus()=='1'){?>
 					<div class="left">
 					<?php $imgpath=Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA);
 					?>
-					<a href=""><img style="margin-bottom: 10px;" src="<?php  echo $imgpath.$item->getFilename();?>"/></a>					
+					<a href="<?php echo $item->getUrl();?>"><img style="margin-bottom: 10px;" src="<?php  echo $imgpath.$item->getFilename();?>"/></a>					
 					</div>
 					 
 				   <?php }?>
 				    <div class="right">
-				<?php echo $item->getStatus();
+				<?php // echo $item->getStatus();
 				 if($item->getStatus()=='2'){?>
 					
 					<?php $imgpath=Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA);
 					?>
-					<a href=""><img style="margin-bottom: 10px;" src="<?php  echo $imgpath.$item->getFilename();?>"/></a>					
+					<a href="<?php echo $item->getUrl();?>"><img style="margin-bottom: 10px;" src="<?php  echo $imgpath.$item->getFilename();?>"/></a>					
 					
 				   <?php }?>
 				<?php  if($item->getStatus()=='3'){?>			
 					<?php $imgpath=Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA);
 					?>
-					<a href=""><img style="margin-bottom: 10px;" src="<?php  echo $imgpath.$item->getFilename();?>"/></a>					
+					<a href="<?php echo $item->getUrl();?>"><img style="margin-bottom: 10px;" src="<?php  echo $imgpath.$item->getFilename();?>"/></a>					
 					
 				   <?php }?>
 				   </div>
 			 
 			 <?php }?>
-					<a href="https://www.spreeos.com/">
-					<img src="https://www.spreeos.com/media/wysiwyg/swatches/images/mincart.jpg" />
-					  </a>
-			</div>
-		</div>
-	</div>
-</div>
-				  
 
 
 
