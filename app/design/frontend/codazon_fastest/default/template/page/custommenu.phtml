@@ -21,10 +21,10 @@
                 <?php $_category = Mage::getModel('catalog/category')->load($_category->getId()) ?>
                 <?php $_subcategories = $_category->getChildrenCategories() ?>
                 <?php if (count($_subcategories) > 0): ?>
-<div class="groupmenu-drop">
+                <div class="groupmenu-drop">
 				 
                 <div class="groupmenu-drop-content groupmenu-6" style="padding-bottom: 60px;">
-						<div class="row">
+						<div class="row"> <!--row div-->
                         <?php foreach($_subcategories as $_subcategory): ?>
 						<div class="col-sm-4">
 						<div class="groupdrop-banner space-s">
@@ -53,9 +53,9 @@
 						</div>
                         <?php endforeach; ?>
 						
-                    </div>
+                    </div><!--row div-->
 				</div>
-				</div> <!--row div-->
+				</div> 
                 <?php endif; ?>
 				
 				

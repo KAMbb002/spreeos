@@ -26637,158 +26637,31 @@ border-bottom: 3px solid #121212; display: inline-block; padding-bottom: 10px;}
 .footer-bottom .footer-box .footer-social {margin: 0 0;}
 .bottom-footer-wrapper .footer-payment-logo {    float: none !important;  text-align: center;  margin: 0 auto;}
 .home-modern ul.clearfix { text-align: center;  width: 100%; float: left;}
-.home-modern ul.clearfix li { float: none; display: inline-block; width: 32%; vertical-align: top;}
+.home-modern ul.clearfix li { float: none; display: inline-block; width: 33%; }
 .bottom-footer-wrapper .footer-payment-logo img {float: right;}
 .header .logo {  margin: 0;  width: 180px;}
 
-.modal-dialog .modal-content .cdz-popup-newsletter-right .banner {margin-top: 48px;}
-.nested-container .page-banners .left { float: left; width: 48%;}
-.nested-container .page-banners .right { float: right; width: 48%;}
-.widget .nested-container { width: 100%; margin-left: auto; margin-right: auto; text-align: center;}
-
-@media only screen and (max-width: 1200px) {
-  .cdz-mobile-header-menu .cdz-mobile-nav {
-    background: #333;
-    border: 0;
-    box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.9);
-    width: 280px;
-}
-.cdz-mobile-header-menu .navbar-default .navbar-toggle:hover, .cdz-mobile-header-menu .navbar-default .navbar-toggle:focus {
-    background-color: transparent;
-}
-.cdz-mobile-header-menu .cdz-navbar-toggle {
-    margin: 0 30px 0 0;
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-.cdz-mobile-header-menu .cdz-menu-responsive {
-    border: 0;
-    padding: 0;
-    cursor: pointer;
-    display: inline-block;
-    float: left;
-    height: 50px;
-    position: relative;
-    width: 50px;
-}
-
-.cdz-mobile-header-menu .cdz-navbar-toggle {
-    margin: 0 30px 0 0;
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-.cdz-mobile-header-menu .cdz-menu-responsive {
-    border: 0;
-    padding: 0;
-    cursor: pointer;
-    display: inline-block;
-    float: left;
-    height: 50px;
-    position: relative;
-    width: 50px;
-}
-.cdz-mobile-header-menu .cdz-mobile-logo {
-    padding: 10px 80px 10px 40px;
-    float: none;
-    width: 100%;
-    text-align: center;
-}
-.cdz-mobile-header-menu .cdz-top-cart {
-    float: right;
-    margin-top: 10px;
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-.cdz-mobile-header-menu .cdz-mobile-search {
-    float: right;
-    margin-right: 10px;
-    padding: 15px 0 0;
-    position: absolute;
-    right: 40px;
-    top: 0;
-}
-.cdz-mobile-header-menu .cdz-mobile-search .cdz-search-trigger {
-    background: none;
-    width: 22px;
-    height: 19px;
-    display: block;
-}
-.cdz-mobile-header-menu .block-cart.cdz-dropdown-content {
-    right: 0;
-    left: auto;
-    min-width: 350px;
-}
-.cdz-mobile-header-menu .cdz-top-cart .cdz-dropdown-content {
-    padding: 20px 0 0;
-}
-
-}
-
-
-@media only screen and (max-width: 1024px) and (min-width: 768px) {
-  .page-footer .footer-link li a {  line-height: 1.5;}
-.footer .footer-bottom .col-sm-5 { width: 20%; margin: 0 2%; padding: 0; }
- #cdz-popup-content .modal-popup .modal-inner-wrap {    width: 616px!important;} 
- .modal-content .cdz-popup-newsletter .cdz-popup-newsletter-left {width: 305px;}
-  .modal-content .cdz-popup-newsletter .cdz-popup-newsletter-right {width: 305px;}
-  .modal-content .cdz-popup-newsletter .cdz-popup-newsletter-right .banner {margin-top: 0;}
-  .cdz-popup-newsletter .cdz-popup-newsletter-right .banner img {width: 150px;}
-   .cdz-popup-newsletter .cdz-popup-newsletter-right .banner p {font-size: 12px;}
-    .cdz-popup-newsletter .cdz-popup-newsletter-right .banner .popup-content {padding: 10px;}
-    .modal-dialog .modal-header .close {    width: 35px; height: 35px;}
-}
-
-
 @media only screen and (max-width: 767px) {
-  .widget .home-modern { margin: 35px 0 35px; padding-bottom: 0; width: 100%; float: left;}
-  .footer-bottom .footer-box .footer-social { margin: 0 0; width: 100%; float: left; }
-  .footer-box .cdz-toggle-title {margin-bottom: 15px;}
-  .footer-bottom .col-sm-6 {padding: 0 30px;}
-  .modal-content .cdz-popup-newsletter .cdz-popup-newsletter-right .banner {margin-top: 20px!important;}
-     .cdz-popup-newsletter .cdz-popup-newsletter-right .banner .popup-content {    padding: 20px 30px 40px 30px;}
-    .modal-dialog .modal-header .close {    width: 38px; height: 38px;}
-
-.bottom-footer-wrapper .footer-payment-logo img {    float: none!important;
-    text-align: center;  margin: 0 auto; padding-bottom: 0!important;}
+.bottom-footer-wrapper .footer-payment-logo img {float: none!important;}
 .cdz-navbar .cdz-mobile-logo a {    width: 160px;}
 .home-modern ul.clearfix li { width: 32%; vertical-align: top;  padding: 0 12px;}
-.home-modern ul.clearfix li span { font-size: 14px;}
+.home-modern ul.clearfix li span { font-size: 15px;}
 .footer-bottom .col-sm-8 { width: 100%; padding: 0 15px; padding-left: 15px; float: left; margin-bottom: 30px;}
-.page-footer .footer-social .social { margin: 20px 0 0 0!important; text-align: center;}
-.footer .footer-bottom .col-sm-5 {width: 50%; margin-bottom: 30px!important; margin: 0; padding: 0 30px; float: left;}
+.page-footer .footer-social .social { margin: 20px 0 0 0; text-align: center;}
+.footer .footer-bottom .col-sm-5 {width: 50%; margin-bottom: 30px; margin: 0; padding: 0 30px; float: left;}
 .footer-bottom .col-sm-6 { margin: 0 0 15px; width: 100%; padding: 0 20px; float: left; text-align: left;}
 .page-footer p.h5 { margin-bottom: 20px; padding: 5px 0;   width: 100%;}
 }
 
 @media only screen and (max-width: 480px) {
-  .footer-bottom .col-sm-6 { padding: 0 15px!important;}
-  .footer .footer-bottom .col-sm-5 {  margin-bottom: 0px!important;}
- .modal-content .cdz-popup-newsletter .cdz-popup-newsletter-right .banner {margin-top: 20px!important;}
-     .cdz-popup-newsletter .cdz-popup-newsletter-right .banner .popup-content {     padding: 10px 12px 35px 12px!important;}
-    .modal-dialog .modal-header .close {    width: 35px; height: 35px;}
-    .cdz-popup-newsletter .cdz-popup-newsletter-right .banner img {width: 150px;}
-   .cdz-popup-newsletter .cdz-popup-newsletter-right .banner p {font-size: 12px;}
-
   .cdz-navbar .cdz-mobile-logo a {    width: 130px!important;}
-  .home-modern ul.clearfix li  {    float: none;
-    padding: 0 0px;  text-align: center; width: 32%;   display: inline-block;  margin-bottom: 0;}
-  .home-modern ul.clearfix li i {  float: none;  width: 58px;}
-  .home-modern ul.clearfix li span {    margin-left: 0; font-size: 10px; padding: 10px 5px 0 5px;}
+  .home-modern ul.clearfix li  { float: left; padding: 0 12px; width: 100%; vertical-align: top; box-sizing: border-box; display: inline-block; margin-bottom: 20px;}
+  .home-modern ul.clearfix li i {  float: left;  width: 58px;}
+  .home-modern ul.clearfix li span {margin-left: 12px;}
   .footer .footer-bottom .col-sm-5 { width: 100%; margin: 0; padding: 0 15px; float: left; margin-bottom: 30px;}
-.home-modern ul.clearfix {  text-align: center;  width: 100%;
-    float: left;  padding: 12px 0; margin-bottom: 20px;}
-.owl-stage-outer .owl-stage .owl-item {    height: 180px;}
-.owl-stage-outer .owl-stage .owl-item .slider-item {height: 100%;}
-.owl-stage-outer .owl-stage .owl-item .slider-item img {height: 100%;}
-.cdz-slideshow .owl-carousel .owl-nav .owl-prev {     top: calc(48% - 15px);   width: 40px; height: 40px;}
-.cdz-slideshow .owl-carousel .owl-nav .owl-next {     top: calc(48% - 15px);   width: 40px; height: 40px;}
-.cdz-slideshow .owl-carousel .owl-nav .owl-prev:before {    font-size: 30px;  line-height: 38px;}
-.cdz-slideshow .owl-carousel .owl-nav .owl-next:before {    font-size: 30px;  line-height: 38px;}
 
 }
+
 
 
 
