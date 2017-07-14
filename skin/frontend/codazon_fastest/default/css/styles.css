@@ -26607,6 +26607,11 @@ form .legend {
 
 /* 09/07/207  */
 
+
+.cdz-main-menu .groupmenu-drop {    background: transparent; box-shadow: none;}
+.cdz-main-menu .groupmenu-drop .groupmenu-drop-content {padding: 0;}
+.cdz-main-menu .groupmenu-drop .col-sm-4 {background: #fff;}
+
 .account-login .registered-users ul.form-list label.required {display: none;}
 .account-login .registered-users ul.form-list .input-box {width: 100%;}
 .account-login .inchoo-socialconnect-login-lower {text-align: center; width: 100%; float: left; margin-bottom: 30px;}
@@ -26736,7 +26741,12 @@ border-bottom: 3px solid #121212; display: inline-block; padding-bottom: 10px;}
 
 
 @media only screen and (max-width: 1024px) and (min-width: 768px) {
-. .groupmenu-drop-content .groupmenu-drop .col-sm-4 {    background: #fff; min-height: 400px;}
+.col1-layout .products-grid .product-items:not(.owl-carousel) .product-item {    width: 25%!important;}
+.col1-layout .products-grid .product-items:not(.owl-carousel) .product-item {width: 25%!important; }
+.col1-layout .products-grid .product-items:not(.owl-carousel) > .product-item .product-item-info {height: 380px!important;}
+
+.home-modern ul li span {    padding: 10px 0 0 0; font-size: 16px;}
+.groupmenu-drop-content .groupmenu-drop .col-sm-4 {    background: #fff; min-height: 400px;}
   .groupmenu-drop-content .groupmenu-drop {width: auto;}
   .widget .cdz-main-menu .groupmenu li.level0 a.menu-link {    padding: 12px 11px;}
   .cdz-header-menu-content .cdz-content-megamenu {    width: 100%;}
@@ -26752,8 +26762,15 @@ border-bottom: 3px solid #121212; display: inline-block; padding-bottom: 10px;}
     .modal-dialog .modal-header .close {    width: 35px; height: 35px;}
 }
 
+@media only screen and (max-width: 767px) and (min-width: 481px) {
+  .footer-bottom .fototer-tags .cdz-toggle-title {margin-bottom: 20px;}
+}
+
 
 @media only screen and (max-width: 767px) {
+  .widget h1 {    font-size: 20px; line-height: 1;  margin: 0 0 4px;}
+  .widget hr {  margin-top: 10px; margin-bottom: 10px; }
+  .slideshow-banner .space-base {    margin-bottom: 0;}
   .widget .home-modern { margin: 35px 0 35px; padding-bottom: 0; width: 100%; float: left;}
   .footer-bottom .footer-box .footer-social { margin: 0 0; width: 100%; float: left; }
   .footer-box .cdz-toggle-title {margin-bottom: 15px;}
@@ -26766,7 +26783,7 @@ border-bottom: 3px solid #121212; display: inline-block; padding-bottom: 10px;}
     text-align: center;  margin: 0 auto; padding-bottom: 0!important;}
 .cdz-navbar .cdz-mobile-logo a {    width: 160px;}
 .home-modern ul.clearfix li { width: 32%; vertical-align: top;  padding: 0 12px;}
-.home-modern ul.clearfix li span { font-size: 14px;}
+.home-modern ul.clearfix li span { font-size: 14px; padding-bottom: 0;}
 .footer-bottom .col-sm-8 { width: 100%; padding: 0 15px; padding-left: 15px; float: left; margin-bottom: 15px;}
 .page-footer .footer-social .social { margin: 20px 0 0 0!important; text-align: center;}
 .footer .footer-bottom .col-sm-5 {width: 50%; margin-bottom: 30px!important; margin: 0; padding: 0 30px; float: left;}
@@ -26775,6 +26792,9 @@ border-bottom: 3px solid #121212; display: inline-block; padding-bottom: 10px;}
 }
 
 @media only screen and (max-width: 480px) {
+  .nested-container .page-banners .right {
+    float: none!important;  width: 100%!important;  margin: 0 auto!important;}
+  .nested-container .page-banners .left { float: none!important;  width: 100%!important;  margin: 0 auto!important;}
   .footer-bottom .col-sm-6 p.h5 {margin-bottom: 15px;}
   .footer-bottom .col-sm-6 { padding: 0 15px!important;}
   .footer .footer-bottom .col-sm-5 {  margin-bottom: 15px!important;}
@@ -26791,17 +26811,18 @@ border-bottom: 3px solid #121212; display: inline-block; padding-bottom: 10px;}
   .home-modern ul.clearfix li span {    margin-left: 0; font-size: 10px; padding: 10px 5px 0 5px;}
   .footer .footer-bottom .col-sm-5 { width: 100%; margin: 0; padding: 0 15px; float: left; margin-bottom: 30px;}
 .home-modern ul.clearfix {  text-align: center;  width: 100%;
-    float: left;  padding: 12px 0; margin-bottom: 20px;}
-.owl-stage-outer .owl-stage .owl-item {    height: 180px;}
+    float: left;  padding: 12px 0; margin-bottom: 0px;}
+/*.owl-stage-outer .owl-stage .owl-item {    height: 180px;}
 .owl-stage-outer .owl-stage .owl-item .slider-item {height: 100%;}
-.owl-stage-outer .owl-stage .owl-item .slider-item img {height: 100%;}
-.cdz-slideshow .owl-carousel .owl-nav .owl-prev {     top: calc(48% - 15px);   width: 40px; height: 40px;}
-.cdz-slideshow .owl-carousel .owl-nav .owl-next {     top: calc(48% - 15px);   width: 40px; height: 40px;}
+.owl-stage-outer .owl-stage .owl-item .slider-item img {height: 100%;}*/
+.cdz-slideshow .owl-carousel .owl-nav .owl-prev {     top: calc(46% - 15px)!important;   width: 40px; height: 40px;}
+.cdz-slideshow .owl-carousel .owl-nav .owl-next {     top: calc(46% - 15px)!important;   width: 40px; height: 40px;}
 .cdz-slideshow .owl-carousel .owl-nav .owl-prev:before {    font-size: 30px;  line-height: 38px;}
 .cdz-slideshow .owl-carousel .owl-nav .owl-next:before {    font-size: 30px;  line-height: 38px;}
+.slideshow-banner .space-base {margin-bottom: 0px;}
+.widget .home-modern {margin: 25px 0;}
 
 }
-
 
 
 
