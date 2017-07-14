@@ -20,7 +20,8 @@ class Tilkor_Deal_Block_Adminhtml_Deal_Edit_Tab_Form extends Mage_Adminhtml_Bloc
           'label'     => Mage::helper('deal')->__('File'),
           'required'  => false,
           'name'      => 'filename',
-		   'after_element_html' => '<small>deal of the days image size(630*550px),other images size(540*270px)</small>',
+		   'after_element_html' => '<small>
+		   image size(630*550px),other images size(540*270px)</small>',
 	  ));
 		
       $fieldset->addField('status', 'select', array(
