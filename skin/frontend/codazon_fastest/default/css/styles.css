@@ -26607,10 +26607,10 @@ form .legend {
 
 /* 09/07/207  */
 
-
+/*
 .cdz-main-menu .groupmenu-drop {    background: transparent; box-shadow: none;}
 .cdz-main-menu .groupmenu-drop .groupmenu-drop-content {padding: 0;}
-.cdz-main-menu .groupmenu-drop .col-sm-4 {background: #fff;}
+.cdz-main-menu .groupmenu-drop .col-sm-4 {background: #fff;}*/
 
 .account-login .registered-users ul.form-list label.required {display: none;}
 .account-login .registered-users ul.form-list .input-box {width: 100%;}
