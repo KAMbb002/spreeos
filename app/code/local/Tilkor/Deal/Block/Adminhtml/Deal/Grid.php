@@ -47,7 +47,7 @@ class Tilkor_Deal_Block_Adminhtml_Deal_Grid extends Mage_Adminhtml_Block_Widget_
       ));
 	 
 
-      $this->addColumn('status', array(
+      /*$this->addColumn('status', array(
           'header'    => Mage::helper('deal')->__('deal type '),
           'align'     => 'left',
           'width'     => '80px',
@@ -59,7 +59,7 @@ class Tilkor_Deal_Block_Adminhtml_Deal_Grid extends Mage_Adminhtml_Block_Widget_
 			  3=>'editor pics'
           ),
 		  
-      ));
+      ));*/
 	  
         $this->addColumn('action',
             array(
