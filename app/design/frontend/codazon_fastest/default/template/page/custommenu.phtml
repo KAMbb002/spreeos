@@ -40,7 +40,7 @@
 							<?php  $_subsubcategory = Mage::getModel('catalog/category')->load($_subcategory->getId());
 		 
 							 $_subsubcategories = $_subsubcategory->getChildrenCategories() ;	?>
-							 <?php if (count($_subcategories) > 0): ?>
+							 <?php echo '=='.count($_subcategories) ; if (count($_subcategories) > 0): ?>
 							 <ul class="groupdrop-link">
 							 <?php foreach($_subsubcategories as $_subsubcategory){?>
 							 <li class="item"><a href="<?php echo $_helper->getCategoryUrl($_subsubcategory) ?>">
