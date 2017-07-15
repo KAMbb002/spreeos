@@ -34,9 +34,22 @@
                        <ul class="groupdrop-link">
                             <li class="item"><a href="<?php echo $_helper->getCategoryUrl($_subcategory) ?>">                                    <?php echo $_subcategory->getName() ?>
                              </a></li>
+					   </ul>
+					   <!--second level for 2 coloumn-->
+					   <?php  $_subsubcategory = Mage::getModel('catalog/category')->load($_subcategory->getId());
+		 
+							 $_subsubcategories = $_subsubcategory->getChildrenCategories() ;	?>
+							 <?php echo '=='.count($_subcategories) ; if (count($_subcategories) > 0): ?>
+							 <ul class="groupdrop-link">
+							 <?php foreach($_subsubcategories as $_subsubcategory){?>
+							 <li class="item"><a href="<?php echo $_helper->getCategoryUrl($_subsubcategory) ?>">
+							<?php echo  $_subsubcategory->getName();?></a></li>
+							 <?php }?>
 							 </ul>
+							 <?php endif; ?>
+					   
 
-							
+							 <!--second level for 2 coloumn end -->
 						
                     </div>
 					<?php endforeach; ?>
