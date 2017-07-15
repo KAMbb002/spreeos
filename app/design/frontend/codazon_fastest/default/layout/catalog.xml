@@ -239,7 +239,7 @@ Product view
                 </block>
                 <block type="catalog/product_view_attributes" name="product.attributes" as="additional" template="catalog/product/view/attributes.phtml">
                     <action method="addToParentGroup"><group>detailed_info</group></action>
-					<action method="setTitle" translate="value"><value>Additional</value></action>
+					<action method="setTitle" translate="value"><value>Color</value></action>
                 </block>
                 <block type="catalog/product_view" name="product.info.addto" as="addto" template="catalog/product/view/addto.phtml"/>
                 <block type="catalog/product_view" name="product.info.addtocart" as="addtocart" template="catalog/product/view/addtocart.phtml"/>
