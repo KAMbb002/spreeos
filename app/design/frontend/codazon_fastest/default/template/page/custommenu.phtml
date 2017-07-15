@@ -9,6 +9,7 @@
            <li class="level0 level-top parent">
 		   <span class="cdz-menu-toggle">toggle</span>
 		       <?php   
+			   echo '----'.$_category->getLevel();
                if($_category->getId()==166)
 			   {		   
 			   $bold="background:#f54444" ;
@@ -20,9 +21,9 @@
 			</a>
                 <?php $_category = Mage::getModel('catalog/category')->load($_category->getId()) ?>
                 <?php $_subcategories = $_category->getChildrenCategories() ?>
-				<?php  echo $_category->getLevel(); ?>
+				<?php  // echo $_category->getLevel(); ?>
 
-                <?php echo '=='. count($_subcategories) ; if (count($_subcategories) > 0): ?>
+                <?php echo '==='. count($_subcategories) ; if (count($_subcategories) > 0): ?>
                 <div class="groupmenu-drop">
 				 
                 <div class="groupmenu-drop-content groupmenu-6" style="padding-bottom: 60px;">
