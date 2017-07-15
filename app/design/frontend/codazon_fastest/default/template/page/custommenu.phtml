@@ -20,7 +20,8 @@
 			</a>
                 <?php $_category = Mage::getModel('catalog/category')->load($_category->getId()) ?>
                 <?php $_subcategories = $_category->getChildrenCategories() ?>
-                <?php if (count($_subcategories) <=2){ ?>
+                <?php if ((count($_subcategories)>0 )and
+				(count($_subcategories)<=2)){ ?>
                 <div class="groupmenu-drop">				 
                <div class="groupmenu-drop-content groupmenu-1">
 						<div class="row"> <!--row div-->
@@ -55,10 +56,8 @@
 					<?php endforeach; ?>
 				</div><!--row div-->
 				</div> 
-				<?php }else{?>
-					
-					<div class="groupmenu-drop">
-				 
+				<?php }else{?>					
+					<div class="groupmenu-drop">				 
                 <div class="groupmenu-drop-content groupmenu-6" style="padding-bottom: 60px;">
 						<div class="row"> <!--row div-->
                         <?php foreach($_subcategories as $_subcategory): ?>
