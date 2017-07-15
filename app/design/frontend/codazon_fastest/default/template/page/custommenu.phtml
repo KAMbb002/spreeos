@@ -9,7 +9,6 @@
            <li class="level0 level-top parent">
 		   <span class="cdz-menu-toggle">toggle</span>
 		       <?php   
-			  // echo '----level'.$_category->getLevel();
                if($_category->getId()==166)
 			   {		   
 			   $bold="background:#f54444" ;
@@ -21,18 +20,45 @@
 			</a>
                 <?php $_category = Mage::getModel('catalog/category')->load($_category->getId()) ?>
                 <?php $_subcategories = $_category->getChildrenCategories() ?>
-				<?php  // echo $_category->getLevel(); ?>
+                <?php if (count($_subcategories) >=1){ ?>
+                <div class="groupmenu-drop">				 
+               <div class="groupmenu-drop-content groupmenu-1">
+						<div class="row"> <!--row div-->
+                        <?php foreach($_subcategories as $_subcategory): ?>
+						<div class="col-sm-24"><!--single level-->
+						<div class="groupdrop-banner space-s">
+						<?php if(Mage::getModel('catalog/category')->load($_subcategory->getId())->getThumbnail()!=''){?>
+						<img  width="200px" height="200px" class="img-responsive" src="<?php echo Mage::getBaseUrl('media') . 'catalog/category/' .Mage::getModel('catalog/category')->load($_subcategory->getId())->getThumbnail();?>"/>
+						<?php }?>
+					</div>
+                       <ul class="groupdrop-link">
+                            <li class="item"><a href="<?php echo $_helper->getCategoryUrl($_subcategory) ?>">                                    <?php echo $_subcategory->getName() ?>
+                             </a></li>
+							 </ul>
 
-                <?php echo '==='. count($_subcategories) ; if (count($_subcategories) > 0): ?>
-                <div class="groupmenu-drop">
-				  <?php 
-				  if((count($_subcategories)>1) and (count($_subcategories)<3))
-				  {
-                   $class="groupmenu-6";}
-			       else{
-					 $class="groupmenu-1";}
-				?>
-                <div class="groupmenu-drop-content<?php echo  ' '.$class; ?>" style="padding-bottom: 60px;">
+							<?php /*<?php  $_subsubcategory = Mage::getModel('catalog/category')->load($_subcategory->getId());
+		 
+							 $_subsubcategories = $_subsubcategory->getChildrenCategories() ;	?>
+							 <?php echo '=='.count($_subcategories) ; if (count($_subcategories) > 0): ?>
+							 <ul class="groupdrop-link">
+							 <?php foreach($_subsubcategories as $_subsubcategory){?>
+							 <li class="item"><a href="<?php echo $_helper->getCategoryUrl($_subsubcategory) ?>">
+							<?php echo  $_subsubcategory->getName();?></a></li>
+							 <?php }?>
+							 </ul>
+							 <?php endif; ?>
+
+							
+						</div>
+                        <?php endforeach; ?>*/?>
+						
+                    </div><!--row div-->
+				</div>
+				</div> 
+                <?php // }elseif(count($_subcategories) >=1){?>
+					 <?php /*<div class="groupmenu-drop">
+				 
+                <div class="groupmenu-drop-content groupmenu-6" style="padding-bottom: 60px;">
 						<div class="row"> <!--row div-->
                         <?php foreach($_subcategories as $_subcategory): ?>
 						<div class="col-sm-4">
@@ -64,8 +90,49 @@
 						
                     </div><!--row div-->
 				</div>
-				</div> 
-                <?php endif; ?>
+				</div>*/?>
+					
+					
+					
+				<?php }else{?>
+					
+					<div class="groupmenu-drop">
+				 
+                <div class="groupmenu-drop-content groupmenu-6" style="padding-bottom: 60px;">
+						<div class="row"> <!--row div-->
+                        <?php foreach($_subcategories as $_subcategory): ?>
+						<div class="col-sm-4">
+						<div class="groupdrop-banner space-s">
+						<?php if(Mage::getModel('catalog/category')->load($_subcategory->getId())->getThumbnail()!=''){?>
+						<img  width="200px" height="200px" class="img-responsive" src="<?php echo Mage::getBaseUrl('media') . 'catalog/category/' .Mage::getModel('catalog/category')->load($_subcategory->getId())->getThumbnail();?>"/>
+						<?php }?>
+					</div>
+                       <p class="groupdrop-title">
+                            <a href="<?php echo $_helper->getCategoryUrl($_subcategory) ?>">                                    <?php echo $_subcategory->getName() ?>
+                             </a>
+							 </p>
+
+							<?php  $_subsubcategory = Mage::getModel('catalog/category')->load($_subcategory->getId());
+		 
+							 $_subsubcategories = $_subsubcategory->getChildrenCategories() ;	?>
+							 <?php echo '=='.count($_subcategories) ; if (count($_subcategories) > 0): ?>
+							 <ul class="groupdrop-link">
+							 <?php foreach($_subsubcategories as $_subsubcategory){?>
+							 <li class="item"><a href="<?php echo $_helper->getCategoryUrl($_subsubcategory) ?>">
+							<?php echo  $_subsubcategory->getName();?></a></li>
+							 <?php }?>
+							 </ul>
+							 <?php endif; ?>
+
+							
+						</div>
+                        <?php endforeach; ?>
+						
+                    </div><!--row div-->
+				</div>
+				</div>
+					
+				<?php }?>
 				
 				
             </li>
