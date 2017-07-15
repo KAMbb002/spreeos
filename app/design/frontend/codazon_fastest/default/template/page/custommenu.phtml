@@ -36,64 +36,11 @@
                              </a></li>
 							 </ul>
 
-							<?php /*<?php  $_subsubcategory = Mage::getModel('catalog/category')->load($_subcategory->getId());
-		 
-							 $_subsubcategories = $_subsubcategory->getChildrenCategories() ;	?>
-							 <?php echo '=='.count($_subcategories) ; if (count($_subcategories) > 0): ?>
-							 <ul class="groupdrop-link">
-							 <?php foreach($_subsubcategories as $_subsubcategory){?>
-							 <li class="item"><a href="<?php echo $_helper->getCategoryUrl($_subsubcategory) ?>">
-							<?php echo  $_subsubcategory->getName();?></a></li>
-							 <?php }?>
-							 </ul>
-							 <?php endif; ?>
-
 							
-						</div>
-                        <?php endforeach; ?>*/?>
 						
                     </div><!--row div-->
 				</div>
 				</div> 
-                <?php // }elseif(count($_subcategories) >=1){?>
-					 <?php /*<div class="groupmenu-drop">
-				 
-                <div class="groupmenu-drop-content groupmenu-6" style="padding-bottom: 60px;">
-						<div class="row"> <!--row div-->
-                        <?php foreach($_subcategories as $_subcategory): ?>
-						<div class="col-sm-4">
-						<div class="groupdrop-banner space-s">
-						<?php if(Mage::getModel('catalog/category')->load($_subcategory->getId())->getThumbnail()!=''){?>
-						<img  width="200px" height="200px" class="img-responsive" src="<?php echo Mage::getBaseUrl('media') . 'catalog/category/' .Mage::getModel('catalog/category')->load($_subcategory->getId())->getThumbnail();?>"/>
-						<?php }?>
-					</div>
-                       <p class="groupdrop-title">
-                            <a href="<?php echo $_helper->getCategoryUrl($_subcategory) ?>">                                    <?php echo $_subcategory->getName() ?>
-                             </a>
-							 </p>
-
-							<?php  $_subsubcategory = Mage::getModel('catalog/category')->load($_subcategory->getId());
-		 
-							 $_subsubcategories = $_subsubcategory->getChildrenCategories() ;	?>
-							 <?php echo '=='.count($_subcategories) ; if (count($_subcategories) > 0): ?>
-							 <ul class="groupdrop-link">
-							 <?php foreach($_subsubcategories as $_subsubcategory){?>
-							 <li class="item"><a href="<?php echo $_helper->getCategoryUrl($_subsubcategory) ?>">
-							<?php echo  $_subsubcategory->getName();?></a></li>
-							 <?php }?>
-							 </ul>
-							 <?php endif; ?>
-
-							
-						</div>
-                        <?php endforeach; ?>
-						
-                    </div><!--row div-->
-				</div>
-				</div>*/?>
-					
-					
-					
 				<?php }else{?>
 					
 					<div class="groupmenu-drop">
