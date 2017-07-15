@@ -20,7 +20,7 @@
 			</a>
                 <?php $_category = Mage::getModel('catalog/category')->load($_category->getId()) ?>
                 <?php $_subcategories = $_category->getChildrenCategories() ?>
-                <?php if (count($_subcategories) >=1){ ?>
+                <?php if (count($_subcategories) <=2){ ?>
                 <div class="groupmenu-drop">				 
                <div class="groupmenu-drop-content groupmenu-1">
 						<div class="row"> <!--row div-->
