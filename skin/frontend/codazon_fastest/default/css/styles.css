@@ -26846,6 +26846,7 @@ border-bottom: 3px solid #121212; display: inline-block; padding-bottom: 10px;}
 .nested-container .page-banners .right img {width: 100%; margin-bottom: 0!important;}
 .cdz-best-seller-wrap {    margin-top: 20px;}
 .nested-container .page-banners .right:first-child {margin-bottom: 0; margin-top: 0;}
+.nested-container .page-banners .left + .right {margin-top: 0; margin-bottom: 0;}
 .page-banners.clearer img {width: 100%; margin-right: 0;}
 
 
@@ -26855,7 +26856,7 @@ border-bottom: 3px solid #121212; display: inline-block; padding-bottom: 10px;}
 
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1024px) {
 .nested-container .page-banners .left {
     float: left;
     width: 100%;
