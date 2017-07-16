@@ -26827,6 +26827,32 @@ border-bottom: 3px solid #121212; display: inline-block; padding-bottom: 10px;}
 
 .cdz-new-trend-wrap .cdz-block-title {margin-top: 20px;}
 
+.page-banners.clearer {width: 100%; float: left;}
+.nested-container .page-banners .left {
+    float: left;
+    width: 640px;
+    margin-right: 5px;
+}
+
+.nested-container .page-banners .left img {    margin-bottom: 0;
+    width: 100%;}
+.nested-container .page-banners .right {
+    float: right;
+    width: 550px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+
+.nested-container .page-banners .right img {width: 100%; margin-bottom: 0;}
+.cdz-best-seller-wrap {    margin-top: 20px;}
+
+
+
+
+
+
+
+
 
 
 
