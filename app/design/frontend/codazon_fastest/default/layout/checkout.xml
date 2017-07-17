@@ -52,13 +52,7 @@ Default layout, loads most of the pages
             </block>
         </reference>
     </default>
-<!-- OPC Checkout -->
 
-<opc_index_index translate="label">
-		<label>Onepage Checkout customer</label>
-</opc_index_index>	
-
-<!-- -->
     <checkout_cart_index translate="label">
         <label>Shopping Cart</label>
         <remove name="right"/>
