@@ -22,6 +22,7 @@ if (! $iwd_av_class) {
 		 * Checkout page
 		 */
 		public function indexAction() {
+			echo "11111";
 			$scheme = Mage::app ()->getRequest ()->getScheme ();
 			if ($scheme == 'http') {
 				$secure = false;
@@ -29,12 +30,17 @@ if (! $iwd_av_class) {
 				$secure = true;
 			}
 			
+			echo "22222222";
+
 			if (Mage::helper ( 'opc' )->isEnable ()) {
 				$this->_redirect ( 'onepage', array (
 						'_secure' => $secure 
 				) );
+
+				echo "33333";exit;
 				return;
 			} else {
+				echo "4444";exit;
 				parent::indexAction ();
 			}
 		}
