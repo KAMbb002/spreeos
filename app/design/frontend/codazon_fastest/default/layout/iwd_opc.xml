@@ -28,42 +28,12 @@
             <action method="addCss"><stylesheet>css/iwd/opc/opc.css</stylesheet></action>
 		</reference>
         
-        <!-- <reference name="content"> -->
+        <reference name="content">
 			<block type="opc/wrapper" name="es.checkout.container" template="opc/wrapper.phtml">
 			
-					<!--  LOGIN FORM  -->
-					<block type="opc/onepage_login" name="checkout.onepage.login" as="login" template="opc/onepage/login.phtml">
-						<block type="customer/account_forgotpassword" name="forgotPassword" template="opc/customer/form/forgotpassword.phtml"/>	
-					</block>
-				 	<!-- BILLING FORM -->
-                    <block type="checkout/onepage_billing" name="checkout.onepage.billing" as="billing" template="opc/onepage/billing.phtml"/>
-
-                    <!-- SHIPPING FORM -->
-                    <block type="checkout/onepage_shipping" name="checkout.onepage.shipping" as="shipping" template="opc/onepage/shipping.phtml"/>
-                    
-                    <!-- COUPON FORM -->
-                    <block type="checkout/cart_coupon" name="checkout.cart.coupon" as="coupon" template="opc/onepage/coupon.phtml"/>
-                    
-                    <!-- COMMENT FORM -->
-                    <block type="opc/onepage_comment" name="checkout.order.comment" as="customer.comment"/>
-                    
-                    <!-- SHIPPING METHODS FORM -->
-                    <block type="checkout/onepage_shipping_method" name="checkout.onepage.shipping_method" as="shipping_method" template="opc/onepage/shipping_method.phtml">
-                    	<block type="checkout/onepage_shipping_method_available" name="checkout.onepage.shipping_method.available" as="available" template="checkout/onepage/shipping_method/available.phtml"/>
-                    	<block type="checkout/onepage_shipping_method_additional" name="checkout.onepage.shipping_method.additional" as="additional" template="checkout/onepage/shipping_method/additional.phtml"/>
-                	</block>
-                	
-                	<!-- PAYMENTS METHOD FORM -->
-                	<block type="checkout/onepage_payment" name="checkout.onepage.payment" as="payment" template="opc/onepage/payment.phtml">
-	                    <block type="checkout/onepage_payment_methods" name="checkout.payment.methods" as="methods" template="checkout/onepage/payment/methods.phtml">
-	                        <action method="setMethodFormTemplate"><method>purchaseorder</method><template>payment/form/purchaseorder.phtml</template></action>
-	                    </block>
-                	</block>
-                	
-                	
-                    
+					
 			</block>
-      <!--  </reference> -->
+        </reference>
         
         <!--  PAYPAL EXPRESS LIGHTBOX -->
         <reference name="before_body_end">
