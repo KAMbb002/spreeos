@@ -15,16 +15,13 @@ if (! Mage::helper ( 'opc' )->isEnable ()) {
 }
 
 if (! $iwd_av_class) {
-	echo "starting......";
 	require_once Mage::getModuleDir ( 'controllers', 'Mage_Checkout' ) . DS . 'OnepageController.php';
 	class IWD_Opc_Checkout_OnepageController extends Mage_Checkout_OnepageController {
-
 		
 		/**
 		 * Checkout page
 		 */
 		public function indexAction() {
-			echo "11111";
 			$scheme = Mage::app ()->getRequest ()->getScheme ();
 			if ($scheme == 'http') {
 				$secure = false;
@@ -32,17 +29,12 @@ if (! $iwd_av_class) {
 				$secure = true;
 			}
 			
-			echo "22222222";
-
 			if (Mage::helper ( 'opc' )->isEnable ()) {
 				$this->_redirect ( 'onepage', array (
 						'_secure' => $secure 
 				) );
-
-				echo "33333";exit;
 				return;
 			} else {
-				echo "4444";exit;
 				parent::indexAction ();
 			}
 		}
