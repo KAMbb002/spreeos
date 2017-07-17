@@ -66,81 +66,81 @@
         </reference>
         
         <!--  PAYPAL EXPRESS LIGHTBOX -->
-        <!-- <reference name="before_body_end"> -->
-			<!-- <block type="opc/lipp" name="opc.lipp.js" as="" template="opc/lipp-js.phtml"></block> -->
-		<!-- </reference> -->
+        <reference name="before_body_end">
+			<block type="opc/lipp" name="opc.lipp.js" as="" template="opc/lipp-js.phtml"></block>
+		</reference>
 	</opc_index_index>		
 	
-	<!-- <checkout_onepage_review> -->
-		<!-- <reference name="checkout.onepage.review.button"> -->
-			<!-- <action method="setTemplate" ifconfig="opc/global/status"><template>opc/onepage/review/button.phtml</template></action> -->
-		<!-- </reference> -->
+	<checkout_onepage_review>
+		<reference name="checkout.onepage.review.button">
+			<action method="setTemplate" ifconfig="opc/global/status"><template>opc/onepage/review/button.phtml</template></action>
+		</reference>
 		
-		<!-- <reference name="checkout.onepage.agreements"> -->
-			<!-- <action method="setTemplate" ifconfig="opc/global/status"><template>opc/onepage/agreements.phtml</template></action> -->
-		<!-- </reference> -->
+		<reference name="checkout.onepage.agreements">
+			<action method="setTemplate" ifconfig="opc/global/status"><template>opc/onepage/agreements.phtml</template></action>
+		</reference>
 				
-		<!-- <reference name="root"> -->
-			<!-- <block type="opc/onepage_subscribed" template="opc/onepage/review/subscribed.phtml" name="opc.newsletters"/>			 -->
-		<!-- </reference>		 -->
-	<!-- </checkout_onepage_review> -->
+		<reference name="root">
+			<block type="opc/onepage_subscribed" template="opc/onepage/review/subscribed.phtml" name="opc.newsletters"/>			
+		</reference>		
+	</checkout_onepage_review>
 	
 	<!--  PAYPAL EXPRESS LIGHTBOX -->
-	<!-- <checkout_cart_index> -->
-	 	<!-- <reference name="head">					 -->
-			<!-- <action method="addItem"><type>skin_js</type><name>js/iwd/opc/lipp.js</name></action>    		 -->
-		<!-- </reference> -->
-		<!-- <reference name="before_body_end"> -->
-			<!-- <block type="opc/lipp" name="opc.lipp.js" as="" template="opc/lipp-js.phtml"></block> -->
-		<!-- </reference> -->
-	<!-- </checkout_cart_index> -->
+	<checkout_cart_index>
+	 	<reference name="head">					
+			<action method="addItem"><type>skin_js</type><name>js/iwd/opc/lipp.js</name></action>    		
+		</reference>
+		<reference name="before_body_end">
+			<block type="opc/lipp" name="opc.lipp.js" as="" template="opc/lipp-js.phtml"></block>
+		</reference>
+	</checkout_cart_index>
 	
 	
 	<!--  LOGIN WITH PAYPAL -->
-	<!-- <customer_logged_out> -->
-        <!-- <reference name="top.links"> -->
-            <!-- <action method="addLink" translate="label title" module="opc" ifconfig="opc/paypallogin/status"><label></label><url helper="opc/paypal/getLoginUrl"/><title>Log In With Paypal</title><prepare/><urlParams/><position>100</position><liParams/><aParams><id>topPayPalIn</id><class>paypal-auth</class></aParams></action> -->
-        <!-- </reference> -->
-    <!-- </customer_logged_out> -->
+	<customer_logged_out>
+        <reference name="top.links">
+            <action method="addLink" translate="label title" module="opc" ifconfig="opc/paypallogin/status"><label></label><url helper="opc/paypal/getLoginUrl"/><title>Log In With Paypal</title><prepare/><urlParams/><position>100</position><liParams/><aParams><id>topPayPalIn</id><class>paypal-auth</class></aParams></action>
+        </reference>
+    </customer_logged_out>
     
-    <!-- <customer_account_index> -->
-        <!-- <reference name="customer_account_dashboard_info"> -->
-            <!-- <block type="opc/customer_account_dashboard_info" name="customer_account_dashboard_info_paypal" as="paypalauth_dashboard" template="opc/customer/account/dashboard/info.phtml"/> -->
-        <!-- </reference> -->
-    <!-- </customer_account_index> -->
+    <customer_account_index>
+        <reference name="customer_account_dashboard_info">
+            <block type="opc/customer_account_dashboard_info" name="customer_account_dashboard_info_paypal" as="paypalauth_dashboard" template="opc/customer/account/dashboard/info.phtml"/>
+        </reference>
+    </customer_account_index>
 
-    <!-- <customer_account_login> -->
-    	<!-- <reference name="head">            -->
-            <!-- <action method="addItem" ifconfig="opc/paypallogin/status"><type>skin_js</type><name>js/iwd/opc/login.js</name></action>    	 -->
-        <!-- </reference> -->
-        <!-- <reference name="customer_form_login"> -->
-            <!-- <action method="setTemplate"><template>opc/customer/form/login.phtml</template></action> -->
-            <!-- <block type="opc/paypal_login" name="paypalauth.login" template="opc/paypal/paypal_login.phtml" /> -->
-            <!-- <block type="persistent/form_remember" name="persistent.remember.me" template="persistent/remember_me.phtml" /> -->
-            <!-- <block type="core/template" name="persistent.remember.me.tooltip" template="persistent/remember_me_tooltip.phtml" /> -->
-        <!-- </reference> -->
-    <!-- </customer_account_login> -->
+    <customer_account_login>
+    	<reference name="head">           
+            <action method="addItem" ifconfig="opc/paypallogin/status"><type>skin_js</type><name>js/iwd/opc/login.js</name></action>    	
+        </reference>
+        <reference name="customer_form_login">
+            <action method="setTemplate"><template>opc/customer/form/login.phtml</template></action>
+            <block type="opc/paypal_login" name="paypalauth.login" template="opc/paypal/paypal_login.phtml" />
+            <block type="persistent/form_remember" name="persistent.remember.me" template="persistent/remember_me.phtml" />
+            <block type="core/template" name="persistent.remember.me.tooltip" template="persistent/remember_me_tooltip.phtml" />
+        </reference>
+    </customer_account_login>
 
-    <!-- <customer_account_create> -->
-    	<!-- <reference name="head">             -->
-            <!-- <action method="addItem" ifconfig="opc/paypallogin/status"><type>skin_js</type><name>js/iwd/opc/login.js</name></action> -->
-        <!-- </reference> -->
-        <!-- <reference name="customer_form_register"> -->
-            <!-- <action method="setTemplate"><template>opc/customer/form/register.phtml</template></action> -->
-            <!-- <block type="opc/paypal_login" name="paypalauth.register" template="opc/paypal/paypal_register.phtml" /> -->
-            <!-- <block type="persistent/form_remember" name="persistent.remember.me" template="persistent/remember_me.phtml" /> -->
-            <!-- <block type="core/template" name="persistent.remember.me.tooltip" template="persistent/remember_me_tooltip.phtml" /> -->
-        <!-- </reference> -->
-    <!-- </customer_account_create> -->
+    <customer_account_create>
+    	<reference name="head">            
+            <action method="addItem" ifconfig="opc/paypallogin/status"><type>skin_js</type><name>js/iwd/opc/login.js</name></action>
+        </reference>
+        <reference name="customer_form_register">
+            <action method="setTemplate"><template>opc/customer/form/register.phtml</template></action>
+            <block type="opc/paypal_login" name="paypalauth.register" template="opc/paypal/paypal_register.phtml" />
+            <block type="persistent/form_remember" name="persistent.remember.me" template="persistent/remember_me.phtml" />
+            <block type="core/template" name="persistent.remember.me.tooltip" template="persistent/remember_me_tooltip.phtml" />
+        </reference>
+    </customer_account_create>
 
-   <!-- <opc_paypal_asklink> -->
-        <!-- <reference name="root"> -->
-            <!-- <action method="setTemplate"><template>page/1column.phtml</template></action> -->
-        <!-- </reference> -->
-         <!-- <reference name="content"> -->
-             <!-- <block type="opc/customer_account_asklink" name="opc.paypal.auth" template="opc/customer/account/asklink.phtml"/> -->
-         <!-- </reference> -->
-    <!-- </opc_paypal_asklink> -->
+   <opc_paypal_asklink>
+        <reference name="root">
+            <action method="setTemplate"><template>page/1column.phtml</template></action>
+        </reference>
+         <reference name="content">
+             <block type="opc/customer_account_asklink" name="opc.paypal.auth" template="opc/customer/account/asklink.phtml"/>
+         </reference>
+    </opc_paypal_asklink>
 
 
 </layout>
