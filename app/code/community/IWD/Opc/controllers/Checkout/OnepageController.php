@@ -15,9 +15,12 @@ if (! Mage::helper ( 'opc' )->isEnable ()) {
 }
 
 if (! $iwd_av_class) {
+	echo "starting......";
 	require_once Mage::getModuleDir ( 'controllers', 'Mage_Checkout' ) . DS . 'OnepageController.php';
 	class IWD_Opc_Checkout_OnepageController extends Mage_Checkout_OnepageController {
-		
+
+		echo "starting22222......";
+		exit;
 		/**
 		 * Checkout page
 		 */
