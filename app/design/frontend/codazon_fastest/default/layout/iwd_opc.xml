@@ -28,6 +28,7 @@
             <action method="addCss"><stylesheet>css/iwd/opc/opc.css</stylesheet></action>
 		</reference>
         
+                    <block type="opc/onepage_comment" name="checkout.order.comment" as="customer.comment"/>
         <reference name="content">
 			<block type="opc/wrapper" name="es.checkout.container" template="opc/wrapper.phtml">
 			
