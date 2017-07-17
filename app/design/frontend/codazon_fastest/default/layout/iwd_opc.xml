@@ -29,7 +29,7 @@
 		</reference>
         
         <reference name="content">
-			<block type="opc/wrapper" name="es.checkout.container" template="opc/wrapper.phtml">
+			<block type="opc/wrapper" name="es.checkout.container.new" template="opc/wrapperNew.phtml">
 			
 					<!--  LOGIN FORM  -->
 					<block type="opc/onepage_login" name="checkout.onepage.login" as="login" template="opc/onepage/login.phtml">
