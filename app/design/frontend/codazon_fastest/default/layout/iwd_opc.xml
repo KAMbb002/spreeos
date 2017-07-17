@@ -29,13 +29,14 @@
 		</reference>
         
         <reference name="content">
-			<block type="opc/wrapper" name="es.checkout.container" template="opc/wrapper.phtml">
-			
+		
 					<!--  LOGIN FORM  -->
 					<block type="opc/onepage_login" name="checkout.onepage.login" as="login" template="opc/onepage/login.phtml">
 						<block type="customer/account_forgotpassword" name="forgotPassword" template="opc/customer/form/forgotpassword.phtml"/>	
 					</block>
 				 	<!-- BILLING FORM -->
+			<block type="opc/wrapper" name="es.checkout.container" template="opc/wrapper.phtml">
+			
                     <block type="checkout/onepage_billing" name="checkout.onepage.billing" as="billing" template="opc/onepage/billing.phtml"/>
 
                     <!-- SHIPPING FORM -->
