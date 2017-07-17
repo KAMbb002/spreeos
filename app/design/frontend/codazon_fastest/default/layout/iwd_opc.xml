@@ -30,6 +30,7 @@
         
                     <block type="opc/onepage_comment" name="checkout.order.comment" as="customer.comment"/>
         <reference name="content">
+		<remove name="footer"/>
 			<block type="opc/wrapper" name="es.checkout.container" template="opc/wrapper.phtml">
 			
 					<!--  LOGIN FORM  -->
