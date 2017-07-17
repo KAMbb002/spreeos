@@ -28,8 +28,8 @@
             <action method="addCss"><stylesheet>css/iwd/opc/opc.css</stylesheet></action>
 		</reference>
         
-        <reference name="content">
-			<block type="opc/wrapper" name="es.checkout.container.new" template="opc/wrapper.phtml">
+        <!-- <reference name="content"> -->
+			<block type="opc/wrapper" name="es.checkout.container" template="opc/wrapper.phtml">
 			
 					<!--  LOGIN FORM  -->
 					<block type="opc/onepage_login" name="checkout.onepage.login" as="login" template="opc/onepage/login.phtml">
@@ -63,7 +63,7 @@
                 	
                     
 			</block>
-        </reference>
+      <!--  </reference> -->
         
         <!--  PAYPAL EXPRESS LIGHTBOX -->
         <reference name="before_body_end">
