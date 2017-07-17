@@ -22,7 +22,6 @@ if (! $iwd_av_class) {
 		 * Checkout page
 		 */
 		public function indexAction() {
-			echo "index iwd";exit;
 			$scheme = Mage::app ()->getRequest ()->getScheme ();
 			if ($scheme == 'http') {
 				$secure = false;
