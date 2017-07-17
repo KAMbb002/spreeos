@@ -27,7 +27,10 @@
 			<action method="addItem"><type>skin_js</type><name>js/opcheckout.js</name></action>					
             <action method="addCss"><stylesheet>css/iwd/opc/opc.css</stylesheet></action>
 		</reference>
-        
+        <!--  LOGIN FORM  -->
+					<block type="opc/onepage_login" name="checkout.onepage.login" as="login" template="opc/onepage/login.phtml">
+						<block type="customer/account_forgotpassword" name="forgotPassword" template="opc/customer/form/forgotpassword.phtml"/>	
+					</block>
         <reference name="content">
 			<block type="opc/wrapper" name="es.checkout.container.new" template="opc/wrapperNew.phtml">
 			
