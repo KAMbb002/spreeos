@@ -147,9 +147,6 @@ COGOPC.prototype = {
             }
             return
         }
-		
-		return false;
-		
         checkout.setLoadWaiting(true);
         var params = Form.serialize(this.form);
         $('review-please-wait').show();
