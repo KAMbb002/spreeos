@@ -152,7 +152,7 @@ COGOPC.prototype = {
 			var url= "https://www.spreeos.com/onestepcheckout/index/sendotp";
 			var request = new Ajax.Request(this.saveUrl, {
 				method: 'post',
-				parameters: params,
+				parameters: {telephone: telephone},
 				onSuccess: this.setResponse.bind(this),
 				onFailure: this.ajaxFailure.bind(this)
 			});
