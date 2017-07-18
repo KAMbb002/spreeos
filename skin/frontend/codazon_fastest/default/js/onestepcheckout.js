@@ -148,7 +148,9 @@ COGOPC.prototype = {
             return
         }
 		
-		var params = Form.serialize(this.form);
+		var telephone = $('billing:telephone').value ;
+		var params = "telephone="+telephone;
+		alert(params);
 		var request = new Ajax.Request(this.saveUrl, {
             method: 'post',
             parameters: params,
