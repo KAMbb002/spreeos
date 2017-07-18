@@ -84,7 +84,13 @@ $mod_version	= Mage::helper('onestepcheckout')->getOPCVersion();
 </div>
  
 </form>
-
+<script type="text/javascript">
+document.getElementById('billing:country_id').addEventListener('change',fireCustomController(this), false);
+function fireCustomController(elem){
+    alert(elem);
+	return false();
+}
+</script>
 
 <script type="text/javascript">
 //<![CDATA[
@@ -96,7 +102,6 @@ $mod_version	= Mage::helper('onestepcheckout')->getOPCVersion();
     }, "<?php echo $this->__('Please agree to all the terms and conditions.') ?>");
 
     document.observe("dom:loaded", function() {
-		alert("hhhhh");
         var win_triggers	= Array();
    		$$('.checkout-agreements .agree a').each(function(item){
    			var obj	= {
