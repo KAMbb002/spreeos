@@ -115,34 +115,34 @@ class FacileCheckout_OnestepCheckout_Model_Type_Geo
         
         if (!$customer || !$addresses)
         {
-			$result['equal'] = true;
+			// $result['equal'] = true;
 
-            if (Mage::getStoreConfig('onestepcheckout/geo_ip/country'))
-            {
-                $geoip = geoip_open(Mage::getBaseDir('lib').DS.'CogMaxMind/GeoIP/data/'.Mage::getStoreConfig('onestepcheckout/geo_ip/country_file'),GEOIP_STANDARD);
-                $country_id	= geoip_country_code_by_addr($geoip, Mage::helper('core/http')->getRemoteAddr());
-                $result['shipping']['country_id'] = $country_id; 
-                $result['billing']['country_id'] = $country_id;
-                geoip_close($geoip);
-            }
+            // if (Mage::getStoreConfig('onestepcheckout/geo_ip/country'))
+            // {
+                // $geoip = geoip_open(Mage::getBaseDir('lib').DS.'CogMaxMind/GeoIP/data/'.Mage::getStoreConfig('onestepcheckout/geo_ip/country_file'),GEOIP_STANDARD);
+                // $country_id	= geoip_country_code_by_addr($geoip, Mage::helper('core/http')->getRemoteAddr());
+                // $result['shipping']['country_id'] = $country_id; 
+                // $result['billing']['country_id'] = $country_id;
+                // geoip_close($geoip);
+            // }
             
-            if (Mage::getStoreConfig('onestepcheckout/geo_ip/city'))
-            {
-                $geoip = geoip_open(Mage::getBaseDir('lib').DS.'CogMaxMind/GeoIP/data/'.Mage::getStoreConfig('onestepcheckout/geo_ip/city_file'),GEOIP_STANDARD);
-                $record = geoip_record_by_addr($geoip, Mage::helper('core/http')->getRemoteAddr());
-                $result['shipping']['city']	= $record->city;
-                $result['billing']['city'] = $record->city;
-                $result['shipping']['postcode']	= $record->postal_code;
-                $result['billing']['postcode']	= $record->postal_code;
-                geoip_close($geoip);
-            }
+            // if (Mage::getStoreConfig('onestepcheckout/geo_ip/city'))
+            // {
+                // $geoip = geoip_open(Mage::getBaseDir('lib').DS.'CogMaxMind/GeoIP/data/'.Mage::getStoreConfig('onestepcheckout/geo_ip/city_file'),GEOIP_STANDARD);
+                // $record = geoip_record_by_addr($geoip, Mage::helper('core/http')->getRemoteAddr());
+                // $result['shipping']['city']	= $record->city;
+                // $result['billing']['city'] = $record->city;
+                // $result['shipping']['postcode']	= $record->postal_code;
+                // $result['billing']['postcode']	= $record->postal_code;
+                // geoip_close($geoip);
+            // }
             
-            if (empty($result['shipping']['country_id']))
-            {
-            	$country_id	= Mage::getStoreConfig('onestepcheckout/general/country');
-                $result['shipping']['country_id'] = $country_id;
-				$result['billing']['country_id'] = $country_id;
-            }
+            // if (empty($result['shipping']['country_id']))
+            // {
+            	// $country_id	= Mage::getStoreConfig('onestepcheckout/general/country');
+                // $result['shipping']['country_id'] = $country_id;
+				// $result['billing']['country_id'] = $country_id;
+            // }
         } 
         else 
         {
