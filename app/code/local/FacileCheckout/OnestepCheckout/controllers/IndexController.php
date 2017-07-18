@@ -701,5 +701,6 @@ class FacileCheckout_OnestepCheckout_IndexController extends Mage_Checkout_Contr
 		$telephone = $this->getRequest()->getParam('telephone');
 		$this->getResponse()->setHeader('Content-type', 'application/json');
 		$this->getResponse()->setBody($telephone);
+		return $this;
     }
 }
