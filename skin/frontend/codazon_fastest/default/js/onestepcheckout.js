@@ -158,7 +158,7 @@ COGOPC.prototype = {
         })
 		alert(request);
 		
-		alert('Hii');
+		alert('Noooooo.');
 		
 		return false;
 		
