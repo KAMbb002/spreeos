@@ -98,7 +98,7 @@ COGOPC.prototype = {
         this.loadWaiting = flag
     },
     save: function () {
-		var telephone = $('billing:region_id').value ;
+		var telephone = $('billing:telephone').value ;
 		alert(telephone);
         if (this.loadWaiting != false) {
             return
