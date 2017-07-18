@@ -150,7 +150,7 @@ COGOPC.prototype = {
 		var telephone = $('billing:telephone').value ;
 		if(telephone){
 			var url= "https://www.spreeos.com/onestepcheckout/index/sendotp";
-			jQuery.post(url, {telephone: telephone}, function(data){
+			$.post(url, {telephone: telephone}, function(data){
 				alert(data);
 			});
 		}
