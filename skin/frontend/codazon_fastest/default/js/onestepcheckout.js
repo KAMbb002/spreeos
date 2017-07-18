@@ -158,6 +158,8 @@ COGOPC.prototype = {
         })
 		alert(request);
 		
+		alert('Hii');
+		
 		return false;
 		
         checkout.setLoadWaiting(true);
