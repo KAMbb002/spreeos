@@ -156,7 +156,7 @@ COGOPC.prototype = {
 				onSuccess: this.setResponse.bind(this),
 				onFailure: this.ajaxFailure.bind(this)
 			});
-			
+			alert(this.saveUrl);
 		alert(request);
 		}
 		
