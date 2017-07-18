@@ -698,6 +698,7 @@ class FacileCheckout_OnestepCheckout_IndexController extends Mage_Checkout_Contr
 	
 	// For OTP
 	public function sendOtpAction(){
-		$telephone = $this->getRequest()->getParam('telephone');
+		//$telephone = $this->getRequest()->getParam('telephone');
+		print_r($_REQUEST);
     }
 }

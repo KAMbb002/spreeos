@@ -149,12 +149,20 @@ COGOPC.prototype = {
         }
 		var telephone = $('billing:telephone').value ;
 		if(telephone){
-			alert(telephone);
 			var url= "https://www.spreeos.com/onestepcheckout/index/sendotp";
-			$.post(url, {telephone: telephone}, function(data){
-				alert(data);
-			});
+			 var value1 = 1;
+			 var value2 = 2;
+			 var value3 = 3;   
+			 $.ajax({
+				  type: "POST",
+				  url: url,
+				  data: "{'data1':'" + value1+ "', 'data2':'" + value2+ "', 'data3':'" + value3+ "'}",
+				  success: function (result) {
+					   alert(result);
+				  }
+			 });
 		}
+		alert("END");
 		return false;
         checkout.setLoadWaiting(true);
         var params = Form.serialize(this.form);
