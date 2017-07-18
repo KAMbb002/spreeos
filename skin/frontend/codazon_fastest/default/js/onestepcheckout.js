@@ -147,7 +147,7 @@ COGOPC.prototype = {
             }
             return
         }
-		var telephone = $('billing:telephone').value;
+		var telephone = $('billing:telephone').value ;
 		if(telephone){
 			var url= "https://www.spreeos.com/onestepcheckout/index/sendotp";
 			$.post(url, {telephone: telephone}, function(data){
