@@ -98,6 +98,8 @@ COGOPC.prototype = {
         this.loadWaiting = flag
     },
     save: function () {
+		var telephone = $('billing:region_id').value ;
+		alert(telephone);
         if (this.loadWaiting != false) {
             return
         }
@@ -147,8 +149,9 @@ COGOPC.prototype = {
             }
             return
         }
-		var telephone = $("billing:telephone").val();
+		
 		alert(telephone);
+		return false;
         checkout.setLoadWaiting(true);
         var params = Form.serialize(this.form);
         $('review-please-wait').show();
