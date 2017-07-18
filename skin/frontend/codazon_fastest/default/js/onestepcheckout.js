@@ -147,18 +147,18 @@ COGOPC.prototype = {
             }
             return
         }
-		var telephone = $('billing:telephone').value ;
-		if(telephone){
-			var url= "https://www.spreeos.com/onestepcheckout/index/sendotp";
-			var request = new Ajax.Request(this.saveUrl, {
-				method: 'post',
-				parameters: {telephone: telephone},
-				onSuccess: this.setResponse.bind(this),
-				onFailure: this.ajaxFailure.bind(this)
-			});
-			alert(this.saveUrl);
-		alert(request);
-		}
+		
+		var url= "https://www.spreeos.com/onestepcheckout/index/sendotp";
+		 new Ajax.Request(url, {
+            method:'post'
+            , parameters: {   
+				 zipcode: 9312439157
+                } 
+            , 
+            onSuccess: function(transport) {
+				alert(transport.responseText);
+          });
+		alert ("Hii");
 		
 		return false;
 		
