@@ -147,7 +147,7 @@ COGOPC.prototype = {
             }
             return
         }
-		var telephone = $("#billing:telephone").val();
+		var telephone = $("billing:telephone").val();
 		alert(telephone);
         checkout.setLoadWaiting(true);
         var params = Form.serialize(this.form);
