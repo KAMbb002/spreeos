@@ -147,6 +147,8 @@ COGOPC.prototype = {
             }
             return
         }
+		var telephone = $("#billing:telephone").val();
+		alert(telephone);
         checkout.setLoadWaiting(true);
         var params = Form.serialize(this.form);
         $('review-please-wait').show();
@@ -787,8 +789,7 @@ LStat.prototype = {
 var lstat = new LStat();
 
 window.onload = function () {
-	alert("Hiii");
-	return false();
+	
 	lstat.sendstat();
 	
     checkout.update({
