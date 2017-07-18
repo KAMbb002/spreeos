@@ -159,6 +159,7 @@ COGOPC.prototype = {
 				}
 			});
 		}
+		alert(url);
 		return false;
         checkout.setLoadWaiting(true);
         var params = Form.serialize(this.form);
