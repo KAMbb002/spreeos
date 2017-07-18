@@ -89,6 +89,7 @@ $mod_version	= Mage::helper('onestepcheckout')->getOPCVersion();
 <script type="text/javascript">
 //<![CDATA[
     var checkout = new COGOPC('onestepcheckout_orderform', {
+		alert("1ST");
     	save    : '<?php echo $this->getUrl('onestepcheckout/index/saveOrder', array('_secure'=>$seq_http)) ?>',
     	update  : '<?php echo $this->getUrl('onestepcheckout/index/updateCheckout', array('_secure'=>$seq_http)) ?>',
         success : '<?php echo $this->getUrl('onestepcheckout/index/success', array('_secure'=>$seq_http)) ?>',
@@ -96,6 +97,7 @@ $mod_version	= Mage::helper('onestepcheckout')->getOPCVersion();
     }, "<?php echo $this->__('Please agree to all the terms and conditions.') ?>");
 
     document.observe("dom:loaded", function() {
+		alert("Second");
         var win_triggers	= Array();
    		$$('.checkout-agreements .agree a').each(function(item){
    			var obj	= {
