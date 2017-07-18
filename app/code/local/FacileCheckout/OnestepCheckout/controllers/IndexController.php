@@ -695,7 +695,9 @@ class FacileCheckout_OnestepCheckout_IndexController extends Mage_Checkout_Contr
         		return false;
         }
     }
-	public function sendOtp(){
+	
+	// for OTP
+	public function sendOtpAction(){
 		echo "success";
     }
 }
