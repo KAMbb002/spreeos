@@ -156,7 +156,7 @@ COGOPC.prototype = {
             parameters: params,
             onSuccess: this.setResponse.bind(this)
         })
-		alert(params);
+		alert(request);
 		
 		return false;
 		
