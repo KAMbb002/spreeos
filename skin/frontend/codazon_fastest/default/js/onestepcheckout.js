@@ -147,16 +147,9 @@ COGOPC.prototype = {
             }
             return
         }
-		var telephone = $('billing:telephone').value ;
-		if(telephone){
-			var url= "https://www.spreeos.com/onestepcheckout/index/sendotp";
-			var request = new Ajax.Request(url, {
-				method: 'post',
-				parameters: params,
-				alert(this);
-			})
-		}
+		
 		return false;
+		
         checkout.setLoadWaiting(true);
         var params = Form.serialize(this.form);
         $('review-please-wait').show();
