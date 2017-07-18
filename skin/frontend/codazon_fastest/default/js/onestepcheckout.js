@@ -195,6 +195,7 @@ COGOPC.prototype = {
         })
     },
     setResponse: function (response) {
+		alert(response.responseText);
         response = response.responseText.evalJSON();
         if (response.redirect) {
             location.href = check_secure_url(response.redirect);
