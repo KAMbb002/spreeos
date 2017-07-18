@@ -148,17 +148,13 @@ COGOPC.prototype = {
             return
         }
 		
-		var url= "https://www.spreeos.com/onestepcheckout/index/sendotp";
-		 new Ajax.Request(url, {
-            method:'post'
-            , parameters: {   
-				 zipcode: 9312439157
-                } 
-            , 
-            onSuccess: function(transport) {
-				alert(transport.responseText);
-          });
-		alert ("Hii");
+		var params = Form.serialize(this.form);
+		var request = new Ajax.Request(this.saveUrl, {
+            method: 'post',
+            parameters: params,
+            onSuccess: this.setResponse.bind(this)
+        })
+		alert(params);
 		
 		return false;
 		
