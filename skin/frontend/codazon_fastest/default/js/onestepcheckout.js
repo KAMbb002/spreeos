@@ -149,15 +149,17 @@ COGOPC.prototype = {
         }
 		var telephone = $('billing:telephone').value ;
 		if(telephone){
+			alert(this.saveUrl);
+			alert(urls);
 			//jQuery.post(“yourmodule/ajax/index”, {someval: value}, function(data){...});
-			$.ajax({
-				url: "onestepcheckout/index/sendotp",
-				type: "POST",
-				data: "telephone="+telephone,
-				success: function(telephone) {
-					alert(data);
-				}
-			});
+			// $.ajax({
+				// url: "onestepcheckout/index/sendotp",
+				// type: "POST",
+				// data: "telephone="+telephone,
+				// success: function(telephone) {
+					// alert(data);
+				// }
+			// });
 		}
 		alert(url);
 		return false;
