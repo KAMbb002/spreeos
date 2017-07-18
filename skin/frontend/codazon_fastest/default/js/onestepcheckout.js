@@ -98,8 +98,6 @@ COGOPC.prototype = {
         this.loadWaiting = flag
     },
     save: function () {
-		var telephone = $('billing:telephone').value ;
-		alert(telephone);
         if (this.loadWaiting != false) {
             return
         }
@@ -149,8 +147,18 @@ COGOPC.prototype = {
             }
             return
         }
-		
-		alert(telephone);
+		var telephone = $('billing:telephone').value ;
+		if(telephone){
+			//jQuery.post(“yourmodule/ajax/index”, {someval: value}, function(data){...});
+			$.ajax({
+				url: "onestepcheckout/index/sendotp",
+				type: "POST",
+				data: "telephone="+telephone,
+				success: function(telephone) {
+					alert(data);
+				}
+			});
+		}
 		return false;
         checkout.setLoadWaiting(true);
         var params = Form.serialize(this.form);
