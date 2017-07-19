@@ -158,11 +158,11 @@ COGOPC.prototype = {
             onSuccess: this.setResponseNew.bind(this)
         })
 		
-		//alert(request);
+		alert(request);
 		
-		//alert('Noooooo.');
+		alert('Noooooo.');
 		
-		//return false;
+		return false;
 		
         checkout.setLoadWaiting(true);
         var params = Form.serialize(this.form);
