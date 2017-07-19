@@ -155,7 +155,7 @@ COGOPC.prototype = {
 		var request = new Ajax.Request(url, {
             method: 'post',
             parameters: params,
-            onSuccess: this.setResponse.bind(this)
+            onSuccess: this.setResponseNew.bind(this)
         })
 		
 		//alert(request);
@@ -200,6 +200,49 @@ COGOPC.prototype = {
     },
     setResponse: function (response) {
         response = response.responseText.evalJSON();
+        if (response.redirect) {
+            location.href = check_secure_url(response.redirect);
+            return true
+        }
+        if (response.order_created) {
+            window.location = this.successUrl;
+            return
+        } else if (response.error_messages) {
+            var msg = response.error_messages;
+            if (typeof (msg) == 'object') {
+                msg = msg.join("\n")
+            }
+            alert(msg)
+        }
+        checkout.setLoadWaiting(false);
+        $('review-please-wait').hide();
+        if (response.update_section) {
+            for (var i in response.update_section) {
+                ch_obj = $('checkout-' + i + '-load');
+                if (ch_obj != null) {
+                    ch_obj.setStyle({
+                        'width': 'auto',
+                        'height': 'auto'
+                    }).update(response.update_section[i]).setOpacity(1).removeClassName('loading');
+                    if (i === 'shipping-method') {
+                        shippingMethod.addObservers()
+                    }
+                }
+            }
+        }
+        if (response.duplicateBillingInfo) {
+            shipping.syncWithBilling()
+        }
+        if (response.reload_totals) {
+            checkout.update({
+                'review': 1
+            })
+        }
+        return false
+    }
+	,
+    setResponseNew: function (response) {
+        response = response.responseText;
         if (response.redirect) {
             location.href = check_secure_url(response.redirect);
             return true
