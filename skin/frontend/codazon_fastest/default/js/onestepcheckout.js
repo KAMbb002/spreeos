@@ -160,7 +160,7 @@ COGOPC.prototype = {
 		
 		alert(request);
 		
-		alert('Noooooo.');
+		alert('Noooo!!!.');
 		
 		return false;
 		
