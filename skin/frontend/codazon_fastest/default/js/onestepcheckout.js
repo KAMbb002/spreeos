@@ -155,7 +155,7 @@ COGOPC.prototype = {
 		var request = new Ajax.Request(url, {
             method: 'post',
             parameters: params,
-            onSuccess: this.setResponseNew(this)
+            onSuccess: this.setResponse.bind(this)
         })
 		
 		alert(request);
@@ -239,10 +239,6 @@ COGOPC.prototype = {
             })
         }
         return false
-    }
-	,
-    setResponseNew: function (response) {
-        return response.responseText; 
     },
     blockform: function () {
         $(this.form).remove();
