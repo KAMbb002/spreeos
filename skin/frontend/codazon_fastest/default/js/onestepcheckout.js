@@ -199,7 +199,8 @@ COGOPC.prototype = {
         })
     },
     setResponse: function (response) {
-        response = response.responseText.evalJSON();
+       // response = response.responseText.evalJSON();
+		response = '{ "name": "Violet", "occupation": "character" }'.evalJSON();
         if (response.redirect) {
             location.href = check_secure_url(response.redirect);
             return true
