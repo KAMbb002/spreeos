@@ -154,11 +154,11 @@ COGOPC.prototype = {
 		var request = new Ajax.Request(url, {
             method: 'post',
             parameters: {telephone: telephone},
-            //onSuccess: this.setResponse.bind(this)
+            onSuccess: this.setResponse.bind(this)
         })
 		
-		var retjson = request.responseText.evalJSON();
-		alert(retjson.telephone);
+		//var retjson = request.responseText.evalJSON();
+		alert(request);
 		
 		alert('Noooo!!!.');
 		
