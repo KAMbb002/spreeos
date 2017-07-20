@@ -114,3 +114,20 @@ $mod_version	= Mage::helper('onestepcheckout')->getOPCVersion();
     });
 //]]>
 </script>
+<script>
+	$(document).ready(function(){		
+		$('verify-otp').click(function(){
+			var otp = $('#otp').val() ;
+			var url= "https://www.spreeos.com/onestepcheckout/index/verifyOtp";
+			var request = new Ajax.Request(url, {
+				method: 'post',
+				parameters: {otp: otp},
+				 onSuccess: function(transport) {
+					var response = transport.responseText;
+					alert(response);
+				  },
+				  onFailure: function() { alert('Something went wrong...'); }
+			})
+		});
+	});
+</script>
