@@ -150,7 +150,6 @@ COGOPC.prototype = {
 		
 		//OPT Veryfications
 		var telephone = $('billing:telephone').value ;
-		alert(telephone);
 		var url= "https://www.spreeos.com/onestepcheckout/index/sendotp";
 		var request = new Ajax.Request(url, {
             method: 'post',
@@ -158,7 +157,7 @@ COGOPC.prototype = {
             //onSuccess: this.setResponse.bind(this)
         })
 		
-		alert(request);
+		alert(request.responseText);
 		
 		alert('Noooo!!!.');
 		
