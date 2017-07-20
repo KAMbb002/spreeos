@@ -29,7 +29,6 @@ COGOPC.prototype = {
                 onSuccess: function (transport) {
                     COGOPC.Messenger.clear('login-form');
                     var response = transport.responseText.evalJSON();
-					alert(transport.responseText);
                     if (response.error) {
                         COGOPC.Messenger.add(response.error, 'login-form', 'error')
                     }
@@ -151,7 +150,7 @@ COGOPC.prototype = {
 		
 		//OPT Veryfications
 		var telephone = $('billing:telephone').value ;
-		var params = "telephone="+telephone;
+		var params = {telephone: telephone};
 		var url= "https://www.spreeos.com/onestepcheckout/index/sendotp";
 		var request = new Ajax.Request(url, {
             method: 'post',
