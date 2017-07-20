@@ -154,11 +154,9 @@ COGOPC.prototype = {
 		var request = new Ajax.Request(url, {
             method: 'post',
             parameters: {telephone: telephone},
-            onSuccess: this.setResponse.bind(this)
+            //onSuccess: this.setResponse.bind(this)
         })
-		
-		//var retjson = request.responseText.evalJSON();
-		alert(request);
+		alert(request.responseText);
 		
 		alert('Noooo!!!.');
 		
@@ -200,8 +198,6 @@ COGOPC.prototype = {
     },
     setResponse: function (response) {
         response = response.responseText.evalJSON();
-		alert(response);
-		alert(response.responseText);
         if (response.redirect) {
             location.href = check_secure_url(response.redirect);
             return true
