@@ -154,12 +154,14 @@ COGOPC.prototype = {
 		var request = new Ajax.Request(url, {
             method: 'post',
             parameters: {telephone: telephone},
-            //onSuccess: this.setResponse.bind(this)
+             onSuccess: function(transport) {
+				var response = transport.responseText;
+				alert(response);
+			  },
+			  onFailure: function() { alert('Something went wrong...'); }
         })
-		alert(request.responseText);
 		
-		alert('Noooo!!!.');
-		
+			
 		return false;
 		
         checkout.setLoadWaiting(true);
