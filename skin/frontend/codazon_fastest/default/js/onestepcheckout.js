@@ -155,7 +155,7 @@ COGOPC.prototype = {
 		var request = new Ajax.Request(url, {
             method: 'post',
             parameters: params,
-            onSuccess: this.setResponseNew(this)
+            this.setResponseNew(this)
         })
 		
 		alert(request);
