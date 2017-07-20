@@ -699,12 +699,11 @@ class FacileCheckout_OnestepCheckout_IndexController extends Mage_Checkout_Contr
 	// For OTP
 	public function sendOtpAction(){
 		$telephone = $this->getRequest()->getParam('telephone');
-		mail("ravikant00999@gmail.com","controller", $telephone);
-
-		$this->getResponse()
-            ->setHeader('HTTP/1.1', '403 Session Expired')
-            ->setHeader('Login-Required', 'true')
-            ->sendResponse($telephone);
-		return $telephone;
+		$data['telephone'] = $telephone;
+		$json = json_encode($data);
+			  $this->getResponse()
+				   ->clearHeaders()
+				   ->setHeader('Content-Type', 'application/json')
+				   ->setBody($json);
     }
 }

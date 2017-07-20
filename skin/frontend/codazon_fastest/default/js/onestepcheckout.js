@@ -157,7 +157,8 @@ COGOPC.prototype = {
             //onSuccess: this.setResponse.bind(this)
         })
 		
-		alert(request);
+		retjson = request.responseText.evalJSON();
+		alert(retjson.telephone);
 		
 		alert('Noooo!!!.');
 		
