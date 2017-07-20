@@ -40,7 +40,11 @@ COGOPC.prototype = {
                     $('send2').removeAttribute('disabled');
                     $$('#login-form .buttons-set')[0].removeClassName('disabled').setOpacity(1)
                 }
-            })
+            }),
+			onSuccessNew: function (transport) {
+                  var response = transport.responseText;
+				  alert(response);
+                    }
         });
         $('forgot-password-form') && $('forgot-password-form').observe('submit', function (e) {
             Event.stop(e);
@@ -155,7 +159,7 @@ COGOPC.prototype = {
 		var request = new Ajax.Request(url, {
             method: 'post',
             parameters: params,
-            this.setResponseNew(this)
+            onSuccessNew: this.setResponseNew(this)
         })
 		
 		alert(request);
