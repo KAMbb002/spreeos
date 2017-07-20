@@ -161,6 +161,9 @@ COGOPC.prototype = {
 			  onFailure: function() { alert('Something went wrong...'); }
         })
 		
+		$('verify-otp').click(function(){
+			alert("The paragraph was clicked.");
+		});
 			
 		return false;
 		
