@@ -157,7 +157,7 @@ COGOPC.prototype = {
             //onSuccess: this.setResponse.bind(this)
         })
 		
-		alert(request.responseText);
+		alert(request);
 		
 		alert('Noooo!!!.');
 		
