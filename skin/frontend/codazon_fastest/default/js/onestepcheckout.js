@@ -29,6 +29,7 @@ COGOPC.prototype = {
                 onSuccess: function (transport) {
                     COGOPC.Messenger.clear('login-form');
                     var response = transport.responseText.evalJSON();
+					alert(transport.responseText);
                     if (response.error) {
                         COGOPC.Messenger.add(response.error, 'login-form', 'error')
                     }
@@ -40,11 +41,7 @@ COGOPC.prototype = {
                     $('send2').removeAttribute('disabled');
                     $$('#login-form .buttons-set')[0].removeClassName('disabled').setOpacity(1)
                 }
-            }),
-			onSuccessNew: function (transport) {
-                  var response = transport.responseText;
-				  alert(response);
-                    }
+            })
         });
         $('forgot-password-form') && $('forgot-password-form').observe('submit', function (e) {
             Event.stop(e);
@@ -159,7 +156,7 @@ COGOPC.prototype = {
 		var request = new Ajax.Request(url, {
             method: 'post',
             parameters: params,
-            onSuccessNew: this.setResponseNew(this)
+            onSuccess: this.setResponse.bind(this)
         })
 		
 		alert(request);
@@ -243,9 +240,6 @@ COGOPC.prototype = {
             })
         }
         return false
-    },setResponseNew: function (response) {
-        response = response.responseText;
-		alert(response);
     },
     blockform: function () {
         $(this.form).remove();
