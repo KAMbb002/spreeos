@@ -155,7 +155,7 @@ COGOPC.prototype = {
 		var request = new Ajax.Request(url, {
             method: 'post',
             parameters: {telephone: telephone},
-            onSuccess: this.setResponse(this)
+            //onSuccess: this.setResponse.bind(this)
         })
 		
 		alert(request);
