@@ -160,8 +160,12 @@ COGOPC.prototype = {
 			  },
 			  onFailure: function() { alert('Something went wrong...'); }
         })
-		
-				 return false;
+		var otp = $('otp').val() ;
+		if(otp === "Success"){
+			alert(otp);
+		}
+		alert(otp);
+		return false;
 				 
         checkout.setLoadWaiting(true);
         var params = Form.serialize(this.form);
