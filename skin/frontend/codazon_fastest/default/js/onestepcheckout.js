@@ -160,11 +160,12 @@ COGOPC.prototype = {
 			  },
 			  onFailure: function() { alert('Something went wrong...'); }
         })
-		
-		var otp = $('otp').val() ;
+
+		var otp = $('otp').value ;
 		if(otp === "Success"){
 			alert(otp);
 		}
+		alert(otp);
 		
 		
 		return false;
