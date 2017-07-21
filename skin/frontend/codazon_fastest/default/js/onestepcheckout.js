@@ -157,11 +157,12 @@ COGOPC.prototype = {
              onSuccess: function(transport) {
 				//var response = transport.responseText;
 				$('otp-validation').show();
-				 return false;
 			  },
 			  onFailure: function() { alert('Something went wrong...'); }
         })
 		
+				 return false;
+				 
         checkout.setLoadWaiting(true);
         var params = Form.serialize(this.form);
         $('review-please-wait').show();
