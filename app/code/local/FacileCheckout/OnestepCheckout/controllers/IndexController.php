@@ -698,8 +698,7 @@ class FacileCheckout_OnestepCheckout_IndexController extends Mage_Checkout_Contr
 	
 	// For OTP
 	public function sendOtpAction(){
-		$telephone = $this->getRequest()->getParam('telephone');
-		$mobile = 9312439157;
+		$mobile = $this->getRequest()->getParam('telephone');
 		$otp = mt_rand(100000, 999999);;
 		$generatedDate = date('Y-m-d H:i:s');
 		$expireDate = date('Y-m-d H:i:s', strtotime("+10 minutes"));
