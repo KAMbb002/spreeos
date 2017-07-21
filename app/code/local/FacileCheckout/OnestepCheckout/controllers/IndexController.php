@@ -713,7 +713,7 @@ class FacileCheckout_OnestepCheckout_IndexController extends Mage_Checkout_Contr
 		
 		$query = "Insert Into {$tableName} (id, mobile, otp, generated_date, expire_date) Values ('','{$mobile}','{$otp}','{$generatedDate}','{$expireDate}')";
 		$writeConnection->query($query);
-		$this->sendOtpVeryfication($mobile,)
+		$this->sendOtpVeryfication($mobile, $otp);
     }
 	
 	public function verifyOtpAction(){
