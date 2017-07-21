@@ -716,13 +716,26 @@ class FacileCheckout_OnestepCheckout_IndexController extends Mage_Checkout_Contr
 		$this->sendOtpVeryfication($mobile, $otp);
     }
 	
-	public function verifyOtpAction(){
-		$otp = $this->getRequest()->getParam('otp');
-		//echo "Success";
-		echo "Error";
-    }
-	
 	public function sendOtpVeryfication($mobile, $otp){
 		echo $mobile ."---". $otp;
     }
+	
+	public function verifyOtpAction(){
+		$mobile = $this->getRequest()->getParam('telephone');
+		$mobile = 9312439157;
+		$otp = 107387;
+		$resource = Mage::getSingleton('core/resource');
+		$readConnection = $resource->getConnection('core_read');
+		$tableName = $resource->getTableName('otp_verification');
+		
+		$currentDate = date('Y-m-d H:i:s');
+		$query = "Select * FROM {$tableName} where (mobile='{$mobile}') and (otp='{$otp}' and expire_date>='{$currentDate}')";
+		$writeConnection->query($query);
+		$results = $readConnection->fetchAll($query);
+		
+		var_dump($results);
+
+    }
+	
+	// End
 }
