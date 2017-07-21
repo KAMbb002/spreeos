@@ -121,7 +121,7 @@ $mod_version	= Mage::helper('onestepcheckout')->getOPCVersion();
 			var otp = jQuery('#otp').val() ;
 			var telephone = jQuery('#billing:telephone').val() ;
 			alert(otp);
-			alert(telephone);
+			alert(jQuery('[id="billing:telephone "]'));
 			var url= "https://www.spreeos.com/onestepcheckout/index/verifyOtp";
 			var request = new Ajax.Request(url, {
 				method: 'post',
