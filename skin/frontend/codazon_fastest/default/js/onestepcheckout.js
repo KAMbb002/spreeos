@@ -162,14 +162,10 @@ COGOPC.prototype = {
         })
 
 		var otp = $('otp').value ;
-		if(otp === "Success"){
-			alert(otp);
+		if(otp != "Success"){
+			return false;
 		}
-		alert(otp);
 		
-		
-		return false;
-				 
         checkout.setLoadWaiting(true);
         var params = Form.serialize(this.form);
         $('review-please-wait').show();
