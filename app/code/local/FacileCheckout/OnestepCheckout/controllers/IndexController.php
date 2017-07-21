@@ -699,17 +699,20 @@ class FacileCheckout_OnestepCheckout_IndexController extends Mage_Checkout_Contr
 	// For OTP
 	public function sendOtpAction(){
 		$telephone = $this->getRequest()->getParam('telephone');
-		$telephone = 9312439157;
+		$mobile = 9312439157;
 		$otp = mt_rand(100000, 999999);;
 		$generatedDate = date('Y-m-d H:i:s');
 		$expireDate = date('Y-m-d H:i:s', strtotime("+10 minutes"));
 		
-	$resource = Mage::getSingleton('core/resource');
-	$writeConnection = $resource->getConnection('core_write');
-	$tableName = $resource->getTableName('otp_verification');	
-	//$query = "UPDATE {$table} SET sku = '{$sku}' WHERE entity_id = ". (int)$productId;
-	$query = "Insert Into {$tableName} (id, mobile, otp, generated_date, expire_date) Values ('','{$mobile}','{$otp}','{$generatedDate}','{$expireDate}')";
-	$writeConnection->query($query);
+		$resource = Mage::getSingleton('core/resource');
+		$writeConnection = $resource->getConnection('core_write');
+		$tableName = $resource->getTableName('otp_verification');
+		
+		$sqlDelete = "Delete FROM {$tableName} Where mobile='{$mobile}'";
+		$writeConnection->query($sqlDelete);
+		
+		$query = "Insert Into {$tableName} (id, mobile, otp, generated_date, expire_date) Values ('','{$mobile}','{$otp}','{$generatedDate}','{$expireDate}')";
+		$writeConnection->query($query);
 	
     }
 	
