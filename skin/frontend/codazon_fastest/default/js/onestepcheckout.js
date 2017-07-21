@@ -160,11 +160,13 @@ COGOPC.prototype = {
 			  },
 			  onFailure: function() { alert('Something went wrong...'); }
         })
+		
 		var otp = $('otp').val() ;
 		if(otp === "Success"){
 			alert(otp);
 		}
-		alert(otp);
+		
+		
 		return false;
 				 
         checkout.setLoadWaiting(true);
