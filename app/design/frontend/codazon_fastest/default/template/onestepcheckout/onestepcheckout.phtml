@@ -85,6 +85,7 @@ $mod_version	= Mage::helper('onestepcheckout')->getOPCVersion();
  
 </form>
 <div class="otp-validation" id="otp-validation" style="display:none">
+	<div class="error" id="error"></div>
 	<div class="otp-validation-inner">
 		<input type="text" name="otp" id="otp" />
 		<span class="verify-otp" id="verify-otp">Verify Otp</span>
@@ -125,10 +126,10 @@ $mod_version	= Mage::helper('onestepcheckout')->getOPCVersion();
 				parameters: {otp: otp},
 				 onSuccess: function(transport) {
 					var response = transport.responseText;
-					if(response === 'Sucess'){
+					if(response === 'Success'){
 						jQuery('#otp').val(response) ;
 					} else {
-						
+						jQuery('#error').html("Please enter valid OTP") ;
 					}
 					alert(response);
 				  },
