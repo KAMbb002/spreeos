@@ -128,10 +128,11 @@ $mod_version	= Mage::helper('onestepcheckout')->getOPCVersion();
 					var response = transport.responseText;
 					if(response === 'Success'){
 						jQuery('#otp').val(response) ;
+						
+					alert(response);
 					} else {
 						jQuery('#error').html("Please enter valid OTP") ;
 					}
-					alert(response);
 				  },
 				  onFailure: function() { alert('Something went wrong...'); }
 			})
