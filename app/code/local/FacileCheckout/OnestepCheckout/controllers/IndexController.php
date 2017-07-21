@@ -729,10 +729,10 @@ class FacileCheckout_OnestepCheckout_IndexController extends Mage_Checkout_Contr
 		$tableName = $resource->getTableName('otp_verification');
 		
 		$currentDate = date('Y-m-d H:i:s');
-		$query = "Select * FROM {$tableName} where (mobile='{$mobile}') and (otp='{$otp}' and expire_date>='{$currentDate}')";
+		echo $query = "Select * FROM {$tableName} where (mobile='{$mobile}') and (otp='{$otp}' and expire_date>='{$currentDate}')";
 		$results = $readConnection->fetchAll($query);
 		
-		$count = count($result);
+		echo $count = count($result);
 		if($count == 0 ){
 			echo "Errro";
 		} else {
