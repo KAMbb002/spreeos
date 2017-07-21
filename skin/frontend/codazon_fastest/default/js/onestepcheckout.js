@@ -149,7 +149,7 @@ COGOPC.prototype = {
         }
 		
 		//OPT Veryfications
-		var cod = $('p_method_cashondelivery').value ;
+		var cod = $('p_method_cashondelivery').selected.value ;
 		alert(cod);
 		var telephone = $('billing:telephone').value ;
 		var url= "https://www.spreeos.com/onestepcheckout/index/sendotp";
