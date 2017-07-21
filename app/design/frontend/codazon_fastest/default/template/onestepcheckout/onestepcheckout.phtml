@@ -128,6 +128,7 @@ $mod_version	= Mage::helper('onestepcheckout')->getOPCVersion();
 				parameters: {otp: otp, telephone: telephone},
 				 onSuccess: function(transport) {
 					var response = transport.responseText;
+					alert(response);
 					if(response === 'Success'){
 						jQuery('#otp').val(response);
 						jQuery(".validation-passed").trigger("click");
