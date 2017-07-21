@@ -153,6 +153,7 @@ COGOPC.prototype = {
 		var otp = $('otp').value ;
 		alert(cod);
 		if(cod == true && otp !="Success" ) {
+			alert(cod);
 			$('review-please-wait').show();
 			var telephone = $('billing:telephone').value ;
 			var url= "https://www.spreeos.com/onestepcheckout/index/sendotp";
@@ -165,7 +166,8 @@ COGOPC.prototype = {
 					$('review-please-wait').hide();
 				  },
 				  onFailure: function() { alert('Something went wrong...'); }
-			})			
+			})	
+alert("hiii");			
 			if(otp != "Success"){
 				return false;
 			}
