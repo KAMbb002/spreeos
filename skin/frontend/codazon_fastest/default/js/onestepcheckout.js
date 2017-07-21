@@ -150,24 +150,24 @@ COGOPC.prototype = {
 		
 		//OPT Veryfications
 		var cod = $('p_method_cashondelivery').checked ;
-		alert(cod);
-		var telephone = $('billing:telephone').value ;
-		var url= "https://www.spreeos.com/onestepcheckout/index/sendotp";
-		var request = new Ajax.Request(url, {
-            method: 'post',
-            parameters: {telephone: telephone},
-             onSuccess: function(transport) {
-				//var response = transport.responseText;
-				$('otp-validation').show();
-			  },
-			  onFailure: function() { alert('Something went wrong...'); }
-        })
+		if(cod == true) {
+			var telephone = $('billing:telephone').value ;
+			var url= "https://www.spreeos.com/onestepcheckout/index/sendotp";
+			var request = new Ajax.Request(url, {
+				method: 'post',
+				parameters: {telephone: telephone},
+				 onSuccess: function(transport) {
+					//var response = transport.responseText;
+					$('otp-validation').show();
+				  },
+				  onFailure: function() { alert('Something went wrong...'); }
+			})
 
-		var otp = $('otp').value ;
-		if(otp != "Success"){
-			return false;
+			var otp = $('otp').value ;
+			if(otp != "Success"){
+				return false;
+			}
 		}
-		
         checkout.setLoadWaiting(true);
         var params = Form.serialize(this.form);
         $('review-please-wait').show();
