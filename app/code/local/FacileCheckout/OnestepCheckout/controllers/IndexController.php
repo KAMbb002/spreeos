@@ -717,7 +717,7 @@ class FacileCheckout_OnestepCheckout_IndexController extends Mage_Checkout_Contr
 	
 	public function sendOtpVeryfication($mobile, $otp){
 		$message = urlencode("Your Order OTP is $otp");
-		echo $url ="http://sms.rightchoicesms.com/sendsms/sendsms.php?username=SPREEO&password=ksethi&type=TEXT&sender=Alerts&mobile=$mobile&message=$message";
+		echo $url ="http://sms.rightchoicesms.com/sendsms/sendsms.php?username=RCSPREEO&password=ksethi&type=TEXT&sender=SPREEO&mobile=$mobile&message=$message";
 		$return = file($url);
     }
 	
