@@ -732,7 +732,12 @@ class FacileCheckout_OnestepCheckout_IndexController extends Mage_Checkout_Contr
 		$query = "Select * FROM {$tableName} where (mobile='{$mobile}') and (otp='{$otp}' and expire_date>='{$currentDate}')";
 		$results = $readConnection->fetchAll($query);
 		
-		var_dump($results);
+		$count = count($result);
+		if($count == 0 ){
+			echo "Errro";
+		} else {
+			echo "success";
+		}
 
     }
 	
