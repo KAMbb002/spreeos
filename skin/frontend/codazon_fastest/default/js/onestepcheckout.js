@@ -160,6 +160,7 @@ COGOPC.prototype = {
 				 onSuccess: function(transport) {
 					//var response = transport.responseText;
 					$('otp-validation').show();
+					$('review-please-wait').hide();
 				  },
 				  onFailure: function() { alert('Something went wrong...'); }
 			})
