@@ -703,6 +703,7 @@ class FacileCheckout_OnestepCheckout_IndexController extends Mage_Checkout_Contr
 	
 	public function verifyOtpAction(){
 		$otp = $this->getRequest()->getParam('otp');
-		echo "Success";
+		//echo "Success";
+		echo "Error";
     }
 }
