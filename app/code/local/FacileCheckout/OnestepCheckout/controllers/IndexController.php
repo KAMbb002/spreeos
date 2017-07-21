@@ -721,9 +721,8 @@ class FacileCheckout_OnestepCheckout_IndexController extends Mage_Checkout_Contr
     }
 	
 	public function verifyOtpAction(){
-		$mobile = $this->getRequest()->getParam('telephone');
-		$mobile = 9312439157;
-		$otp = 107387;
+		echo $mobile = $this->getRequest()->getParam('telephone');
+		echo $otp = $this->getRequest()->getParam('otp');
 		$resource = Mage::getSingleton('core/resource');
 		$readConnection = $resource->getConnection('core_read');
 		$tableName = $resource->getTableName('otp_verification');
@@ -736,9 +735,8 @@ class FacileCheckout_OnestepCheckout_IndexController extends Mage_Checkout_Contr
 		if($count == 0 ){
 			echo "Errro";
 		} else {
-			echo "success";
+			echo "Success";
 		}
-
     }
 	
 	// End
