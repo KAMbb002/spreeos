@@ -155,13 +155,12 @@ COGOPC.prototype = {
             method: 'post',
             parameters: {telephone: telephone},
              onSuccess: function(transport) {
-				var response = transport.responseText;
+				//var response = transport.responseText;
 				$('otp-validation').show();
+				 return false;
 			  },
 			  onFailure: function() { alert('Something went wrong...'); }
         })
-			
-		return false;
 		
         checkout.setLoadWaiting(true);
         var params = Form.serialize(this.form);
