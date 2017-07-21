@@ -127,7 +127,9 @@ $mod_version	= Mage::helper('onestepcheckout')->getOPCVersion();
 					var response = transport.responseText;
 					if(response === 'Sucess'){
 						jQuery('#otp').val(response) ;
-					} elase {}
+					} else {
+						
+					}
 					alert(response);
 				  },
 				  onFailure: function() { alert('Something went wrong...'); }
