@@ -150,7 +150,9 @@ COGOPC.prototype = {
 		
 		//OPT Veryfications
 		var cod = $('p_method_cashondelivery').checked ;
-		if(cod == true) {
+		var otp = $('otp').value ;
+		alert(cod);
+		if(cod == true && otp !="Success" ) {
 			$('review-please-wait').show();
 			var telephone = $('billing:telephone').value ;
 			var url= "https://www.spreeos.com/onestepcheckout/index/sendotp";
@@ -163,13 +165,12 @@ COGOPC.prototype = {
 					$('review-please-wait').hide();
 				  },
 				  onFailure: function() { alert('Something went wrong...'); }
-			})
-
-			var otp = $('otp').value ;
+			})			
 			if(otp != "Success"){
 				return false;
 			}
 		}
+		alert("Hiii");
         checkout.setLoadWaiting(true);
         var params = Form.serialize(this.form);
         $('review-please-wait').show();
