@@ -717,6 +717,7 @@ class FacileCheckout_OnestepCheckout_IndexController extends Mage_Checkout_Contr
 	
 	public function sendOtpVeryfication($mobile, $otp){
 		echo $mobile ."---". $otp;
+		
     }
 	
 	public function verifyOtpAction(){
@@ -727,7 +728,7 @@ class FacileCheckout_OnestepCheckout_IndexController extends Mage_Checkout_Contr
 		$tableName = $resource->getTableName('otp_verification');
 		
 		$currentDate = date('Y-m-d H:i:s');
-		echo $query = "Select * FROM {$tableName} where (mobile='{$mobile}') and (otp='{$otp}' and expire_date>='{$currentDate}')";
+		$query = "Select * FROM {$tableName} where (mobile='{$mobile}') and (otp='{$otp}' and expire_date>='{$currentDate}')";
 		$result = $readConnection->fetchAll($query);
 		
 		$count = count($result);

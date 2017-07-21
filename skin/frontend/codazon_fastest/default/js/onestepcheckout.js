@@ -149,6 +149,8 @@ COGOPC.prototype = {
         }
 		
 		//OPT Veryfications
+		var cod = $('p_method_cashondelivery').value ;
+		alert(cod);
 		var telephone = $('billing:telephone').value ;
 		var url= "https://www.spreeos.com/onestepcheckout/index/sendotp";
 		var request = new Ajax.Request(url, {
