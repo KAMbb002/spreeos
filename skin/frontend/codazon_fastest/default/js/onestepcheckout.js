@@ -158,7 +158,7 @@ COGOPC.prototype = {
 				parameters: {telephone: telephone},
 				 onSuccess: function(transport) {
 					//var response = transport.responseText;
-					$('otp-validation').show(1000);
+					$('otp-validation').show();
 				  },
 				  onFailure: function() { alert('Something went wrong...'); }
 			})
