@@ -85,8 +85,8 @@ $mod_version	= Mage::helper('onestepcheckout')->getOPCVersion();
  
 </form>
 <div class="otp-validation" id="otp-validation" style="display:none">
-	<div class="error" id="error"></div>
-	<div class="otp-validation-inner">
+	<div class="otp-validation-inner">	
+		<div class="error" id="error"></div>
 		<input type="text" name="otp" id="otp" />
 		<span class="verify-otp" id="verify-otp">Verify Otp</span>
 	</div>
@@ -150,7 +150,7 @@ $mod_version	= Mage::helper('onestepcheckout')->getOPCVersion();
     height: 100%;
     overflow: auto;
     background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0,0,0,0.9);
 }
 .otp-validation-inner {
     width: 21%;
