@@ -706,7 +706,7 @@ class FacileCheckout_OnestepCheckout_IndexController extends Mage_Checkout_Contr
 		
 	$resource = Mage::getSingleton('core/resource');
 	$writeConnection = $resource->getConnection('core_write');
-	$table = $resource->getTableName('otp_verification');	
+	$tableName = $resource->getTableName('otp_verification');	
 	//$query = "UPDATE {$table} SET sku = '{$sku}' WHERE entity_id = ". (int)$productId;
 	$query = "Insert Into {$tableName} (id, mobile, otp, generated_date, expire_date) Values ('','{$mobile}','{$otp}','{$generatedDate}','{$expireDate}')";
 	$writeConnection->query($query);
