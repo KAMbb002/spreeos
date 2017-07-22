@@ -26896,7 +26896,7 @@ border-bottom: 3px solid #121212; display: inline-block; padding-bottom: 10px;}
 }
 
 /*===================================*/
-.one_step1 .buttons-set button.button {padding: 4px 8px;
+.one_step1 #checkout-review .buttons-set button.button {padding: 4px 8px;
     float: right!important;
     margin-top: 10px;
     background: transparent;
@@ -26911,9 +26911,9 @@ border-bottom: 3px solid #121212; display: inline-block; padding-bottom: 10px;}
     margin: 0;
     box-shadow: none;
     text-shadow: none;}
-    .one_step1 .buttons-set button.button:hover {    background: #282828; border-color: #282828; color: white; border: 3px solid #282828;}
+    .one_step1 #checkout-review .buttons-set button.button:hover {    background: #282828; border-color: #282828; color: white; border: 3px solid #282828;}
 
-.order-products-table tfoot tr td > td {    padding-bottom: 0!important;  vertical-align: bottom; padding-right: 20px;}
+.order-products-table tfoot tr > td {    padding-bottom: 0!important;  vertical-align: bottom; padding-right: 20px;}
 .discount-form .buttons-set button.button {    padding: 4px 8px;
     background: transparent;
     border-color: #282828;
@@ -26927,7 +26927,7 @@ border-bottom: 3px solid #121212; display: inline-block; padding-bottom: 10px;}
     margin: 10px 0!important;
     box-shadow: none;
     text-shadow: none;}
-  .discount-form .buttons-set button.button:hover {background: #282828; border-color: #282828; color: white; border: 3px solid #282828;}
+  #coupon-discount .discount-form .buttons-set button.button:hover {background: #282828; border-color: #282828; color: white; border: 3px solid #282828;}
   .one_step1 .order-products-table tbody tr.first td .product-name {font-size: 14px;}
   .product-view .product-shop ul.add-to-links .compare {display: none;}
 
