@@ -26928,9 +26928,54 @@ border-bottom: 3px solid #121212; display: inline-block; padding-bottom: 10px;}
     box-shadow: none;
     text-shadow: none;}
   #coupon-discount .discount-form .buttons-set button.button:hover {background: #282828; border-color: #282828; color: white; border: 3px solid #282828;}
-  .one_step1 .order-products-table tbody tr.first td .product-name {font-size: 14px;}
+  .one_step1 .order-products-table tbody tr td .product-name {font-size: 14px;}
   .product-view .product-shop ul.add-to-links .compare {display: none;}
+  #coupon-discount .discount-form .buttons-set {    margin-top: 12px!important; margin-bottom: 12px!important;}
+  .product-shop .add-to-cart .product-button-bottom button.button {    font: 500 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;}
+  #otp-validation .otp-validation-inner {    width: 360px;
+    background: #fff;
+    opacity: 1;
+    display: table;
+    padding: 20px;}
+    #otp-validation input#otp {margin: 0;
+    width: 190px!important;
+    float: left;
+    text-transform: uppercase;
+    color: #999;
+    position: relative;
+    border: 2px solid #282828;
+    border-right: 0;
+    padding: 0px 10px;
+    float: left;
+    margin-top: 0;
+    background: white;
+    border-color: #282828;
+    color: #282828;
+    font: 600 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+    outline: none;
+    border-radius: 0;
+    height: 44px;
+    line-height: 43px;}
+ #otp-validation span#verify-otp { width: 130px;
+    padding: 0px 10px;
+    float: none;
+    margin-top: 10px;
+    background: white;
+    border-color: #282828;
+    color: #282828;
+    font: 600 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+    outline: none;
+    border-radius: 0;
+    margin: 0;
+    text-transform: uppercase;
+    height: 44px;
+    line-height: 43px;
+    display: block;
+    float: right;}
+     #otp-validation span#verify-otp:hover {    background: #282828;
+    border-color: #282828; color: white; border: 3px solid #282828;}
 
+#otp-validation #error {    color: #df280a;  font-weight: 400; font-size: 13px;}
 /* OTP Popup*/
 .otp-validation{
     position: fixed;
