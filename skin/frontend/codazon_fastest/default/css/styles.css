@@ -26925,7 +26925,7 @@ border-bottom: 3px solid #121212; display: inline-block; padding-bottom: 10px;}
     line-height: 32px; 
     opacity: 1;
     margin: 10px 0!important;
-    box-shadow: none;
+    box-shadow: none; 
     text-shadow: none;}
   #coupon-discount .discount-form .buttons-set button.button:hover {background: #282828; border-color: #282828; color: white; border: 3px solid #282828;}
   .one_step1 .order-products-table tbody tr td .product-name {font-size: 14px;}
