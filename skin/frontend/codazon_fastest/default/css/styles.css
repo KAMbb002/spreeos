@@ -26517,10 +26517,14 @@ form .legend {
         clear: both;
     }
     @media screen and (max-width: 480px) {
+#otp-validation .otp-validation-inner { width: 320px!important; padding: 10px!important;} 
+#otp-validation input#otp {width: 170px!important;}
+
+
       .onestepcheckout_datafields .one_step1 .op_block_title { margin-top: 0px!important;}
     #coupon-discount .discount-form .buttons-set button.button  {    width: 100%!important;}
       .input-box {width: 100%!important}
-        .left, .right { float: none; width: auto; }  
+        .left, .right { float: none; width: auto; }    
     }
   
   .kd {
