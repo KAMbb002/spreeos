@@ -26517,14 +26517,15 @@ form .legend {
         clear: both;
     }
     @media screen and (max-width: 480px) {
-      .buttons-set button.button  {    width: 100%!important;}
-      .input-box {width: 100!important}
+      .onestepcheckout_datafields .one_step1 .op_block_title { margin-top: 0px!important;}
+    #coupon-discount .discount-form .buttons-set button.button  {    width: 100%!important;}
+      .input-box {width: 100%!important}
         .left, .right { float: none; width: auto; }  
     }
   
   .kd {
     margin-top: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 0px; 
     border: 0;
     border-top: 1px solid #ababab;
 }
