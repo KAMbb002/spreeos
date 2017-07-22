@@ -55,7 +55,9 @@
                         <?php endif; ?>
 
                         <?php endif; ?>
+                        <?php if($_rate->getCode() != 'freeshipping_freeshipping') ?>
                         <label for="s_method_<?php echo $_rate->getCode() ?>"><?php echo $this->escapeHtml($_rate->getMethodTitle()) ?>
+                    <?php endif; ?>
                         <?php $_excl = $this->getShippingPrice($_rate->getPrice(), $this->helper('tax')->displayShippingPriceIncludingTax()); ?>
                         <?php $_incl = $this->getShippingPrice($_rate->getPrice(), true); ?>
                         <?php echo $_excl; ?>
