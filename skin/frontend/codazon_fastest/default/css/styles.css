@@ -26878,6 +26878,9 @@ border-bottom: 3px solid #121212; display: inline-block; padding-bottom: 10px;}
 
 
 @media only screen and (max-width: 767px) {
+.cart .cart-collaterals .last {    width: 100%;  position: static;  float: right;}
+.cart .cart-collaterals .first {    width: 100%;  float: left;  position: static;} 
+
 .nested-container .page-banners .left {
     float: left;
     width: 53.5%;
@@ -27038,6 +27041,7 @@ border-bottom: 3px solid #121212; display: inline-block; padding-bottom: 10px;}
 #checkout-payment-method-load .sp-methods dt { margin: 0px 0 5px; width: 100%;  float: left;} 
 .cart .cart-collaterals .last {    width: 50%;  position: static;  float: right;}
 .cart .cart-collaterals .first {    width: 50%;  float: left;  position: static;}
+.cart .cart-collaterals .last .col-sm-12 {}
 
 
 
