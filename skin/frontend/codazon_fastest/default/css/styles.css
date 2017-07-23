@@ -27030,7 +27030,9 @@ border-bottom: 3px solid #121212; display: inline-block; padding-bottom: 10px;}
     padding: 20px;
     box-sizing: border-box;}
     .totals-content #shopping-cart-totals-table tfoot tr td span.price {  width: 150px!important; display: table;}
-
+.cart .cart-collaterals .totals-content {    border: 1px solid #e1e1e1;}
+.cart .cart-collaterals #discount-coupon-form {    border: 1px solid #e1e1e1;}
+.discount-form .buttons-set button.button:hover {    background: white; color: #282828;} 
 
 
 
