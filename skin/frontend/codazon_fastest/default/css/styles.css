@@ -27022,17 +27022,17 @@ border-bottom: 3px solid #121212; display: inline-block; padding-bottom: 10px;}
   #checkout-payment-method-load .sp-methods dt label {    float: left;  width: auto!important;} 
   .cart .cart-collaterals {    overflow: visible;
     height: 100%; background: #fff; width: 100%;  float: left;
-    -webkit-box-shadow: 1px 3px 1px rgba(50, 50, 50, 0.04);
+    -webkit-box-shadow: 1px 3px 1px rgba(50, 50, 50, 0.04); 
     -moz-box-shadow: 1px 3px 1px rgba(50, 50, 50, 0.04);
     box-shadow: 1px 3px 1px rgba(50, 50, 50, 0.04);
     -webkit-border-radius: 0px; 
-    padding: 20px; 
+    padding: 20px;  
     box-sizing: border-box;}
     .totals-content #shopping-cart-totals-table tfoot tr td span.price {  width: 150px!important; display: table;}
-.cart .cart-collaterals .totals-content {    border: 1px solid #e1e1e1;     -webkit-box-shadow: 0;
-    -moz-box-shadow: 0;  box-shadow: 0;  -webkit-border-radius: 0;  -moz-border-radius: 0px;}
-.cart .cart-collaterals #discount-coupon-form {    border: 1px solid #e1e1e1;     -webkit-box-shadow: 0;
-    -moz-box-shadow: 0;  box-shadow: 0;  -webkit-border-radius: 0;    -moz-border-radius: 0px;}
+.cart .cart-collaterals .totals-content {    border: 1px solid #e1e1e1;     -webkit-box-shadow: 0!important;
+    -moz-box-shadow: 0!important;  box-shadow: 0!important;  -webkit-border-radius: 0!important;  -moz-border-radius: 0px!important;}
+.cart .cart-collaterals #discount-coupon-form {    border: 1px solid #e1e1e1;     -webkit-box-shadow: 0!important;
+    -moz-box-shadow: 0!important;  box-shadow: 0!important;  -webkit-border-radius: 0!important;    -moz-border-radius: 0px!important;}
 .discount-form .buttons-set button.button:hover {    background: #282828;
     border-color: #282828; color: white; border: 3px solid;} 
 #checkout-payment-method-load .sp-methods dt { margin: 0px 0 5px; width: 100%;  float: left;}
