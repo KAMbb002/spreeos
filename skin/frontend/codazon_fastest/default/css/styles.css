@@ -26878,8 +26878,8 @@ border-bottom: 3px solid #121212; display: inline-block; padding-bottom: 10px;}
 
 
 @media only screen and (max-width: 767px) {
-.cart .cart-collaterals .last {    width: 100%;  position: static;  float: right;}
-.cart .cart-collaterals .first {    width: 100%;  float: left;  position: static;} 
+.cart .cart-collaterals .last {    width: 100%!important;  position: static;  float: right;} 
+.cart .cart-collaterals .first {    width: 100%!important;  float: left;  position: static;} 
 
 .nested-container .page-banners .left {
     float: left;
