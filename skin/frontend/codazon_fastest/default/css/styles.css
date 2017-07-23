@@ -26894,8 +26894,8 @@ border-bottom: 3px solid #121212; display: inline-block; padding-bottom: 10px;}
 }
 
 @media only screen and (max-width: 480px) { 
-.nested-container .page-banners .left {    width: 100%!important;  margin-bottom: 10px!important; margin-left: 0; margin-right: 0;}
-.nested-container .page-banners .right {    width: 100%!important;  margin-right: 10px!important;  margin-bottom: 0!important;}
+.nested-container .page-banners .left {    width: 100%!important;  margin-bottom: 0px!important; margin-left: 0; margin-right: 0;}
+.nested-container .page-banners .right {    width: 100%!important;  margin-right: 0px!important;  margin-bottom: 0!important;}
 .nested-container .page-banners .left a {    display: block;  margin-bottom: 10px;}
 .nested-container .page-banners .right a {    display: block;  margin-bottom: 10px;}
 
@@ -26903,7 +26903,7 @@ border-bottom: 3px solid #121212; display: inline-block; padding-bottom: 10px;}
 }
 
 /*===================================*/
-.one_step1 #checkout-review .buttons-set button.button {padding: 4px 8px;
+.one_step1 #checkout-review .buttons-set button.button {padding: 4px 8px; 
     float: right!important;
     margin-top: 10px;
     background: transparent;
@@ -27018,6 +27018,18 @@ border-bottom: 3px solid #121212; display: inline-block; padding-bottom: 10px;}
 .checkout-payment-method-load {    width: 100%!important;}
 .checkout-payment-method-load .sp-methods dt input {    margin-left: 0;  margin-right: 0;}
   .checkout-payment-method-load .sp-methods dt label {    float: left;  width: auto!important;} 
+  .cart form .cart-collaterals {    overflow: visible;
+    height: 100%;
+    background: #fff;
+    width: 100%;
+    float: left;
+    -webkit-box-shadow: 1px 3px 1px rgba(50, 50, 50, 0.04);
+    -moz-box-shadow: 1px 3px 1px rgba(50, 50, 50, 0.04);
+    box-shadow: 1px 3px 1px rgba(50, 50, 50, 0.04);
+    -webkit-border-radius: 0px;
+    padding: 20px;
+    box-sizing: border-box;}
+    .totals-content #shopping-cart-totals-table tfoot tr td span.price {  width: 150px!important; display: table;}
 
 
 
