@@ -15501,7 +15501,8 @@ fieldset[disabled] .mobile-search-wrapper .ui-dialog .button {
   margin-bottom: 20px;
 }
 .my-account .data-table#my-orders-table tr td {
-  padding: 20px;
+    padding: 10px;
+    width: 35%;
 }
 .my-account .data-table#my-orders-table tr td .price {
   display: block;
@@ -15514,7 +15515,7 @@ fieldset[disabled] .mobile-search-wrapper .ui-dialog .button {
   margin-bottom: 17px;
   clear: both;
   width: 100%;
-}
+} 
 .my-account .col2-set:first-child {
   margin-bottom: 8px;
 }
@@ -27031,6 +27032,8 @@ border-color: #282828; color: white; border: 3px solid;}
 .groupmenu-drop-content.groupmenu-5 { width: 750px;}   
 .groupmenu-drop-content.groupmenu-6 { width: 900px;}
 .groupmenu-drop-content.groupmenu-7 { width: 1050px;}
+
+.my-account .data-table#my-orders-table tr td .price { display: block; width: 100px;}
 
 
 
