@@ -26996,6 +26996,9 @@ border-bottom: 3px solid #121212; display: inline-block; padding-bottom: 10px;}
 .onestepcheckout_datafields .one_step1 {width: 32%;}
 .onestepcheckout_datafields .one_step1:last-child {width: 36%;}
 .one_step1 .order-products-table tfoot tr td.last {padding-right: 0px;}
+.order-products-table td { padding: 8px 0px 2px!important;}
+#shopping-cart-table tr {text-align: center;}
+#shopping-cart-table tr td span {width: 100px!important; display: table;}
 .one_step1 .order-products-table tfoot tr td.last span {  width: 100px!important; display: table;}
 #checkout-payment-method-load {    width: 100%!important;}
 .onestepcheckout_block #checkout-payment-method-load { width: 100%!important;  float: left;}
@@ -27007,7 +27010,7 @@ height: 100%; background: #fff; width: 100%;  float: left;
 -moz-box-shadow: 1px 3px 1px rgba(50, 50, 50, 0.04);
 box-shadow: 1px 3px 1px rgba(50, 50, 50, 0.04);
 -webkit-border-radius: 0px;  
-padding: 20px;  
+padding: 20px;   
 box-sizing: border-box;}
 .totals-content #shopping-cart-totals-table tfoot tr td span.price {  width: 150px!important; display: table;}
 .cart .cart-collaterals .totals-content {    border: 1px solid #e1e1e1;     -webkit-box-shadow: 0!important;
