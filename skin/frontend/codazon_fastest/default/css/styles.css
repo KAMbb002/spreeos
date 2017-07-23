@@ -26987,34 +26987,12 @@ border-bottom: 3px solid #121212; display: inline-block; padding-bottom: 10px;}
 
 #otp-validation #error {    color: #df280a;  font-weight: 400; font-size: 13px;}
 /* OTP Popup*/
-.otp-validation{
-    position: fixed;
-    z-index: 1;
-    padding-top: 22%;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.9);
-}
-.otp-validation-inner {
-    width: 21%;
-    margin: 0 auto;
-}
-.verify-otp {
-    background: #48D5F2;
-    color: #FFF;
-    padding: 9px;
-    float: left;
-    font-weight: 400;
-    border: 2px solid #48D5F2;
-    border-radius: 4px;
-    text-align: center;
-	cursor: pointer;
-}
-
+.otp-validation{ position: fixed;
+    z-index: 1; padding-top: 22%;
+    left: 0; top: 0;  width: 100%; height: 100%; overflow: auto; background-color: rgb(0,0,0); background-color: rgba(0,0,0,0.9);}
+.otp-validation-inner { width: 21%; margin: 0 auto;} 
+.verify-otp { background: #48D5F2; color: #FFF; padding: 9px; float: left;
+    font-weight: 400; border: 2px solid #48D5F2; border-radius: 4px; text-align: center; cursor: pointer;}
 .onestepcheckout_datafields .one_step1 {width: 32%;}
 .onestepcheckout_datafields .one_step1:last-child {width: 36%;}
 .one_step1 .order-products-table tfoot tr td.last {padding-right: 0px;}
@@ -27022,22 +27000,22 @@ border-bottom: 3px solid #121212; display: inline-block; padding-bottom: 10px;}
 #checkout-payment-method-load {    width: 100%!important;}
 .onestepcheckout_block #checkout-payment-method-load { width: 100%!important;  float: left;}
 #checkout-payment-method-load .sp-methods dt input {    margin-left: 0;  margin-right: 0; margin-top: 8px;}
-  #checkout-payment-method-load .sp-methods dt label {    float: left;  width: auto!important;} 
-  .cart .cart-collaterals {    overflow: visible;
-    height: 100%; background: #fff; width: 100%;  float: left;
-    -webkit-box-shadow: 1px 3px 1px rgba(50, 50, 50, 0.04); 
-    -moz-box-shadow: 1px 3px 1px rgba(50, 50, 50, 0.04);
-    box-shadow: 1px 3px 1px rgba(50, 50, 50, 0.04);
-    -webkit-border-radius: 0px;  
-    padding: 20px;  
-    box-sizing: border-box;}
-    .totals-content #shopping-cart-totals-table tfoot tr td span.price {  width: 150px!important; display: table;}
+#checkout-payment-method-load .sp-methods dt label {    float: left;  width: auto!important;} 
+.cart .cart-collaterals {    overflow: visible;
+height: 100%; background: #fff; width: 100%;  float: left;
+-webkit-box-shadow: 1px 3px 1px rgba(50, 50, 50, 0.04); 
+-moz-box-shadow: 1px 3px 1px rgba(50, 50, 50, 0.04);
+box-shadow: 1px 3px 1px rgba(50, 50, 50, 0.04);
+-webkit-border-radius: 0px;  
+padding: 20px;  
+box-sizing: border-box;}
+.totals-content #shopping-cart-totals-table tfoot tr td span.price {  width: 150px!important; display: table;}
 .cart .cart-collaterals .totals-content {    border: 1px solid #e1e1e1;     -webkit-box-shadow: 0!important;
-    -moz-box-shadow: 0!important;  box-shadow: 0!important;  -webkit-border-radius: 0!important;  -moz-border-radius: 0px!important;}
+-moz-box-shadow: 0!important;  box-shadow: 0!important;  -webkit-border-radius: 0!important;  -moz-border-radius: 0px!important;}
 .cart .cart-collaterals #discount-coupon-form {    border: 1px solid #e1e1e1;     -webkit-box-shadow: 0!important;
-    -moz-box-shadow: 0!important;  box-shadow: 0!important;  -webkit-border-radius: 0!important;    -moz-border-radius: 0px!important;}
+-moz-box-shadow: 0!important;  box-shadow: 0!important;  -webkit-border-radius: 0!important;    -moz-border-radius: 0px!important;}
 .discount-form .buttons-set button.button:hover {    background: #282828;
-    border-color: #282828; color: white; border: 3px solid;} 
+border-color: #282828; color: white; border: 3px solid;} 
 #checkout-payment-method-load .sp-methods dt { margin: 0px 0 5px; width: 100%;  float: left;} 
 .cart .cart-collaterals .last {    width: 50%;  position: static;  float: right;}
 .cart .cart-collaterals .first {    width: 50%;  float: left;  position: static;}
@@ -27047,7 +27025,7 @@ border-bottom: 3px solid #121212; display: inline-block; padding-bottom: 10px;}
 .groupmenu-drop-content.groupmenu-2 { width: 300px;} 
 .groupmenu-drop-content.groupmenu-3 { width: 450px;}
 .groupmenu-drop-content.groupmenu-4 { width: 600px;} 
-.groupmenu-drop-content.groupmenu-5 { width: 750px;}  
+.groupmenu-drop-content.groupmenu-5 { width: 750px;}   
 .groupmenu-drop-content.groupmenu-6 { width: 900px;}
 .groupmenu-drop-content.groupmenu-7 { width: 1050px;}
 
