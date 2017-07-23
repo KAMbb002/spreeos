@@ -25792,7 +25792,8 @@ form .legend {
   }
 }
 @media (max-width: 767px) {
-  .onestepcheckout_datafields .one_step1 {width: 100%; float: left;}
+  .onestepcheckout_datafields .one_step1 {width: 100%!important; float: left;}
+   .onestepcheckout_datafields .one_step1:last-child {width: 100%!important; float: left;}
   .cdz-block-categories-deals {  display: none;  }
   .cdz-block-categories-deals h3 { font: 500 11px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;  }
   .cdz-block-categories-deals h3 a { font: 500 11px/1.55 Poppins, Helvetica Neue, Verdana, Arial, sans-serif; }
@@ -26094,7 +26095,8 @@ form .legend {
 * Codazon_Footer 2
 * ============================================ */
 @media only screen and (max-width: 1024px) and (min-width: 768px) {
-  .onestepcheckout_datafields .one_step1 {width: 50%; float: left;}
+  .onestepcheckout_datafields .one_step1 {width: 50%!important; float: left;}
+    .onestepcheckout_datafields .one_step1:last-child {width: 50%!important; float: left;}
 
 }
 
@@ -27013,6 +27015,9 @@ border-bottom: 3px solid #121212; display: inline-block; padding-bottom: 10px;}
 .onestepcheckout_datafields .one_step1 {width: 32%;}
 .onestepcheckout_datafields .one_step1:last-child {width: 36%;}
 .one_step1 .order-products-table tfoot tr td.last strong {  width: 150px!important; display: table;}
+.checkout-payment-method-load {    width: 100%!important;}
+.checkout-payment-method-load .sp-methods dt input {    margin-left: 0;  margin-right: 0;}
+  .checkout-payment-method-load .sp-methods dt label {    float: left;  width: auto!important;} 
 
 
 
