@@ -21,8 +21,7 @@
                 <?php $_category = Mage::getModel('catalog/category')->load($_category->getId()) ?>
                 <?php $_subcategories = $_category->getChildrenCategories() ?>
                 <?php if ((count($_subcategories)>0 )and
-				(count($_subcategories)<=2)){
-					echo 'arv'.count($_subcategories);
+				(count($_subcategories)<2)){					
 					?>
                 <div class="groupmenu-drop">				 
                <div class="groupmenu-drop-content groupmenu-1">
@@ -79,7 +78,7 @@
 							<?php  $_subsubcategory = Mage::getModel('catalog/category')->load($_subcategory->getId());
 		 
 							 $_subsubcategories = $_subsubcategory->getChildrenCategories() ;	?>
-							 <?php  echo "abc".count($_subcategories);if (count($_subcategories) > 0): ?>
+							 <?php if (count($_subcategories) > 0): ?>
 							 <ul class="groupdrop-link">
 							 <?php foreach($_subsubcategories as $_subsubcategory){?>
 							 <li class="item"><a href="<?php echo $_helper->getCategoryUrl($_subsubcategory) ?>">
