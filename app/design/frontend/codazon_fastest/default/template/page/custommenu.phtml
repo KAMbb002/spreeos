@@ -65,7 +65,79 @@
                <div class="groupmenu-drop-content groupmenu-1">
 						<div class="row"> <!--row div-->
                         <?php foreach($_subcategories as $_subcategory): ?>
+						<div class="col-sm-12 coloumn2"><!--single level-->
+						<div class="groupdrop-banner space-s">
+						<?php if(Mage::getModel('catalog/category')->load($_subcategory->getId())->getThumbnail()!=''){?>
+						<img  width="200px" height="200px" class="img-responsive" src="<?php echo Mage::getBaseUrl('media') . 'catalog/category/' .Mage::getModel('catalog/category')->load($_subcategory->getId())->getThumbnail();?>"/>
+						<?php }?>
+					</div>
+                       <ul class="groupdrop-link">
+                            <li class="item"><a href="<?php echo $_helper->getCategoryUrl($_subcategory) ?>">                                    <?php echo $_subcategory->getName() ?>
+                             </a></li>
+					   </ul>
+					   <!--second level for 2 coloumn-->
+					   <?php  $_subsubcategory = Mage::getModel('catalog/category')->load($_subcategory->getId());
+		 
+							 $_subsubcategories = $_subsubcategory->getChildrenCategories() ;	?>
+							 <?php  if (count($_subcategories) > 0): ?>
+							 <ul class="groupdrop-link">
+							 <?php foreach($_subsubcategories as $_subsubcategory){?>
+							 <li class="item"><a href="<?php echo $_helper->getCategoryUrl($_subsubcategory) ?>">
+							<?php echo  $_subsubcategory->getName();?></a></li>
+							 <?php }?>
+							 </ul>
+							 <?php endif; ?>
+					   
+
+							 <!--second level for 3 coloumn end -->
+						
+                    </div>
+					<?php endforeach; ?>
+				</div><!--row div-->
+				</div> 
+				</div>
+				<?php }elseif((count($_subcategories)>=3 and count($_subcategories)<=4 )){?>
+				<div class="groupmenu-drop">				 
+               <div class="groupmenu-drop-content groupmenu-1">
+						<div class="row"> <!--row div-->
+                        <?php foreach($_subcategories as $_subcategory): ?>
 						<div class="col-sm-12 coloumn3"><!--single level-->
+						<div class="groupdrop-banner space-s">
+						<?php if(Mage::getModel('catalog/category')->load($_subcategory->getId())->getThumbnail()!=''){?>
+						<img  width="200px" height="200px" class="img-responsive" src="<?php echo Mage::getBaseUrl('media') . 'catalog/category/' .Mage::getModel('catalog/category')->load($_subcategory->getId())->getThumbnail();?>"/>
+						<?php }?>
+					</div>
+                       <ul class="groupdrop-link">
+                            <li class="item"><a href="<?php echo $_helper->getCategoryUrl($_subcategory) ?>">                                    <?php echo $_subcategory->getName() ?>
+                             </a></li>
+					   </ul>
+					   <!--second level for 2 coloumn-->
+					   <?php  $_subsubcategory = Mage::getModel('catalog/category')->load($_subcategory->getId());
+		 
+							 $_subsubcategories = $_subsubcategory->getChildrenCategories() ;	?>
+							 <?php  if (count($_subcategories) > 0): ?>
+							 <ul class="groupdrop-link">
+							 <?php foreach($_subsubcategories as $_subsubcategory){?>
+							 <li class="item"><a href="<?php echo $_helper->getCategoryUrl($_subsubcategory) ?>">
+							<?php echo  $_subsubcategory->getName();?></a></li>
+							 <?php }?>
+							 </ul>
+							 <?php endif; ?>
+					   
+
+							 <!--second level for 3 coloumn end -->
+						
+                    </div>
+					<?php endforeach; ?>
+				</div><!--row div-->
+				</div> 
+				</div>
+				<?php }elseif((count($_subcategories)>=4 and count($_subcategories)<5 )){?>
+				<div class="groupmenu-drop">				 
+               <div class="groupmenu-drop-content groupmenu-1">
+						<div class="row"> <!--row div-->
+                        <?php foreach($_subcategories as $_subcategory): ?>
+						<div class="col-sm-12 coloumn4"><!--single level-->
 						<div class="groupdrop-banner space-s">
 						<?php if(Mage::getModel('catalog/category')->load($_subcategory->getId())->getThumbnail()!=''){?>
 						<img  width="200px" height="200px" class="img-responsive" src="<?php echo Mage::getBaseUrl('media') . 'catalog/category/' .Mage::getModel('catalog/category')->load($_subcategory->getId())->getThumbnail();?>"/>
