@@ -27025,7 +27025,7 @@ border-bottom: 3px solid #121212; display: inline-block; padding-bottom: 10px;}
     -webkit-box-shadow: 1px 3px 1px rgba(50, 50, 50, 0.04); 
     -moz-box-shadow: 1px 3px 1px rgba(50, 50, 50, 0.04);
     box-shadow: 1px 3px 1px rgba(50, 50, 50, 0.04);
-    -webkit-border-radius: 0px; 
+    -webkit-border-radius: 0px;  
     padding: 20px;  
     box-sizing: border-box;}
     .totals-content #shopping-cart-totals-table tfoot tr td span.price {  width: 150px!important; display: table;}
@@ -27035,7 +27035,9 @@ border-bottom: 3px solid #121212; display: inline-block; padding-bottom: 10px;}
     -moz-box-shadow: 0!important;  box-shadow: 0!important;  -webkit-border-radius: 0!important;    -moz-border-radius: 0px!important;}
 .discount-form .buttons-set button.button:hover {    background: #282828;
     border-color: #282828; color: white; border: 3px solid;} 
-#checkout-payment-method-load .sp-methods dt { margin: 0px 0 5px; width: 100%;  float: left;}
+#checkout-payment-method-load .sp-methods dt { margin: 0px 0 5px; width: 100%;  float: left;} 
+.cart .cart-collaterals .last {    width: 50%;  position: static;  float: right;}
+.cart .cart-collaterals .first {    width: 50%;  float: left;  position: static;}
 
 
 
