@@ -85,7 +85,7 @@ $has_addr	= $this->customerHasAddresses();
 					</label>
 					<?php if ($city_r === 'required'){ echo ' <sup>*</sup> ';}?>
 					<div class="data_area">
-						<input type="text" name="billing[city]" id="billing:city" title="<?php echo $this->__('City') ?>" value="<?php echo $this->htmlEscape($this->getBillAddress()->getCity()) ?>" class="validate-alpha t1<?php if ($city_r === 'required'){ echo ' required-entry ';}?>" maxlength="20"  />
+						<input type="text" name="billing[city]" id="billing:city" title="<?php echo $this->__('City') ?>" value="<?php echo $this->htmlEscape($this->getBillAddress()->getCity()) ?>" class=" t1<?php if ($city_r === 'required'){ echo ' required-entry ';}?>" maxlength="20"  />
                         </div>
 				</div>
 			<?php endif; ?>
@@ -103,7 +103,7 @@ $has_addr	= $this->customerHasAddresses();
 							$('billing:region_id').setAttribute('defaultValue',  "<?php echo $this->getBillAddress()->getRegionId() ?>");
 						//]]>
 						</script>
-						<input type="text" id="billing:region" name="billing[region]" value="<?php echo $this->htmlEscape($this->getBillAddress()->getRegion()) ?>"  title="<?php echo $this->__('State/Province') ?>" class="validate-alpha t1<?php if($state_r === 'required'){ echo ' required-entry';}?>" maxlength="20" style="display:none;" />
+						<input type="text" id="billing:region" name="billing[region]" value="<?php echo $this->htmlEscape($this->getBillAddress()->getRegion()) ?>"  title="<?php echo $this->__('State/Province') ?>" class=" t1<?php if($state_r === 'required'){ echo ' required-entry';}?>" maxlength="20" style="display:none;" />
 					</div>
 				</div>
 			</div>
