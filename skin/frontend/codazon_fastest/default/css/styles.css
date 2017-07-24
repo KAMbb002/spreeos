@@ -27025,13 +27025,14 @@ border-color: #282828; color: white; border: 3px solid;}
 .cart .cart-collaterals .first {    width: 50%;  float: left;  position: static;}
 .cart .cart-collaterals .last .col-sm-12 {width: 100%; float: left;}
 .cart .cart-collaterals .first .col-sm-12 {width: 100%; float: left;}
-.groupmenu-drop-content.groupmenu-1 { width: 150px;}
-.groupmenu-drop-content.groupmenu-2 { width: 300px;} 
-.groupmenu-drop-content.groupmenu-3 { width: 450px;}
-.groupmenu-drop-content.groupmenu-4 { width: 600px;} 
-.groupmenu-drop-content.groupmenu-5 { width: 750px;}    
-.groupmenu-drop-content.groupmenu-6 { width: 900px;}
-.groupmenu-drop-content.groupmenu-7 { width: 1050px;} 
+
+.groupmenu-drop .groupmenu-1 { width: 150px;}
+.groupmenu-drop .groupmenu-2 { width: 300px;} 
+.groupmenu-drop .groupmenu-3 { width: 450px;}
+.groupmenu-drop .groupmenu-4 { width: 600px;} 
+.groupmenu-drop .groupmenu-5 { width: 750px;}    
+.groupmenu-drop .groupmenu-6 { width: 900px;}
+.groupmenu-drop .groupmenu-7 { width: 1050px;} 
 
 .my-account .data-table#my-orders-table tr td .price { display: block; width: 100px;}
 
@@ -27041,13 +27042,13 @@ border-color: #282828; color: white; border: 3px solid;}
 .cart #shopping-cart-table tbody tr td {    text-align: left;}
 .cart-collaterals .totals-content { min-height: 230px;}
 .cart #shopping-cart-table tfoot tr td button {    margin-right: 10px; margin-left: 0;}
-.pager .my-account .pager .amount {margin-top: 5px;}
+.pager .my-account .pager .amount {margin-top: 5px;} 
 
 .groupmenu-1 .customcoloum { width: 150px; padding: 0 10px; box-sizing: border-box; float: left;} 
 .groupmenu-2 .customcoloum { width: 150px; padding: 0 10px; box-sizing: border-box; float: left;}
 .groupmenu-3 .customcoloum { width: 150px; padding: 0 10px; box-sizing: border-box; float: left;}
 .groupmenu-4 .customcoloum { width: 150px; padding: 0 10px; box-sizing: border-box; float: left;} 
-.groupmenu-5 .customcoloum { width: 150px; padding: 0 10px; box-sizing: border-box; float: left;}
+.groupmenu-5 .customcoloum { width: 150px; padding: 0 10px; box-sizing: border-box; float: left;} 
 .groupmenu-6 .customcoloum { width: 150px; padding: 0 10px; box-sizing: border-box; float: left;}
 
 
