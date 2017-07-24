@@ -86,7 +86,7 @@ if (!$this->getQuote()->isVirtual() && Mage::helper('onestepcheckout')->isShippi
 					<?php if ($city_r === 'required'){ echo ' <sup>*</sup> ';}?>
 
 					<div class="data_area">
-						<input type="text" name="shipping[city]" id="shipping:city" title="<?php echo $this->__('City') ?>" value="<?php echo $this->htmlEscape($this->getShipAddress()->getCity()) ?>" class="validate-alpha t1<?php if ($city_r === 'required'){ echo ' required-entry ';}?>" onchange="shipping.setSameAsBilling(false);" maxlength="20" />
+						<input type="text" name="shipping[city]" id="shipping:city" title="<?php echo $this->__('City') ?>" value="<?php echo $this->htmlEscape($this->getShipAddress()->getCity()) ?>" class=" t1<?php if ($city_r === 'required'){ echo ' required-entry ';}?>" onchange="shipping.setSameAsBilling(false);" maxlength="20" />
 					</div>
 				</div>
 			<?php endif; ?>
@@ -104,7 +104,7 @@ if (!$this->getQuote()->isVirtual() && Mage::helper('onestepcheckout')->isShippi
 							$('shipping:region_id').setAttribute('defaultValue',  "<?php echo $this->getShipAddress()->getRegionId() ?>");
 						//]]>
 						</script>
-						<input type="text" id="shipping:region" name="shipping[region]" value="<?php echo $this->htmlEscape($this->getShipAddress()->getRegion()) ?>"  title="<?php echo $this->__('State/Province') ?>" class="validate-alpha t1<?php if($state_r === 'required'){ echo ' required-entry';}?>" style="display:none;" maxlength="20" />
+						<input type="text" id="shipping:region" name="shipping[region]" value="<?php echo $this->htmlEscape($this->getShipAddress()->getRegion()) ?>"  title="<?php echo $this->__('State/Province') ?>" class=" t1<?php if($state_r === 'required'){ echo ' required-entry';}?>" style="display:none;" maxlength="20" />
 					</div>
 				</div>
 			</div>
