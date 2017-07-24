@@ -33,7 +33,7 @@
 					<img src="<?php echo (string)$_imgHelper->init($_product, 'image')->resize($_width,$_height); ?>" alt="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" />
 					
 					
-                    <img src="<?php echo (string)$_imgHelper->init($_product,'thumbnail')->resize($_width, $_height); ?>" alt="<?php echo $this->stripTags($this->getImageLabel($_product, 'thumbnail'), null, true) ?>" class="alternative-img img-responsive" />
+                    <img src="<?php echo (string)$_imgHelper->init($_product,'thumbnail')->resize($_width, $_height); ?>" alt="<?php echo $this->stripTags($this->getImageLabel($_product, 'image'), null, true) ?>" class="alternative-img img-responsive" />
                     </a>
                     <?php endif ?>
                     </div>
