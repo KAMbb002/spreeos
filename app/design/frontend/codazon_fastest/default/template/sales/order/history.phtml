@@ -71,7 +71,7 @@
                     <?php if (($date_time_stamp-$created_at)<=86400 && $_order->getData('status')!='canceled' ) : ?>
 					<span class="separator">|</span>
                     <a href="<?php echo $this->getUrl('customerordercancel/order/cancel', array('order_id' => $_order->getId(), '_secure'=>true)) ?>" class="link-reorder"><?php echo $this->__('Cancel Order') ?></a>
-                     <?php endif?>
+                     <?php endif ?>
 
 
                     <?php /* <?php if ($this->helper('sales/reorder')->canReorder($_order)) : ?>
