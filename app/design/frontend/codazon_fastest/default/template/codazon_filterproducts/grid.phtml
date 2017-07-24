@@ -29,9 +29,9 @@
 					<div class="cdz-product-top">
                     <?php if( $this->display('image') ):?>
                     <a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" class="product-image"> 
-					<?php $product = Mage::getModel('catalog/product')->load($_product->getId());
-echo $full_path_url = Mage::helper('catalog/image')->init($product, 'small_image')."==1";?>
+					
 					<?php echo  Mage::helper('catalog/image')->init($_product, 'small_image').'==2';?>
+       <?php echo $imageUrl = Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . 'catalog/product' . $_product->getImage();?>
 
 					<img src="<?php echo (string)$_imgHelper->init($_product, 'small_image')->resize($_width,$_height); ?>" alt="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" />
 					
