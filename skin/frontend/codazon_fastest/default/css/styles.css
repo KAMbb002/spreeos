@@ -27029,11 +27029,15 @@ border-color: #282828; color: white; border: 3px solid;}
 .groupmenu-drop-content.groupmenu-2 { width: 300px;} 
 .groupmenu-drop-content.groupmenu-3 { width: 450px;}
 .groupmenu-drop-content.groupmenu-4 { width: 600px;} 
-.groupmenu-drop-content.groupmenu-5 { width: 750px;}   
+.groupmenu-drop-content.groupmenu-5 { width: 750px;}    
 .groupmenu-drop-content.groupmenu-6 { width: 900px;}
-.groupmenu-drop-content.groupmenu-7 { width: 1050px;}
+.groupmenu-drop-content.groupmenu-7 { width: 1050px;} 
 
 .my-account .data-table#my-orders-table tr td .price { display: block; width: 100px;}
+
+.pager .limiter label {    margin-top: 5px;  margin-bottom: 0;} 
+.pager .limiter select {    margin-right: 10px;}
+.pager .my-account .pager .amount { margin: 4px 10px 0 0; font-weight: normal;}  
 
 
 
