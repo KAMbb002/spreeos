@@ -27013,7 +27013,7 @@ box-shadow: 1px 3px 1px rgba(50, 50, 50, 0.04);
 -webkit-border-radius: 0px;  
 padding: 20px;   
 box-sizing: border-box;}
-.totals-content #shopping-cart-totals-table tfoot tr td span.price {  width: 150px!important; display: table;}
+.totals-content #shopping-cart-totals-table tfoot tr td span.price {  width: 120px!important; display: table;}
 .cart .cart-collaterals .totals-content {    border: 1px solid #e1e1e1;     -webkit-box-shadow: 0!important;
 -moz-box-shadow: 0!important;  box-shadow: 0!important;  -webkit-border-radius: 0!important;  -moz-border-radius: 0px!important;}
 .cart .cart-collaterals #discount-coupon-form {    border: 1px solid #e1e1e1;     -webkit-box-shadow: 0!important;
@@ -27038,8 +27038,17 @@ border-color: #282828; color: white; border: 3px solid;}
 .pager .limiter label {    margin-top: 5px;  margin-bottom: 0;} 
 .pager .limiter select {    margin-right: 10px;}
 .pager .my-account .pager .amount { margin: 4px 10px 0 0; font-weight: normal;}  
+.cart #shopping-cart-table tbody tr td {    text-align: left;}
+.cart-collaterals .totals-content { min-height: 230px;}
+.cart #shopping-cart-table tfoot tr td button {    margin-right: 10px; margin-left: 0;}
+.pager .my-account .pager .amount {margin-top: 5px;}
 
-
+.groupmenu-1 .coloumn-2 { width: 150px; padding: 0 10px; box-sizing: border-box; float: left;} 
+.groupmenu-2 .coloumn-2 { width: 150px; padding: 0 10px; box-sizing: border-box; float: left;}
+.groupmenu-3 .coloumn-2 { width: 150px; padding: 0 10px; box-sizing: border-box; float: left;}
+.groupmenu-4 .coloumn-2 { width: 150px; padding: 0 10px; box-sizing: border-box; float: left;} 
+.groupmenu-5 .coloumn-2 { width: 150px; padding: 0 10px; box-sizing: border-box; float: left;}
+.groupmenu-6 .coloumn-2 { width: 150px; padding: 0 10px; box-sizing: border-box; float: left;}
 
 
 
