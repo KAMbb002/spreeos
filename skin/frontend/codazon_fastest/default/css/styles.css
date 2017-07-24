@@ -26756,6 +26756,14 @@ border-bottom: 3px solid #121212; display: inline-block; padding-bottom: 10px;}
 .groupmenu-5 .customcoloum { width: 125px!important; }   
 .groupmenu-6 .customcoloum { width: 125px!important; }
 
+.groupmenu-drop .groupmenu-1 { width: 125px!important;}
+.groupmenu-drop .groupmenu-2 { width: 250px!important;} 
+.groupmenu-drop .groupmenu-3 { width: 375px!important;}  
+.groupmenu-drop .groupmenu-4 { width: 500px!important;} 
+.groupmenu-drop .groupmenu-5 { width: 625px!important;}    
+.groupmenu-drop .groupmenu-6 { width: 750px!important;}
+.groupmenu-drop .groupmenu-7 { width: 875px!important;} 
+
 .col1-layout .products-grid .product-items:not(.owl-carousel) .product-item {    width: 25%!important;}
 .col1-layout .products-grid .product-items:not(.owl-carousel) .product-item {width: 25%!important; }
 .col1-layout .products-grid .product-items:not(.owl-carousel) > .product-item .product-item-info {height: 380px!important;}
