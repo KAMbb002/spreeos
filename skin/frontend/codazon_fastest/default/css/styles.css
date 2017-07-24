@@ -26794,6 +26794,8 @@ border-bottom: 3px solid #121212; display: inline-block; padding-bottom: 10px;}
 
 
 @media only screen and (max-width: 767px) {
+   .order-parent {    width: 100%; overflow-x: scroll;  float: left;}
+  .order-parent .data-table {margin-bottom: 10px;} 
   .widget h1 {    font-size: 20px; line-height: 1;  margin: 0 0 4px;}
   .widget hr {  margin-top: 10px; margin-bottom: 10px; }
   .slideshow-banner .space-base {    margin-bottom: 0;}
