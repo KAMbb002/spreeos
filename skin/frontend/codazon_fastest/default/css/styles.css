@@ -26748,6 +26748,25 @@ border-bottom: 3px solid #121212; display: inline-block; padding-bottom: 10px;}
 
 
 @media only screen and (max-width: 1024px) and (min-width: 768px) {
+  .order-parent {    width: 100%; overflow-x: scroll;  float: left;}
+  .order-parent .data-table {margin-bottom: 10px;} 
+  .cdz-main-menu-horizontal ul.groupmenu li a {}
+.groupmenu-drop .groupmenu-6 { width: 770px!important;} 
+.groupmenu-1 .customcoloum { width: 125px!important; } 
+.groupmenu-2 .customcoloum { width: 125px!important; }
+.groupmenu-3 .customcoloum { width: 125px!important; } 
+.groupmenu-4 .customcoloum { width: 125px!important; } 
+.groupmenu-5 .customcoloum { width: 125px!important; }   
+.groupmenu-6 .customcoloum { width: 125px!important; }
+
+.groupmenu-drop .groupmenu-1 { width: 125px!important;}
+.groupmenu-drop .groupmenu-2 { width: 250px!important;} 
+.groupmenu-drop .groupmenu-3 { width: 375px!important;}  
+.groupmenu-drop .groupmenu-4 { width: 500px!important;} 
+.groupmenu-drop .groupmenu-5 { width: 625px!important;}    
+.groupmenu-drop .groupmenu-6 { width: 750px!important;}
+.groupmenu-drop .groupmenu-7 { width: 875px!important;} 
+
 .col1-layout .products-grid .product-items:not(.owl-carousel) .product-item {    width: 25%!important;}
 .col1-layout .products-grid .product-items:not(.owl-carousel) .product-item {width: 25%!important; }
 .col1-layout .products-grid .product-items:not(.owl-carousel) > .product-item .product-item-info {height: 380px!important;}
@@ -26755,7 +26774,7 @@ border-bottom: 3px solid #121212; display: inline-block; padding-bottom: 10px;}
 .home-modern ul li span {    padding: 10px 0 0 0; font-size: 16px;}
 .groupmenu-drop-content .groupmenu-drop .col-sm-4 {    background: #fff; min-height: 400px;}
   .groupmenu-drop-content .groupmenu-drop {width: auto;}
-  .widget .cdz-main-menu .groupmenu li.level0 a.menu-link {    padding: 12px 11px;}
+  .widget .cdz-main-menu .groupmenu li.level0 a.menu-link {    padding: 12px 9px; font-size: 13px;}
   .cdz-header-menu-content .cdz-content-megamenu {    width: 100%;}
   .page-footer .footer-link li a {  line-height: 1.5;}
 .footer .footer-bottom .col-sm-5 { width: 20%; margin: 0 2%; padding: 0; }
@@ -26775,6 +26794,8 @@ border-bottom: 3px solid #121212; display: inline-block; padding-bottom: 10px;}
 
 
 @media only screen and (max-width: 767px) {
+   .order-parent {    width: 100%; overflow-x: scroll;  float: left;} 
+  .order-parent .data-table {margin-bottom: 10px;} 
   .widget h1 {    font-size: 20px; line-height: 1;  margin: 0 0 4px;}
   .widget hr {  margin-top: 10px; margin-bottom: 10px; }
   .slideshow-banner .space-base {    margin-bottom: 0;}
@@ -27013,31 +27034,44 @@ box-shadow: 1px 3px 1px rgba(50, 50, 50, 0.04);
 -webkit-border-radius: 0px;  
 padding: 20px;   
 box-sizing: border-box;}
-.totals-content #shopping-cart-totals-table tfoot tr td span.price {  width: 150px!important; display: table;}
+.totals-content #shopping-cart-totals-table tfoot tr td span.price {  width: 120px!important; display: table;}
 .cart .cart-collaterals .totals-content {    border: 1px solid #e1e1e1;     -webkit-box-shadow: 0!important;
 -moz-box-shadow: 0!important;  box-shadow: 0!important;  -webkit-border-radius: 0!important;  -moz-border-radius: 0px!important;}
-.cart .cart-collaterals #discount-coupon-form {    border: 1px solid #e1e1e1;     -webkit-box-shadow: 0!important;
+.cart .cart-collaterals #discount-coupon-form { min-height: 230px;  border: 1px solid #e1e1e1;     -webkit-box-shadow: 0!important;
 -moz-box-shadow: 0!important;  box-shadow: 0!important;  -webkit-border-radius: 0!important;    -moz-border-radius: 0px!important;}
-.discount-form .buttons-set button.button:hover {    background: #282828;
+.discount-form .buttons-set button.button:hover {    background: #282828; 
 border-color: #282828; color: white; border: 3px solid;} 
 #checkout-payment-method-load .sp-methods dt { margin: 0px 0 5px; width: 100%;  float: left;} 
 .cart .cart-collaterals .last {    width: 50%;  position: static;  float: right;}
 .cart .cart-collaterals .first {    width: 50%;  float: left;  position: static;}
 .cart .cart-collaterals .last .col-sm-12 {width: 100%; float: left;}
 .cart .cart-collaterals .first .col-sm-12 {width: 100%; float: left;}
-.groupmenu-drop-content.groupmenu-1 { width: 150px;}
-.groupmenu-drop-content.groupmenu-2 { width: 300px;} 
-.groupmenu-drop-content.groupmenu-3 { width: 450px;}
-.groupmenu-drop-content.groupmenu-4 { width: 600px;} 
-.groupmenu-drop-content.groupmenu-5 { width: 750px;}    
-.groupmenu-drop-content.groupmenu-6 { width: 900px;}
-.groupmenu-drop-content.groupmenu-7 { width: 1050px;} 
+
+.groupmenu-drop .groupmenu-1 { width: 150px;}
+.groupmenu-drop .groupmenu-2 { width: 300px;} 
+.groupmenu-drop .groupmenu-3 { width: 450px;}
+.groupmenu-drop .groupmenu-4 { width: 600px;} 
+.groupmenu-drop .groupmenu-5 { width: 750px;}    
+.groupmenu-drop .groupmenu-6 { width: 900px;}
+.groupmenu-drop .groupmenu-7 { width: 1050px;} 
 
 .my-account .data-table#my-orders-table tr td .price { display: block; width: 100px;}
 
 .pager .limiter label {    margin-top: 5px;  margin-bottom: 0;} 
 .pager .limiter select {    margin-right: 10px;}
 .pager .my-account .pager .amount { margin: 4px 10px 0 0; font-weight: normal;}  
+.cart #shopping-cart-table tbody tr td {    text-align: left;}
+.cart-collaterals .totals-content { min-height: 230px;}
+.cart #shopping-cart-table tfoot tr td button {    margin-right: 10px; margin-left: 0;}
+.pager .my-account .pager .amount {margin-top: 5px;} 
+
+.groupmenu-1 .customcoloum { width: 150px; padding: 0 10px; box-sizing: border-box; float: left;} 
+.groupmenu-2 .customcoloum { width: 150px; padding: 0 10px; box-sizing: border-box; float: left;}
+.groupmenu-3 .customcoloum { width: 150px; padding: 0 10px; box-sizing: border-box; float: left;}
+.groupmenu-4 .customcoloum { width: 150px; padding: 0 10px; box-sizing: border-box; float: left;} 
+.groupmenu-5 .customcoloum { width: 150px; padding: 0 10px; box-sizing: border-box; float: left;} 
+.groupmenu-6 .customcoloum { width: 150px; padding: 0 10px; box-sizing: border-box; float: left;}
+
 
 
 
