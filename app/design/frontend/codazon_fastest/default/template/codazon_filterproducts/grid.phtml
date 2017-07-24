@@ -29,7 +29,7 @@
 					<div class="cdz-product-top">
                     <?php if( $this->display('image') ):?>
                     <a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" class="product-image">
-					<?php  // $imageUrl= Mage::helper('catalog/image')->init($_product, 'image').'==2';?>
+					<?php  echo  $imageUrl= Mage::helper('catalog/image')->init($_product, 'thumbnail').'==2';?>
 					<img src="<?php echo (string)$_imgHelper->init($_product, 'image')->resize($_width,$_height); ?>" alt="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" />
 					
 					
