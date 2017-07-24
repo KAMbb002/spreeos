@@ -26748,6 +26748,8 @@ border-bottom: 3px solid #121212; display: inline-block; padding-bottom: 10px;}
 
 
 @media only screen and (max-width: 1024px) and (min-width: 768px) {
+  .order-parent {    width: 558px; overflow-x: scroll;  float: left;}
+  .order-parent .data-table {margin-bottom: 10px;} 
   .cdz-main-menu-horizontal ul.groupmenu li a {}
 .groupmenu-drop .groupmenu-6 { width: 770px!important;} 
 .groupmenu-1 .customcoloum { width: 125px!important; } 
