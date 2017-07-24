@@ -28,13 +28,9 @@
 				<div class="cdz-hover-section">
 					<div class="cdz-product-top">
                     <?php if( $this->display('image') ):?>
-                    <a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" class="product-image"> 
+                    <a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" class="product-image">
 					
-					<?php  echo  Mage::helper('catalog/image')->init($_product, 'image').'==2';?>
-       <?php  $imageUrl = Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA) . 'catalog/product' . $_product->getImage();?>
-
-					<img width="<?php echo $_width ;?>" height="<?php echo $_height ;?>" src="<?php echo  $imageUrl; ?>" alt="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" />
-					
+					<img src="<?php echo (string)$_imgHelper->init($_product, 'image')->resize($_width,$_height); ?>" alt="<?php echo $this->stripTags($this->getImageLabel($_product, 'image'), null, true) ?>" />
                     <img src="<?php echo (string)$_imgHelper->init($_product,'thumbnail')->resize($_width, $_height); ?>" alt="<?php echo $this->stripTags($this->getImageLabel($_product, 'thumbnail'), null, true) ?>" class="alternative-img img-responsive" />
                     </a>
                     <?php endif ?>
