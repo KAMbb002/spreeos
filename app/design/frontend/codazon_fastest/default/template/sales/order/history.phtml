@@ -32,6 +32,7 @@
 </div>
 <?php echo $this->getPagerHtml(); ?>
 <?php if($_orders->getSize()): ?>
+<div class="order-parent">
 <table class="data-table" id="my-orders-table">
     <col width="1" />
     <col width="1" />
@@ -84,6 +85,7 @@
         <?php endforeach; ?>
     </tbody>
 </table>
+</div>
 <script type="text/javascript">decorateTable('my-orders-table');
 
 $('.show_filters').on('click',function() {
