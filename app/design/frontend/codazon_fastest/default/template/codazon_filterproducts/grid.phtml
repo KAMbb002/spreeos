@@ -28,7 +28,7 @@
 				<div class="cdz-hover-section">
 					<div class="cdz-product-top">
                     <?php if( $this->display('image') ):?>
-                    <a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" class="product-image">
+                    <a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" class="product-image"> 
 					<?php $product = Mage::getModel('catalog/product')->load($_product->getId());
 echo $full_path_url = Mage::helper('catalog/image')->init($product, 'small_image')."==1";?>
 					<?php echo  Mage::helper('catalog/image')->init($_product, 'small_image').'==2';?>
