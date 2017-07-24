@@ -26748,6 +26748,7 @@ border-bottom: 3px solid #121212; display: inline-block; padding-bottom: 10px;}
 
 
 @media only screen and (max-width: 1024px) and (min-width: 768px) {
+  .cdz-main-menu-horizontal ul.groupmenu li a {}
 .groupmenu-drop .groupmenu-6 { width: 770px!important;} 
 .groupmenu-1 .customcoloum { width: 125px!important; } 
 .groupmenu-2 .customcoloum { width: 125px!important; }
@@ -26771,7 +26772,7 @@ border-bottom: 3px solid #121212; display: inline-block; padding-bottom: 10px;}
 .home-modern ul li span {    padding: 10px 0 0 0; font-size: 16px;}
 .groupmenu-drop-content .groupmenu-drop .col-sm-4 {    background: #fff; min-height: 400px;}
   .groupmenu-drop-content .groupmenu-drop {width: auto;}
-  .widget .cdz-main-menu .groupmenu li.level0 a.menu-link {    padding: 12px 11px;}
+  .widget .cdz-main-menu .groupmenu li.level0 a.menu-link {    padding: 12px 9px; font-size: 13px;}
   .cdz-header-menu-content .cdz-content-megamenu {    width: 100%;}
   .page-footer .footer-link li a {  line-height: 1.5;}
 .footer .footer-bottom .col-sm-5 { width: 20%; margin: 0 2%; padding: 0; }
@@ -27032,9 +27033,9 @@ box-sizing: border-box;}
 .totals-content #shopping-cart-totals-table tfoot tr td span.price {  width: 120px!important; display: table;}
 .cart .cart-collaterals .totals-content {    border: 1px solid #e1e1e1;     -webkit-box-shadow: 0!important;
 -moz-box-shadow: 0!important;  box-shadow: 0!important;  -webkit-border-radius: 0!important;  -moz-border-radius: 0px!important;}
-.cart .cart-collaterals #discount-coupon-form {    border: 1px solid #e1e1e1;     -webkit-box-shadow: 0!important;
+.cart .cart-collaterals #discount-coupon-form { min-height: 230px;  border: 1px solid #e1e1e1;     -webkit-box-shadow: 0!important;
 -moz-box-shadow: 0!important;  box-shadow: 0!important;  -webkit-border-radius: 0!important;    -moz-border-radius: 0px!important;}
-.discount-form .buttons-set button.button:hover {    background: #282828;
+.discount-form .buttons-set button.button:hover {    background: #282828; 
 border-color: #282828; color: white; border: 3px solid;} 
 #checkout-payment-method-load .sp-methods dt { margin: 0px 0 5px; width: 100%;  float: left;} 
 .cart .cart-collaterals .last {    width: 50%;  position: static;  float: right;}
