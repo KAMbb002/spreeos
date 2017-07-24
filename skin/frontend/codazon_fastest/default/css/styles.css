@@ -27043,12 +27043,12 @@ border-color: #282828; color: white; border: 3px solid;}
 .cart #shopping-cart-table tfoot tr td button {    margin-right: 10px; margin-left: 0;}
 .pager .my-account .pager .amount {margin-top: 5px;}
 
-.groupmenu-1 .coloumn-2 { width: 150px; padding: 0 10px; box-sizing: border-box; float: left;} 
-.groupmenu-2 .coloumn-2 { width: 150px; padding: 0 10px; box-sizing: border-box; float: left;}
-.groupmenu-3 .coloumn-2 { width: 150px; padding: 0 10px; box-sizing: border-box; float: left;}
-.groupmenu-4 .coloumn-2 { width: 150px; padding: 0 10px; box-sizing: border-box; float: left;} 
-.groupmenu-5 .coloumn-2 { width: 150px; padding: 0 10px; box-sizing: border-box; float: left;}
-.groupmenu-6 .coloumn-2 { width: 150px; padding: 0 10px; box-sizing: border-box; float: left;}
+.groupmenu-1 .customcoloum { width: 150px; padding: 0 10px; box-sizing: border-box; float: left;} 
+.groupmenu-2 .customcoloum { width: 150px; padding: 0 10px; box-sizing: border-box; float: left;}
+.groupmenu-3 .customcoloum { width: 150px; padding: 0 10px; box-sizing: border-box; float: left;}
+.groupmenu-4 .customcoloum { width: 150px; padding: 0 10px; box-sizing: border-box; float: left;} 
+.groupmenu-5 .customcoloum { width: 150px; padding: 0 10px; box-sizing: border-box; float: left;}
+.groupmenu-6 .customcoloum { width: 150px; padding: 0 10px; box-sizing: border-box; float: left;}
 
 
 
