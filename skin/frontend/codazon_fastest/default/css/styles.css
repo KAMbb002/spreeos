@@ -27073,7 +27073,7 @@ border-color: #282828; color: white; border: 3px solid;}
 .groupmenu-6 .customcoloum { width: 150px; padding: 0 10px; box-sizing: border-box; float: left;}
 
 .order-products-table thead tr {    width: 100%;  display: table; table-layout: fixed; border-collapse: collapse;}
-.order-products-table thead tr th {  display: table-cell;  text-align: center;  vertical-align: middle;}
+.order-products-table thead tr th {  display: table-cell;  text-align: center;  vertical-align: middle;} 
 
 
 
