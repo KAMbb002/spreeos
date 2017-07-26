@@ -27122,7 +27122,7 @@ table.cust-reviewss thead tr th.review-four {    width: 80px;  max-width: 80px; 
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     padding: 8px 0px;
     color: #fff;
-    content: 'Quick Shop';
+    content: 'Add to Cart'; 
     opacity: 1;
     visibility: hidden;
     text-align: center;
@@ -27139,7 +27139,7 @@ table.cust-reviewss thead tr th.review-four {    width: 80px;  max-width: 80px; 
     line-height: normal;}
 .cdz-product-bottom .cdz-buttons-inner .btn-cart:hover:after {opacity: 1; visibility: visible;}
 
-.cdz-product-bottom .cdz-buttons-inner .tooltip.fade {display: none!important;}  
+.cdz-product-bottom .cdz-buttons-inner .tooltip.fade {display: none!important;}   
 
 
 
