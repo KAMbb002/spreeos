@@ -26803,6 +26803,9 @@ table.cust-reviewss thead tr th.review-four { width: auto!important; max-width: 
 
 
 @media only screen and (max-width: 767px) {
+  #shipping-method .op_block_title {margin-top: 0px!important;}
+  #payment-method .op_block_title {margin-top: 0px!important;}
+  #checkout-review .op_block_title {margin-top: 0px!important;}
    .order-parent {    width: 100%; overflow-x: scroll;  float: left;} 
   .order-parent .data-table {margin-bottom: 10px;} 
   .widget h1 {    font-size: 20px; line-height: 1;  margin: 0 0 4px;}
@@ -26829,7 +26832,9 @@ table.cust-reviewss thead tr th.review-four { width: auto!important; max-width: 
 }
 
 @media only screen and (max-width: 480px) {
-
+  .one_step1 .op_block_title {    padding-right: 0; 
+    padding-top: 5px;  padding-bottom: 5px; font-size: 14px;}
+table.cust-reviewss thead {display: none;} 
   .footer-bottom .col-sm-6 p.h5 {margin-bottom: 15px;}
   .footer-bottom .col-sm-6 { padding: 0 15px!important;}
   .footer .footer-bottom .col-sm-5 {  margin-bottom: 15px!important;}
