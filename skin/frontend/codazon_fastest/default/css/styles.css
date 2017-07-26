@@ -26803,7 +26803,8 @@ table.cust-reviewss thead tr th.review-four { width: auto!important; max-width: 
 
 
 @media only screen and (max-width: 767px) {
-  #shipping-method .op_block_title {margin-top: 0px!important;}
+  #checkout-review .op_block_title {}
+  #shipping-method .op_block_title#shipping {margin-top: 0px!important;}
   #payment-method .op_block_title {margin-top: 0px!important;}
   #checkout-review .op_block_title {margin-top: 0px!important;}
    .order-parent {    width: 100%; overflow-x: scroll;  float: left;} 
@@ -26832,9 +26833,8 @@ table.cust-reviewss thead tr th.review-four { width: auto!important; max-width: 
 }
 
 @media only screen and (max-width: 480px) {
-  .one_step1 .op_block_title {    padding-right: 0; 
-    padding-top: 5px;  padding-bottom: 5px; font-size: 14px;}
-table.cust-reviewss thead {display: none;} 
+  .one_step1 .op_block_title { padding-right: 0!important; padding-top: 5px!important;  padding-bottom: 5px!important; font-size: 14px!important;}
+table.cust-reviewss thead {display: none;}  
   .footer-bottom .col-sm-6 p.h5 {margin-bottom: 15px;}
   .footer-bottom .col-sm-6 { padding: 0 15px!important;}
   .footer .footer-bottom .col-sm-5 {  margin-bottom: 15px!important;}
@@ -27039,7 +27039,7 @@ table.cust-reviewss thead {display: none;}
 #checkout-payment-method-load {    width: 100%!important;}
 .onestepcheckout_block #checkout-payment-method-load { width: 100%!important;  float: left;}
 #checkout-payment-method-load .sp-methods dt input {    margin-left: 0;  margin-right: 0; margin-top: 8px;}
-#checkout-payment-method-load .sp-methods dt label {    float: left;  width: auto!important;} 
+#checkout-payment-method-load .sp-methods dt label {  float: left;  width: auto!important; min-width: auto; padding-left: 10px;} 
 .cart .cart-collaterals {    overflow: visible; 
 height: 100%; background: #fff; width: 100%;  float: left;
 -webkit-box-shadow: 1px 3px 1px rgba(50, 50, 50, 0.04); 
