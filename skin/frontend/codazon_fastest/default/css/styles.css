@@ -27075,7 +27075,10 @@ border-color: #282828; color: white; border: 3px solid;}
 table.order-products-table {display: table;}
 table.order-products-table thead tr {    display: table-row;}
 table.order-products-table thead tr th {    display: table-cell;}
-
+table.cust-reviewss thead tr th.review-one {    width: 70px; max-width: 70px;  min-width: 70px;}
+table.cust-reviewss thead tr th.review-two {    min-width: 140px;  width: 140px;    max-width: 140px;}
+table.cust-reviewss thead tr th.review-three {    width: 80px;  max-width: 80px;  min-width: 80px;}
+table.cust-reviewss thead tr th.review-four {    width: 80px;  max-width: 80px;  min-width: 100px;}
 
 
 
