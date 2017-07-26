@@ -26960,14 +26960,14 @@ border-bottom: 3px solid #121212; display: inline-block; padding-bottom: 10px;}
     box-shadow: none; 
     text-shadow: none;}
   #coupon-discount .discount-form .buttons-set button.button:hover {background: #282828; border-color: #282828; color: white; border: 3px solid #282828;}
-  .one_step1 .order-products-table tbody tr td .product-name {font-size: 14px;}
+  .one_step1 .order-products-table tbody tr td .product-name {font-size: 13px;}
   .product-view .product-shop ul.add-to-links .compare {display: none;}
   #coupon-discount .discount-form .buttons-set {    margin-top: 12px!important; margin-bottom: 12px!important;}
   .product-shop .add-to-cart .product-button-bottom button.button {    font: 500 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;}
   #otp-validation .otp-validation-inner {    width: 360px;
     background: #fff;
     opacity: 1;
-    display: table;
+    display: table; 
     padding: 20px;}
     #otp-validation input#otp {margin: 0;
     width: 190px!important;
@@ -27074,9 +27074,9 @@ border-color: #282828; color: white; border: 3px solid;}
 
 table.order-products-table {display: table;}
 table.order-products-table thead tr {    display: table-row;}
-table.order-products-table thead tr th {    display: table-cell;}
+table.order-products-table thead tr th {    display: table-cell; font-size: 12px;}
 table.cust-reviewss thead tr th.review-one {    width: 70px; max-width: 70px;  min-width: 70px;}
-table.cust-reviewss thead tr th.review-two {    min-width: 140px;  width: 140px;    max-width: 140px;}
+table.cust-reviewss thead tr th.review-two {    min-width: 110px;  width: 110px;    max-width: 110px;}
 table.cust-reviewss thead tr th.review-three {    width: 80px;  max-width: 80px;  min-width: 80px;}
 table.cust-reviewss thead tr th.review-four {    width: 80px;  max-width: 80px;  min-width: 100px;}
 
