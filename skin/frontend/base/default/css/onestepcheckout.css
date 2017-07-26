@@ -312,11 +312,10 @@ input[type="email"], input[type="search"], input[type="number"], input[type="pas
 }
 @media (min-width:650px) and (max-width:1000px)
 {
-	  .order-products-table td
-  {
-  	width:200% !important;
+	  .order-products-table td  { 
+/*  	width:200% !important;
   	float:left;
-  	text-align:left;
+  	text-align:left;*/
   }
 .op_block_title
   {
