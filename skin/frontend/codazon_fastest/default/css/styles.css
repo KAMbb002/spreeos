@@ -26755,7 +26755,8 @@ table.cust-reviewss thead tr th.review-four { width: auto!important; max-width: 
 }
 
 
-@media only screen and (max-width: 1024px) and (min-width: 768px) {
+@media only screen and (max-width: 1024px) and (min-width: 768px) { 
+  table.cust-reviewss thead tr th.review-three { width: 45px!important;  max-width: 45px!important;  min-width: 45px!important;}
   .order-parent {    width: 100%; overflow-x: scroll;  float: left;}
   .order-parent .data-table {margin-bottom: 10px;} 
   .cdz-main-menu-horizontal ul.groupmenu li a {}
