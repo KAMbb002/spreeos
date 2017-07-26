@@ -27114,7 +27114,17 @@ table.cust-reviewss thead tr th.review-four {    width: 80px;  max-width: 80px; 
     opacity: 0.9;  margin-left: -50px; display: inline-block;  line-height: normal;}
 .cdz-product-bottom .cdz-buttons-inner .btn-cart:hover:after {opacity: 1; visibility: visible;}
 .cdz-product-bottom .cdz-buttons-inner .tooltip.fade {display: none!important;}   
-.totals-content ul.checkout-types li button.button {    padding: 7px 15px;}   
+.totals-content ul.checkout-types li button.button {    padding: 7px 15px;}  
+
+.cdz-product-bottom .cdz-buttons-inner .link-wishlist {position: relative;} 
+.cdz-product-bottom .cdz-buttons-inner .link-wishlist:after { max-width: 200px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; 
+    padding: 8px 0px;  color: #fff; content: 'Add to Wishlist'; font-weight: 600;  
+    opacity: 1;  visibility: hidden; text-align: center;
+    background-color: #000;  border-radius: 4px;  position: absolute;
+    top: -45px; left: 50%;  font-size: 11px;  min-width: 100px;
+    opacity: 0.9;  margin-left: -50px; display: inline-block;  line-height: normal;}
+    .cdz-product-bottom .cdz-buttons-inner .link-wishlist:hover:after {opacity: 1; visibility: visible;}
 
 
 
