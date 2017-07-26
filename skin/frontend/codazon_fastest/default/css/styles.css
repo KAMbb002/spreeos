@@ -27072,6 +27072,10 @@ border-color: #282828; color: white; border: 3px solid;}
 .groupmenu-5 .customcoloum { width: 150px; padding: 0 10px; box-sizing: border-box; float: left;} 
 .groupmenu-6 .customcoloum { width: 150px; padding: 0 10px; box-sizing: border-box; float: left;}
 
+table.order-products-table {display: table;}
+table.order-products-table thead tr {    display: table-row;}
+table.order-products-table thead tr td {    display: table-cell;}
+
 
 
 
