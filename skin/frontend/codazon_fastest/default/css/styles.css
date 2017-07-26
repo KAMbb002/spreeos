@@ -27094,6 +27094,14 @@ table.cust-reviewss thead tr th.review-two {    min-width: 110px;  width: 110px;
 table.cust-reviewss thead tr th.review-three {    width: 80px;  max-width: 80px;  min-width: 80px;}
 table.cust-reviewss thead tr th.review-four {    width: 80px;  max-width: 80px;  min-width: 100px;}
 
+.cdz-product-bottom .cdz-tooltip {position: relative;}
+.cdz-product-bottom .cdz-tooltip:before { max-width: 200px;
+    padding: 3px 8px;
+    color: #fff; content: 'Quick Shop'; opacity: 1; visibility: hidden;
+    text-align: center;
+    background-color: #000;
+    border-radius: 4px;}
+.cdz-product-bottom .cdz-tooltip:hover:before {opacity: 1; visibility: visible;}
 
 
 
