@@ -1452,8 +1452,8 @@
     border: 0px solid;
   }
 
-  .cdz-buttons-inner .qs-button {
-    display: none;
+  .cdz-buttons-inner .qs-button { 
+    display: inline-block;
   }
 
   .products-grid .isotope .item.product-item .availability.out-of-stock {
