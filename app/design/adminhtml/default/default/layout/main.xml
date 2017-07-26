@@ -178,12 +178,6 @@ Layout for editor element
             <action method="addJs"><script>prototype/window.js</script></action>
             <action method="addItem"><type>js_css</type><name>prototype/windows/themes/default.css</name></action>
             <action method="addCss"><name>lib/prototype/windows/themes/magento.css</name></action>
-
-             <action method="addJs"><file>lib/uploader/flow.min.js</file></action>
-            <action method="addJs"><file>lib/uploader/fusty-flow.js</file></action>
-            <action method="addJs"><file>lib/uploader/fusty-flow-factory.js</file></action>
-            <action method="addJs"><file>mage/adminhtml/uploader/instance.js</file></action>
-            
         </reference>
     </editor>
 
