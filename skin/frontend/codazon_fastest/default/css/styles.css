@@ -26738,6 +26738,14 @@ border-bottom: 3px solid #121212; display: inline-block; padding-bottom: 10px;}
 
 }
 
+@media only screen and (max-width: 1150px) and (min-width: 1025px) {
+table.cust-reviewss thead tr th.review-one { width: 70px; max-width: 70px;  min-width: 70px;}
+table.cust-reviewss thead tr th.review-two { min-width: 110px;  width: 110px;  max-width: 110px;}
+table.cust-reviewss thead tr th.review-three { width: 60px;  max-width: 60px; min-width: 60px;} 
+table.cust-reviewss thead tr th.review-four { width: auto; max-width: inherit; min-width: auto;}
+
+}
+
 @media only screen and (max-width: 1200px) and (min-width: 768px) {
   .cdz-header-menu-content .cdz-fix-left .cdz-content-megamenu {width: 100%;}
   .cdz-header-bottom .cdz-header-bottom-content {position: relative;}
