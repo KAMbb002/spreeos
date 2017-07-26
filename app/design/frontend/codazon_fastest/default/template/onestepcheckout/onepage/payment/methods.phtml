@@ -12,9 +12,9 @@
         <label for="p_method_<?php echo $_code ?>"><?php echo $this->htmlEscape($_method->getTitle()) ?> <?php echo $this->getMethodLabelAfterHtml($_method) ?></label>
     </dt>
     <?php if ($html = $this->getPaymentMethodFormHtml($_method)): ?>
-    <dd>
+   <!--  <dd>
         <?php echo $html; ?>
-    </dd>
+    </dd> -->
     <?php endif; ?>
 <?php endforeach; ?>
 </dl>
