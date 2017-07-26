@@ -27138,8 +27138,8 @@ table.cust-reviewss thead tr th.review-four {    width: 80px;  max-width: 80px; 
     display: inline-block;
     line-height: normal;}
 .cdz-product-bottom .cdz-buttons-inner .btn-cart:hover:after {opacity: 1; visibility: visible;}
-
 .cdz-product-bottom .cdz-buttons-inner .tooltip.fade {display: none!important;}   
+.totals-content ul.checkout-types li button.button {    padding: 7px 15px;}  
 
 
 
