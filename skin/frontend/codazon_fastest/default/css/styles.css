@@ -27127,6 +27127,13 @@ table.cust-reviewss thead tr th.review-four {    width: 80px;  max-width: 80px; 
     opacity: 0.9;  margin-left: -50px; display: inline-block;  line-height: normal;}
     .cdz-product-bottom .cdz-buttons-inner .link-wishlist:hover:after {opacity: 1; visibility: visible;}
 
+/*================27-7-17==================*/
+.one_step1 #shipping-method .sp-methods dt {    padding-left: 10px;} 
+.one_step1 #payment-method #checkout-payment-method-load {padding-left: 10px;}
+.one_step1 #checkout-coupon-discount-load .discount .op_block_title {    padding-left: 10px;}
+.one_step1 #checkout-coupon-discount-load .discount .discount-form {    padding-left: 10px;}
+.one_step1 .newsletter {    padding-left: 10px;}
+
 
 
 
