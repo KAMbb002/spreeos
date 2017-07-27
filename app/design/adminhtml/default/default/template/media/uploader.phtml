@@ -29,6 +29,9 @@
  * @var $this Mage_Uploader_Block_Multiple|Mage_Uploader_Block_Single
  */
 ?>
+<?php echo $this->helper('adminhtml/js')->includeScript('lib/flex.js') ?>
+<?php echo $this->helper('adminhtml/js')->includeScript('mage/adminhtml/flexuploader.js') ?>
+<?php echo $this->helper('adminhtml/js')->includeScript('lib/FABridge.js') ?>
 <div id="<?php echo $this->getHtmlId() ?>" class="uploader">
     <div class="buttons a-right">
         <?php echo $this->getBrowseButtonHtml(); ?>
