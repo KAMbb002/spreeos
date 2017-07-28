@@ -26933,7 +26933,9 @@ table.cust-reviewss thead {display: none;}
 
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 480px) { 
+  .cart #shopping-cart-table tfoot tr td button { margin-right: 0!important; margin-left: 0!important; vertical-align: top!important;}
+  .cdz-mobile-header-menu .block-cart.cdz-dropdown-content {min-width: 300px!important;}
 .cart table#shopping-cart-table tfoot tr td button.button {font-size: 10px!important;}
 .cart table#shopping-cart-table tfoot tr td button.button span { width: auto!important;} 
 .cart table#shopping-cart-table tbody tr td .price {    font-size: 12px!important;}
@@ -27171,7 +27173,7 @@ table.cust-reviewss thead tr th.review-four {    width: 80px;  max-width: 80px; 
     border-color: #282828; color: white;  border: 3px solid #282828;}
 .op_login_area .buttons-set .onestepcheckout_forgotlink {margin-top: 16px;}
 .op_login_area #login-form .full .input-box {width: 100%;}   
-
+ .op_login_area #login-form .buttons-set button.button:hover span {color: #fff;}
 
 
 
