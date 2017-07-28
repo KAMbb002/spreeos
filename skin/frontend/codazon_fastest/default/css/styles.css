@@ -27158,7 +27158,7 @@ table.cust-reviewss thead tr th.review-four {    width: 80px;  max-width: 80px; 
     height: 40px;}
     .op_login_area #login-form .buttons-set button.button {padding: 4px 8px;
     background: transparent;
-    border-color: #282828; 
+    border-color: #282828;  
     color: #282828;
     font: 600 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
     outline: none;
@@ -27170,6 +27170,7 @@ table.cust-reviewss thead tr th.review-four {    width: 80px;  max-width: 80px; 
  .op_login_area #login-form .buttons-set button.button:hover {    background: #282828;
     border-color: #282828; color: white;  border: 3px solid #282828;}
 .op_login_area .buttons-set .onestepcheckout_forgotlink {margin-top: 16px;}
+.op_login_area #login-form .full .input-box {width: 100%;} 
 
 
 
