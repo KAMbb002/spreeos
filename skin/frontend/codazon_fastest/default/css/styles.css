@@ -27142,7 +27142,7 @@ table.cust-reviewss thead tr th.review-four {    width: 80px;  max-width: 80px; 
 .op_login_area .page-title {    font: 500 22px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
     color: #282828;}
    .op_login_area #login-form .full {    width: 100%;
-    float: left;  padding-bottom: 0;  margin-bottom: 15px;}
+    float: left;  padding-bottom: 0;  margin-bottom: 0px;}
       .op_login_area #login-form .full label {    color: #767676;
     float: left;
     font-weight: bold;
@@ -27166,9 +27166,10 @@ table.cust-reviewss thead tr th.review-four {    width: 80px;  max-width: 80px; 
     height: 42px!important; line-height: 32px;
     opacity: 1; width: 143px; margin: 10px 0!important;
     box-shadow: none; text-shadow: none;}
+    .op_login_area #login-form .buttons-set button.button span {    font: 600 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;    color: #000;}
  .op_login_area #login-form .buttons-set button.button:hover {    background: #282828;
     border-color: #282828; color: white;  border: 3px solid #282828;}
-
+.op_login_area .buttons-set .onestepcheckout_forgotlink {margin-top: 16px;}
 
 
 
