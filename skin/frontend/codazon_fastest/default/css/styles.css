@@ -26934,6 +26934,10 @@ table.cust-reviewss thead {display: none;}
 }
 
 @media only screen and (max-width: 480px) {
+.cart table#shopping-cart-table tfoot tr td button.button {font-size: 10px!important;}
+.cart table#shopping-cart-table tfoot tr td button.button span { width: auto!important;} 
+.cart table#shopping-cart-table tbody tr td .price {    font-size: 12px!important;}
+
   .category-products .products-grid .product-items .item  {width: 100%!important; height: auto!important; margin-bottom: 25px;}
 .nested-container .page-banners .left {    width: 100%!important;  margin-bottom: 0px!important; margin-left: 0; margin-right: 0;}
 .nested-container .page-banners .right {    width: 100%!important;  margin-right: 0px!important;  margin-bottom: 0!important;}
@@ -27135,6 +27139,35 @@ table.cust-reviewss thead tr th.review-four {    width: 80px;  max-width: 80px; 
 .one_step1 p.newsletter {    padding-left: 10px;}
 .one_step1 #checkout-shipping-method-load  p { padding-left: 10px;}  
 
+.op_login_area .page-title {    font: 500 22px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+    color: #282828;}
+   .op_login_area #login-form .full {    width: 100%;
+    float: left;  padding-bottom: 0;  margin-bottom: 15px;}
+      .op_login_area #login-form .full label {    color: #767676;
+    float: left;
+    font-weight: bold;
+    position: relative;
+    z-index: 0;
+    font-size: 13px;
+    font-family: "Poppins", "Helvetica Neue", Verdana, Arial, sans-serif;}
+     .op_login_area #login-form .full input {    border: 1px solid #ddd;
+    margin: 5px 0;
+    max-width: 100%;
+    width: 100% !important;
+    padding: 5px 15px;
+    height: 40px;}
+    .op_login_area #login-form .buttons-set button.button {padding: 4px 8px;
+    background: transparent;
+    border-color: #282828; 
+    color: #282828;
+    font: 600 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
+    outline: none;
+    border: 3px solid;
+    height: 42px!important; line-height: 32px;
+    opacity: 1; width: 143px; margin: 10px 0!important;
+    box-shadow: none; text-shadow: none;}
+ .op_login_area #login-form .buttons-set button.button:hover {    background: #282828;
+    border-color: #282828; color: white;  border: 3px solid #282828;}
 
 
 
