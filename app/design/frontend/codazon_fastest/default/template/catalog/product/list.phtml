@@ -100,9 +100,9 @@
 
                         	<?php echo $_qsHelper->getQuickshopHtml($_product) ?>
 							<ul class="add-to-links">
-								<?php //if ($this->helper('wishlist')->isAllow()) : ?>
+								<?php if ($this->helper('wishlist')->isAllow()) : ?>
 									<li class="wishlist" data-toggle="tooltip" title="<?php echo $this->__('Add to Wishlist') ?>" ><a href="<?php echo $this->helper('wishlist')->getAddUrl($_product) ?>" class="link-wishlist"><?php echo $this->__('Add to Wishlist') ?></a></li>
-								<?php //endif; ?>
+								<?php endif; ?>
 								
 							</ul>
 					</div>
@@ -204,7 +204,6 @@
                                         <p class="availability out-of-stock"><span><?php echo $this->__('Out of stock') ?></span></p>
                                     <?php endif; ?>
                                     <?php echo $_qsHelper->getQuickshopHtml($_product) ?>
-                                    <a href="<?php echo $this->helper('wishlist')->getAddUrl($_product) ?>" class="link-wishlist"><?php echo $this->__('Add to Wishlist') ?></a>
                                  
                                 </div>
                             </div>
