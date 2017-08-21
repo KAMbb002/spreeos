@@ -7,11 +7,7 @@ if(!empty( $_categoryId )){
 	$_url = $_url."/category/".$_categoryId->getId();
 }*/
 ?>
-<?php $_wishlistSubmitUrl = $this->helper('wishlist')->getAddUrl($_product); ?>
     
 		<a href="javascript:void(0)" class="qs-button cdz-tooltip" data-original-title="<?php echo $this->__('Quick Shop') ?>" data-url="<?php echo $_url ?>" data-toggle="modal" data-target="#cdz-qsiframe"><?php echo $this->getQuickShopLabel() ?></a>
-
-
-		<a href="<?php echo $_wishlistSubmitUrl ?>" class="action link-wishlist">Add to Wishlist</a>
     
     
