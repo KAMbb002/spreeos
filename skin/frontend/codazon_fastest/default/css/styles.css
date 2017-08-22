@@ -10351,6 +10351,12 @@ button {
   top: 15px;
 }
 
+.catalog-category-view .cdz-product-wishlist {
+  position: absolute;
+  left: 15px;
+  top: 5px;
+}
+
 .cdz-product-wishlist a.link-compare {
   display: none;
 }
