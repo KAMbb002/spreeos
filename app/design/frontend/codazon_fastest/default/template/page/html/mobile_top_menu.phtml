@@ -20,7 +20,7 @@ if(!isset($options['lv'])){
 
 foreach ($children as $child) {
     //print_r($child->getData());exit;
-    if($child->getIsActive==1){
+    if($child->getIsActive()==1){
         $child->setLevel($childLevel);
         $outermostClassCode = 'level-'. $options['lv'];
         $_hasChildren = ($child->hasChildren()) ? 'parent' : '';
