@@ -58,6 +58,8 @@ $_swatchArray = $_config->attributes->$_id;
                 $_optionCode = Mage::helper('configurableswatches')->getHyphenatedString($_option->label);
                 $_swatchUrl = Mage::helper('configurableswatches/productimg')->getSwatchUrl($_product, $_option->label, $_swatchInnerWidth, $_swatchInnerHeight, $_swatchType);
                 $_hasImage = !empty($_swatchUrl);
+                $_hasImage = false; // sanjeev: to display only label instead of image
+
                 $_liClass = '';
                 $_aClass = 'swatch-link swatch-link-' . $_attribute->getAttributeId();
                 if ($_hasImage) {

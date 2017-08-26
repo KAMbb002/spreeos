@@ -60,7 +60,7 @@ $_swatchOuterHeight = $_dimHelper->getOuterHeight(Mage_ConfigurableSwatches_Help
             <?php endif; ?>
                 <span class="swatch-label"<?php if ($_hasImage){ echo ' style="' . $_linkCss . '"'; } ?>>
                     <?php if ($_hasImage): ?>
-                        <img src="<?php echo $_swatchUrl; ?>" alt="<?php echo $_label; ?>" title="<?php echo $_label ?>" width="<?php echo $_swatchInnerWidth ?>" height="<?php echo $_swatchInnerHeight ?>" />
+                        <?php echo $_label; ?>
                     <?php else: ?>
                         <?php echo $_label; ?>
                     <?php endif; ?>
