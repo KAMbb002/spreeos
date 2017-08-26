@@ -22361,7 +22361,8 @@ fieldset[disabled] .block-search .button {
   font: 500 14px/1.35 Poppins, Helvetica Neue, Verdana, Arial, sans-serif;
 }
 .cdz-best-seller-wrap .product-name a {
-  color: white;
+  /*color: white;*/
+  color: #282828;
 }
 
 .isotope-wrap .products-grid .product-item-info .product-name {
