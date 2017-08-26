@@ -4,7 +4,7 @@ $html = '';
 $children = $menuTree->getChildren();
 $parentLevel = $menuTree->getLevel();
 $childLevel = is_null($parentLevel) ? 0 : $parentLevel + 1;
-$counter = 1;
+$counter = 1;cdz-mobile-nav
 $parentPositionClass = $menuTree->getPositionClass();
 $itemPositionClassPrefix = $parentPositionClass ? $parentPositionClass . '-' : 'nav-';
 
@@ -19,6 +19,7 @@ if(!isset($options['lv'])){
 }
 
 foreach ($children as $child) {
+    print_r($child->getData());exit;
     $child->setLevel($childLevel);
     $outermostClassCode = 'level-'. $options['lv'];
     $_hasChildren = ($child->hasChildren()) ? 'parent' : '';
