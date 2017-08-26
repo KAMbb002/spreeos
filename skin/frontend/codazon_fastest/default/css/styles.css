@@ -27182,7 +27182,9 @@ table.cust-reviewss thead tr th.review-four {    width: 80px;  max-width: 80px; 
 .op_login_area #login-form .full .input-box {width: 100%;}   
  .op_login_area #login-form .buttons-set button.button:hover span {color: #fff;}
 
-
+a.swatch-link:hover {
+    vertical-align: unset;
+}
 
 
 
