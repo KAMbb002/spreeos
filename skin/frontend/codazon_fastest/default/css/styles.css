@@ -6598,13 +6598,10 @@ body:not(.opc-has-progressed-from-login) .opc.opc-firststep-login .section#opc-l
   box-sizing: content-box;
 }
 
-
 .swatch-link {
-  /*border: 1px solid #cccccc;*/
+  border: 1px solid #cccccc;
   margin: 0 0 3px;
 }
-
-
 
 .swatch-link img {
   border-radius: 2px;
@@ -6631,18 +6628,10 @@ body:not(.opc-has-progressed-from-login) .opc.opc-firststep-login .section#opc-l
   position: relative;
 }
 
-/*.swatch-link.has-image img {
+.swatch-link.has-image img {
   position: absolute;
   top: 0;
   left: 0;
-}*/
-
-.swatch-link.has-image img {
-position: absolute;
-top: 0;
-left: 0;
-border-radius: 50%;
-border: none;
 }
 
 .swatch-label {
