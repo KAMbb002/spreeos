@@ -10351,7 +10351,7 @@ button {
   top: 15px;
 }
 
-.catalog-category-view .cdz-product-wishlist {
+ .catalog-category-view .cdz-product-wishlist, .catalogsearch-result-index .cdz-product-wishlist {
   position: absolute;
   left: 15px;
   top: 5px;
