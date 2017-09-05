@@ -8,7 +8,11 @@
 
 if($_code=='cashondelivery'){
     $quote = Mage::getSingleton('checkout/cart')->getQuote();
-    echo "Total:".$quote->getSubtotal();
+    $subTotal = $quote->getSubtotal();
+    echo "Total:".$subTotal;
+    if($subTotal>5000){
+        echo "disable COD";
+    }
 }
  ?>
     <dt>
