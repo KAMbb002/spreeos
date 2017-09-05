@@ -9,12 +9,11 @@
 if($_code=='cashondelivery'){
     $quote = Mage::getSingleton('checkout/cart')->getQuote();
     $subTotal = $quote->getSubtotal();
-    echo "Total:".$subTotal;
+    //echo "Total:".$subTotal;
     if($subTotal>5000){
         echo "disable COD";
-    }
-}
- ?>
+    
+    ?>
     <dt>
     <?php if( sizeof($this->getMethods()) > 1 ): ?>
         <input id="p_method_<?php echo $_code ?>" value="<?php echo $_code ?>" type="radio" name="payment[method]" title="<?php echo $this->htmlEscape($_method->getTitle()) ?>" onclick="payment.switchMethod('<?php echo $_code ?>')"<?php if($this->getSelectedMethodCode()==$_code): ?> checked="checked"<?php endif; ?> class="radio" />
@@ -23,6 +22,10 @@ if($_code=='cashondelivery'){
     <?php endif; ?>
         <label for="p_method_<?php echo $_code ?>"><?php echo $this->htmlEscape($_method->getTitle()) ?> <?php echo $this->getMethodLabelAfterHtml($_method) ?></label>
     </dt>
+    <?php 
+        }
+    } // disble COD 
+    ?>
     <?php if ($html = $this->getPaymentMethodFormHtml($_method)): ?>
    <!--  <dd>
         <?php echo $html; ?>
