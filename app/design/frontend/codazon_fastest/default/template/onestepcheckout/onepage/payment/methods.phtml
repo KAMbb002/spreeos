@@ -6,13 +6,20 @@
 
 //echo "Checking...".
 
+$disableCod = false;
 if($_code=='cashondelivery'){
     $quote = Mage::getSingleton('checkout/cart')->getQuote();
     $subTotal = $quote->getSubtotal();
     //echo "Total:".$subTotal;
-    if($subTotal>5000){
-        echo "disable COD";
+    $codLimit = Mage::getModel('core/variable')->loadByCode('cod_limit')->getValue('plain');
+    if($subTotal>trim($codLimit)){
+        echo "This product is not eligible for COD.";
+        $disableCod = true;
+
+     }
+    } // disble COD 
     
+    if($disableCod == false):
     ?>
     <dt>
     <?php if( sizeof($this->getMethods()) > 1 ): ?>
@@ -23,8 +30,7 @@ if($_code=='cashondelivery'){
         <label for="p_method_<?php echo $_code ?>"><?php echo $this->htmlEscape($_method->getTitle()) ?> <?php echo $this->getMethodLabelAfterHtml($_method) ?></label>
     </dt>
     <?php 
-        }
-    } // disble COD 
+    endif; 
     ?>
     <?php if ($html = $this->getPaymentMethodFormHtml($_method)): ?>
    <!--  <dd>
