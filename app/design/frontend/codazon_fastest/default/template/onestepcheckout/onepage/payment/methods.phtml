@@ -3,11 +3,12 @@
 <?php else : ?>
 <dl class="sp-methods">
 <?php foreach ($this->getMethods() as $_method): $_code = $_method->getCode();  
-echo "Checking...".
+
+//echo "Checking...".
 
 if($_code=='cashondelivery'){
     $quote = Mage::getSingleton('checkout/cart')->getQuote();
-    echo $quote->getSubtotal();
+    echo "Total:".$quote->getSubtotal();
 }
  ?>
     <dt>
