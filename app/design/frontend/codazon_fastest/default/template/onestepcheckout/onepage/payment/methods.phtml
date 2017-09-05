@@ -13,7 +13,7 @@ if($_code=='cashondelivery'){
     //echo "Total:".$subTotal;
     $codLimit = Mage::getModel('core/variable')->loadByCode('cod_limit')->getValue('plain');
     if($subTotal>trim($codLimit)){
-        echo "This product is not eligible for COD.";
+        echo "<dt>This product is not eligible for COD.<br></dt>";
         $disableCod = true;
 
      }
