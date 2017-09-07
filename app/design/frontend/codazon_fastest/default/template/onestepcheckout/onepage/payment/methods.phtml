@@ -9,7 +9,7 @@
 $disableCod = false;
 if($_code=='cashondelivery'){
     $quote = Mage::getSingleton('checkout/cart')->getQuote();
-    $subTotal = $quote->getSubtotal();
+    $subTotal = $quote->getGrandTotal();
     //echo "Total:".$subTotal;
     $codLimit = Mage::getModel('core/variable')->loadByCode('cod_limit')->getValue('plain');
     if($subTotal>trim($codLimit)){
