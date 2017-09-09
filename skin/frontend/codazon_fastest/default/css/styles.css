@@ -11332,6 +11332,9 @@ table colgroup, .data-table colgroup {
   float: left;
   margin: 0;
 }
+div#cdz-pc-stores p {
+    float: left;
+}
 .header .cdz-header-top .cdz-top-link {
   margin: 0;
   padding: 0;
