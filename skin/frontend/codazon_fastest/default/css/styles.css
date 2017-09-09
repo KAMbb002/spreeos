@@ -11329,6 +11329,8 @@ table colgroup, .data-table colgroup {
 }
 .header .cdz-header-top .cdz-dropdown {
   position: relative;
+  float: left;
+  margin: 0;
 }
 .header .cdz-header-top .cdz-top-link {
   margin: 0;
