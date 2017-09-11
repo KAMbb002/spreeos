@@ -23,6 +23,32 @@
  * @copyright  Copyright (c) 2006-2016 X.commerce, Inc. and affiliates (http://www.magento.com)
  * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
+ 
+/* 
+**
+*** Visiter Ip Location
+**
+*/
+function getUserIP() {
+    if( array_key_exists('HTTP_X_FORWARDED_FOR', $_SERVER) && !empty($_SERVER['HTTP_X_FORWARDED_FOR']) ) {
+        if (strpos($_SERVER['HTTP_X_FORWARDED_FOR'], ',')>0) {
+            $addr = explode(",",$_SERVER['HTTP_X_FORWARDED_FOR']);
+            return trim($addr[0]);
+        } else {
+            return $_SERVER['HTTP_X_FORWARDED_FOR'];
+        }
+    }
+    else {
+        return $_SERVER['REMOTE_ADDR'];
+    }
+}
+
+$ip = getUserIP();
+$countryDetails = json_decode(file_get_contents("http://ip-api.io/json/{$ip}"));
+$countryId = $countryDetails->country_code;
+/* 
+**End
+*/
 
 if (version_compare(phpversion(), '5.3.0', '<')===true) {
     echo  '<div style="font:12px/1.35em arial, helvetica, sans-serif;">
@@ -73,11 +99,22 @@ if (isset($_SERVER['MAGE_IS_DEVELOPER_MODE'])) {
 ini_set('display_errors', 1);
 
 umask(0);
+if($countryId == "IN"){
+	
+	/* Store or website code */
+	$mageRunCode = isset($_SERVER['MAGE_RUN_CODE']) ? $_SERVER['MAGE_RUN_CODE'] : '';
 
-/* Store or website code */
-$mageRunCode = isset($_SERVER['MAGE_RUN_CODE']) ? $_SERVER['MAGE_RUN_CODE'] : '';
+	/* Run store or run website */
+	$mageRunType = isset($_SERVER['MAGE_RUN_TYPE']) ? $_SERVER['MAGE_RUN_TYPE'] : 'us';
 
-/* Run store or run website */
-$mageRunType = isset($_SERVER['MAGE_RUN_TYPE']) ? $_SERVER['MAGE_RUN_TYPE'] : 'store';
+	Mage::run($mageRunCode, $mageRunType);
+} else {
+	
+	/* Store or website code */
+	$mageRunCode = isset($_SERVER['MAGE_RUN_CODE']) ? $_SERVER['MAGE_RUN_CODE'] : '';
 
-Mage::run($mageRunCode, $mageRunType);
+	/* Run store or run website */
+	$mageRunType = isset($_SERVER['MAGE_RUN_TYPE']) ? $_SERVER['MAGE_RUN_TYPE'] : 'store';
+
+	Mage::run($mageRunCode, $mageRunType);
+}
