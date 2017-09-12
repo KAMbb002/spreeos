@@ -34,9 +34,9 @@ class Tilkor_Deal_Block_Adminhtml_Deal_Edit_Tab_Form extends Mage_Adminhtml_Bloc
           
       ));
 	  
-	   $fieldset->addField('identifier', 'select', array(
+	   $fieldset->addField('store', 'select', array(
           'label'     => Mage::helper('deal')->__('Select Store'),
-          'name'      => 'identifier',
+          'name'      => 'store',
 		  'values' => array('0'=>'Please Select..',
 		  '1' => 'IND',
 		  '2' => 'US'),
