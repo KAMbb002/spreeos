@@ -27190,7 +27190,7 @@ table.cust-reviewss thead tr th.review-four {    width: 80px;  max-width: 80px; 
 a.swatch-link:hover {
     vertical-align: unset;
 }
-.store-switcher.cdz-dropdown.dd-open {
+.store-switcher.cdz-dropdown {
     display: none;
 }
 
