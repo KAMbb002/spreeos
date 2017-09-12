@@ -33,6 +33,15 @@ class Tilkor_Deal_Block_Adminhtml_Deal_Edit_Tab_Form extends Mage_Adminhtml_Bloc
 		  '3' => 'editor pics'),
           
       ));
+	  
+	   $fieldset->addField('store', 'select', array(
+          'label'     => Mage::helper('deal')->__('Select Store'),
+          'name'      => 'store',
+		  'values' => array('-1'=>'Please Select..',
+		  '1' => 'IND',
+		  '2' => 'US'),
+          
+      ));
      
       $fieldset->addField('url', 'editor', array(
           'name'      => 'url',
