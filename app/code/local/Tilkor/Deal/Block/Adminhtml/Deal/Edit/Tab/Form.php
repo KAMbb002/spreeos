@@ -38,8 +38,9 @@ class Tilkor_Deal_Block_Adminhtml_Deal_Edit_Tab_Form extends Mage_Adminhtml_Bloc
           'label'     => Mage::helper('deal')->__('Select Store'),
           'name'      => 'store',
 		  'values' => array('0'=>'Please Select..',
-		  '1' => 'IND',
-		  '2' => 'US'),
+		  '1' => 'Global',
+		  '2' => 'US',
+		  '3' => 'IND'),
           
       ));
      
