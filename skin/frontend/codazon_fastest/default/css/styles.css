@@ -11230,7 +11230,7 @@ table colgroup, .data-table colgroup {
 }
 
 .header .cdz-header-top .cdz-dropdown {
-  display: none;
+  display: inline-block;
   margin-left: 0;
   margin-right: 15px;
 }
@@ -27190,4 +27190,9 @@ table.cust-reviewss thead tr th.review-four {    width: 80px;  max-width: 80px; 
 a.swatch-link:hover {
     vertical-align: unset;
 }
+.store-switcher.cdz-dropdown {
+    display: none !important;
+}
+
+
 
