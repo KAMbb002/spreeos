@@ -10,7 +10,7 @@ foreach ($collection as $item) {?>
 		</div>
 
 	<?php }?>
-	<?php if(($item->getStatus()=='2' || $item->getStatus()=='3')) && ($item->getStore()=='1' || $item->getStore()=='2')){?>
+	<?php if(($item->getStatus()=='2' || $item->getStatus()=='3') && ($item->getStore()=='1' || $item->getStore()=='2')){?>
 		<div class="right">
 			<?php // echo $item->getStatus();
 			if(($item->getStatus()=='2') && ($item->getStore()=='1' || $item->getStore()=='2')){?>
