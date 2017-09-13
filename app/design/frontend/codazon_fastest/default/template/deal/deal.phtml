@@ -2,29 +2,28 @@
 $collection = Mage::getModel('deal/deal')->getCollection();
 foreach ($collection as $item) {?>		
 
-<?php  if(($item->getStatus()=='1') && ($item->getStore()=='1' || $item->getStore()=='3')){?>
-	<div class="left">
-	<?php $imgpath=Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA);
-	?>
-	<a href="<?php echo $item->getUrl();?>"><img style="margin-bottom: 10px;" src="<?php  echo $imgpath.$item->getFilename();?>"/></a>					
-	</div>
-	 
-   <?php }?>
+	<?php  if(($item->getStatus()=='1') && ($item->getStore()=='1' || $item->getStore()=='3')){?>
+		<div class="left">
+		<?php $imgpath=Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA);
+		?>
+		<a href="<?php echo $item->getUrl();?>"><img style="margin-bottom: 10px;" src="<?php  echo $imgpath.$item->getFilename();?>"/></a>					
+		</div>
+		 
+	<?php }?>
+	<?php if(($item->getStatus()=='2' || $item->getStatus()=='3')) && ($item->getStore()=='1' || $item->getStore()=='3')){?>
 	<div class="right">
-<?php // echo $item->getStatus();
- if(($item->getStatus()=='2') && ($item->getStore()=='1' || $item->getStore()=='3')){?>
-	
-	<?php $imgpath=Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA);
-	?>
-	<a href="<?php echo $item->getUrl();?>"><img style="margin-bottom: 10px;" src="<?php  echo $imgpath.$item->getFilename();?>"/></a>					
-	
-   <?php }?>
-<?php  if(($item->getStatus()=='3') && ($item->getStore()=='1' || $item->getStore()=='3')){?>			
-	<?php $imgpath=Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA);
-	?>
-	<a href="<?php echo $item->getUrl();?>"><img style="margin-bottom: 10px;" src="<?php  echo $imgpath.$item->getFilename();?>"/></a>					
-	
-   <?php }?>
-   </div>
+		<?php // echo $item->getStatus();
+		if(($item->getStatus()=='2') && ($item->getStore()=='1' || $item->getStore()=='3')){?>
+
+			<?php $imgpath=Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA); ?>
+			<a href="<?php echo $item->getUrl();?>"><img style="margin-bottom: 10px;" src="<?php  echo $imgpath.$item->getFilename();?>"/></a>					
+		<?php }?>
+		<?php  if(($item->getStatus()=='3') && ($item->getStore()=='1' || $item->getStore()=='3')){?>			
+		
+			<?php $imgpath=Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA); ?>
+			<a href="<?php echo $item->getUrl();?>"><img style="margin-bottom: 10px;" src="<?php  echo $imgpath.$item->getFilename();?>"/></a>					
+		<?php }?>
+	</div>
+	<?php }?>
 
 <?php }?>
