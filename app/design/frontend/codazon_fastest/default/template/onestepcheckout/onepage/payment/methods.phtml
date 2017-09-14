@@ -17,6 +17,10 @@ if($_code=='cashondelivery'){
         $disableCod = true;
 
      }
+	 $storeId = Mage::app()->getStore()->getStoreId();
+	 if($storeId == 2){
+		 $disableCod = true;
+	 }
     } // disble COD 
     
     if($disableCod == false):
