@@ -27193,6 +27193,8 @@ a.swatch-link:hover {
 .store-switcher.cdz-dropdown {
     display: none !important;
 }
-
+span.lang-name {
+    display: none;
+}
 
 
