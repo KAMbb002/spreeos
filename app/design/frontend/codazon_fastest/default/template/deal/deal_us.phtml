@@ -1,8 +1,5 @@
 <?php 
 $collection = Mage::getModel('deal/deal')->getCollection(); ?>
-<div style="display:none">
-<?php echo "<pre>"; print_r($collection->getData());?>
-</div>
 <?php foreach ($collection as $item) {?>		
 
 	<?php  if(($item->getStatus()=='1') && ($item->getStore()=='1' || $item->getStore()=='2')){?>
