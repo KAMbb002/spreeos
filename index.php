@@ -43,9 +43,9 @@ function getUserIP() {
     }
 }
 
-$ip = getUserIP();
+echo $ip = getUserIP();
 $countryDetails = json_decode(file_get_contents("http://ip-api.io/json/{$ip}"));
-$countryId = $countryDetails->country_code;
+echo $countryId = $countryDetails->country_code;
 /* 
 **End
 */
