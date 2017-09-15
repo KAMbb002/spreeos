@@ -28,7 +28,7 @@
 <?php else :?>
     <?php echo $this->renderTotals('footer', $_colspan); ?>
 <?php endif;?>
-    <?php if ($this->needDisplayBaseGrandtotal()):?>
+    <?php /* if ($this->needDisplayBaseGrandtotal()):?>
     <tr>
         <td class="a-right" colspan="<?php echo $_colspan; ?>">
             <small><?php echo $this->helper('sales')->__('Your credit card will be charged for') ?></small>
@@ -37,6 +37,6 @@
             <small><?php echo $this->displayBaseGrandtotal() ?></small>
         </td>
     </tr>
-    <?php endif?>
+    <?php endif */?>
 </tfoot>
 <?php endif; ?>
