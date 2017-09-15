@@ -42,7 +42,9 @@
         <p class="availability out-of-stock"><?php echo $this->__('Availability:') ?> <span><?php echo $this->__('Out of stock') ?></span></p>
     <?php endif; ?>
 <?php endif; ?>
-<p class="additional-gst" style="color:#999999">Additional GST will be charged at checkout.</p>
+<?php if(Mage::app()->getStore()->getStoreId() == 1): ?>
+	<p class="additional-gst" style="color:#999999">Additional GST will be charged at checkout.</p>
+<?php endif; ?>
 <?php echo $this->getChildHtml('product_type_data_extra') ?>
 <table class="data-table grouped-items-table" id="super-product-table">
     <col />

@@ -39,7 +39,9 @@
 	<strong><?php echo $this->__('(') ?> <?= (int) Mage::getModel('cataloginventory/stock_item')->loadByProduct($_product)->getQty()?><?php echo $this->__(' Pcs)') ?></strong>
 	<?php endif; ?>
 	</p>
-	<p class="additional-gst" style="color:#999999">Additional GST will be charged at checkout.</p>
+	<?php if(Mage::app()->getStore()->getStoreId() == 1): ?>
+		<p class="additional-gst" style="color:#999999">Additional GST will be charged at checkout.</p>
+	<?php endif; ?>
 	
 <?php else: ?>
     <p class="availability out-of-stock"><label><?php echo $this->__('Availability:') ?></label> <span><?php echo $this->__('Out of stock') ?></span></p>
