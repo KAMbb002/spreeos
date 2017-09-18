@@ -99,23 +99,31 @@ if (isset($_SERVER['MAGE_IS_DEVELOPER_MODE'])) {
 ini_set('display_errors', 1);
 
 umask(0);
-if($countryId == "IN"){
+// if($countryId == "IN"){
 	
-	/* Store or website code */
-	$mageRunCode = isset($_SERVER['MAGE_RUN_CODE']) ? $_SERVER['MAGE_RUN_CODE'] : '';
+	// /* Store or website code */
+	// $mageRunCode = isset($_SERVER['MAGE_RUN_CODE']) ? $_SERVER['MAGE_RUN_CODE'] : '';
 
-	/* Run store or run website */
-	$mageRunType = isset($_SERVER['MAGE_RUN_TYPE']) ? $_SERVER['MAGE_RUN_TYPE'] : 'store';
+	// /* Run store or run website */
+	// $mageRunType = isset($_SERVER['MAGE_RUN_TYPE']) ? $_SERVER['MAGE_RUN_TYPE'] : 'store';
 
-	Mage::run($mageRunCode, $mageRunType);
+	// Mage::run($mageRunCode, $mageRunType);
 	
-} else {
+// } else {
 		
-	/* Store or website code */
-	$mageRunCode = isset($_SERVER['MAGE_RUN_CODE']) ? $_SERVER['MAGE_RUN_CODE'] : '';
+	// /* Store or website code */
+	// $mageRunCode = isset($_SERVER['MAGE_RUN_CODE']) ? $_SERVER['MAGE_RUN_CODE'] : '';
 
-	/* Run store or run website */
-	$mageRunType = isset($_SERVER['MAGE_RUN_TYPE']) ? $_SERVER['MAGE_RUN_TYPE'] : 'us';
+	// /* Run store or run website */
+	// $mageRunType = isset($_SERVER['MAGE_RUN_TYPE']) ? $_SERVER['MAGE_RUN_TYPE'] : 'us';
 
-	Mage::run($mageRunCode, $mageRunType);
-}
+	// Mage::run($mageRunCode, $mageRunType);
+// }
+
+/* Store or website code */
+$mageRunCode = isset($_SERVER['MAGE_RUN_CODE']) ? $_SERVER['MAGE_RUN_CODE'] : '';
+
+/* Run store or run website */
+$mageRunType = isset($_SERVER['MAGE_RUN_TYPE']) ? $_SERVER['MAGE_RUN_TYPE'] : 'store';
+
+Mage::run($mageRunCode, $mageRunType);
