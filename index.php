@@ -101,11 +101,11 @@ else
 
 if($c_code=='IN')
 {
-	Mage::run('base', 'website');
+	Mage::run('us', 'website');
 }
 else
 {
-   Mage::run('us', 'website');
+   Mage::run('base', 'website');
 }
 
 function getCountryCodeByIp($ip)
