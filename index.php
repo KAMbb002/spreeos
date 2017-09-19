@@ -24,38 +24,21 @@
  * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
  
-/* 
-**
-*** Visiter Ip Location
-**
-*/
-function getUserIP() {
-    if( array_key_exists('HTTP_X_FORWARDED_FOR', $_SERVER) && !empty($_SERVER['HTTP_X_FORWARDED_FOR']) ) {
-        if (strpos($_SERVER['HTTP_X_FORWARDED_FOR'], ',')>0) {
-            $addr = explode(",",$_SERVER['HTTP_X_FORWARDED_FOR']);
-            return trim($addr[0]);
-        } else {
-            return $_SERVER['HTTP_X_FORWARDED_FOR'];
-        }
-    }
-    else {
-        return $_SERVER['REMOTE_ADDR'];
-    }
-}
+ 
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
 
-$ip = getUserIP();
-$countryDetails = json_decode(file_get_contents("http://ip-api.io/json/{$ip}"));
-$countryId = $countryDetails->country_code;
-/* 
-**End
-*/
+$_SERVER['MAGE_IS_DEVELOPER_MODE'] = true; 
 
+ 
+ 
+error_reporting(0);
 if (version_compare(phpversion(), '5.3.0', '<')===true) {
     echo  '<div style="font:12px/1.35em arial, helvetica, sans-serif;">
 <div style="margin:0 0 25px 0; border-bottom:1px solid #ccc;">
 <h3 style="margin:0; font-size:1.7em; font-weight:normal; text-transform:none; text-align:left; color:#2f2f2f;">
 Whoops, it looks like you have an invalid PHP version.</h3></div><p>Magento supports PHP 5.3.0 or newer.
-<a href="http://www.magentocommerce.com/install" target="">Find out</a> how to install</a>
+<a href="https://www.magentocommerce.com/install" target="">Find out</a> how to install</a>
  Magento using PHP-CGI as a work-around.</p></div>';
     exit;
 }
@@ -90,35 +73,15 @@ if (file_exists($maintenanceFile)) {
 require MAGENTO_ROOT . '/app/bootstrap.php';
 require_once $mageFilename;
 
-#Varien_Profiler::enable();
+Varien_Profiler::enable();
 
 if (isset($_SERVER['MAGE_IS_DEVELOPER_MODE'])) {
     Mage::setIsDeveloperMode(true);
 }
-
 ini_set('display_errors', 1);
+ini_set('memory_limit', '1000M');
 
 umask(0);
-// if($countryId == "IN"){
-	
-	// /* Store or website code */
-	// $mageRunCode = isset($_SERVER['MAGE_RUN_CODE']) ? $_SERVER['MAGE_RUN_CODE'] : '';
-
-	// /* Run store or run website */
-	// $mageRunType = isset($_SERVER['MAGE_RUN_TYPE']) ? $_SERVER['MAGE_RUN_TYPE'] : 'store';
-
-	// Mage::run($mageRunCode, $mageRunType);
-	
-// } else {
-		
-	// /* Store or website code */
-	// $mageRunCode = isset($_SERVER['MAGE_RUN_CODE']) ? $_SERVER['MAGE_RUN_CODE'] : '';
-
-	// /* Run store or run website */
-	// $mageRunType = isset($_SERVER['MAGE_RUN_TYPE']) ? $_SERVER['MAGE_RUN_TYPE'] : 'us';
-
-	// Mage::run($mageRunCode, $mageRunType);
-// }
 
 /* Store or website code */
 $mageRunCode = isset($_SERVER['MAGE_RUN_CODE']) ? $_SERVER['MAGE_RUN_CODE'] : '';
@@ -126,4 +89,67 @@ $mageRunCode = isset($_SERVER['MAGE_RUN_CODE']) ? $_SERVER['MAGE_RUN_CODE'] : ''
 /* Run store or run website */
 $mageRunType = isset($_SERVER['MAGE_RUN_TYPE']) ? $_SERVER['MAGE_RUN_TYPE'] : 'store';
 
-Mage::run($mageRunCode, $mageRunType);
+if(isset($_COOKIE['webCode'])){
+   $c_code=$_COOKIE['webCode'];
+}
+else
+   {
+    $c_code=getCountryCodeByIp(get_client_ip());
+    setcookie('webCode',$c_code,time()+60*60*24*30,'/','.indiancultr.com');
+    //$_COOKIE['webCode'] = $c_code;
+}
+
+if($c_code=='IN')
+{
+	Mage::run('base', 'website');
+}
+else
+{
+   Mage::run('us', 'website');
+}
+
+function getCountryCodeByIp($ip)
+{
+        $ipnum=ip2long($ip);
+        $sql="select code from geoip_database where $ipnum between begin_num and end_num";
+        if (file_exists('./app/etc/local.xml') && $ipnum!='')
+        {
+            $xml = simplexml_load_file('./app/etc/local.xml');
+            
+            $tblprefix = $xml->global->resources->db->table_prefix;
+            $dbhost = $xml->global->resources->default_setup->connection->host;
+            $dbuser = $xml->global->resources->default_setup->connection->username;
+            $dbpass = $xml->global->resources->default_setup->connection->password;
+            $dbname = $xml->global->resources->default_setup->connection->dbname;
+            $conn = mysql_connect($dbhost,$dbuser,$dbpass);
+            mysql_select_db($dbname);
+            $result=mysql_query($sql);
+            $result=mysql_fetch_array($result);
+            if($result['code'])
+            $country=$result['code'];
+            else
+            $country='IN';
+            return $country;
+        }
+        else
+        return 'IN';
+}
+function get_client_ip() {
+     $ipaddress = '';
+     if ($_SERVER['HTTP_CLIENT_IP'])
+         $ipaddress = $_SERVER['HTTP_CLIENT_IP'];
+     else if($_SERVER['HTTP_X_FORWARDED_FOR'])
+         $ipaddress = $_SERVER['HTTP_X_FORWARDED_FOR'];
+     else if($_SERVER['HTTP_X_FORWARDED'])
+         $ipaddress = $_SERVER['HTTP_X_FORWARDED'];
+     else if($_SERVER['HTTP_FORWARDED_FOR'])
+         $ipaddress = $_SERVER['HTTP_FORWARDED_FOR'];
+     else if($_SERVER['HTTP_FORWARDED'])
+         $ipaddress = $_SERVER['HTTP_FORWARDED'];
+     else if($_SERVER['REMOTE_ADDR'])
+         $ipaddress = $_SERVER['REMOTE_ADDR'];
+     else
+         $ipaddress = 'UNKNOWN';
+
+     return $ipaddress; 
+}
