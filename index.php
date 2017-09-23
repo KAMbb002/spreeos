@@ -99,14 +99,14 @@ else
     //$_COOKIE['webCode'] = $c_code;
 }
 
-// if($c_code=='IN')
-// {
-	// Mage::run('base', 'website');
-// }
-// else
-// {
-   // Mage::run('us', 'website');
-// }
+if($c_code=='IN')
+{
+	Mage::run('base', 'website');
+}
+else
+{
+   Mage::run('us', 'website');
+}
 Mage::run('base', 'website');
 function getCountryCodeByIp($ip)
 {
