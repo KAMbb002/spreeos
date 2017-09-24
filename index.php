@@ -107,7 +107,7 @@ else
 {
    Mage::run('us', 'website');
 }
-Mage::run('base', 'website');
+
 function getCountryCodeByIp($ip)
 {
         $ipnum=ip2long($ip);
