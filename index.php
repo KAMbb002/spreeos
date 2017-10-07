@@ -95,7 +95,7 @@ if(isset($_COOKIE['webCode'])){
 else
    {
     $c_code=getCountryCodeByIp(get_client_ip());
-    setcookie('webCode',$c_code,time()+60*60*24*30,'/','.indiancultr.com');
+    setcookie('webCode',$c_code,time()+60*60*24*30,'/','.spreeos.com');
     //$_COOKIE['webCode'] = $c_code;
 }
 
