@@ -111,8 +111,15 @@ else
 
 $testingIP = $_GET['us-testing'];
 if($testingIP == 1){
+    echo "testing....";
      Mage::run('us', 'website');
 }
+
+if(Mage::app()->getRequest()->getParam('us-testing')){
+    echo "testing22222222....";
+     Mage::run('us', 'website');
+}
+
 
 function getCountryCodeByIp($ip)
 {
