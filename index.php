@@ -104,7 +104,10 @@ if($c_code=='IN')
 	
     $testingIP = $_GET['us-testing'];
 
-    if($testingIP == 1){        
+    if($testingIP == 1){ 
+        echo Mage::getStoreConfig('dev/restrict/allow_ips');   
+        echo "RRR:".$_SERVER['REMOTE_ADDR'];    
+
          Mage::run('us', 'website');
     }else{
         Mage::run('base', 'website');
