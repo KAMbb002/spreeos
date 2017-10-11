@@ -110,7 +110,7 @@ else
 
 
 $testingIP = $_GET['us-testing'];
-if($testingIP){
+if($testingIP == 1){
      Mage::run('us', 'website');
 }
 
