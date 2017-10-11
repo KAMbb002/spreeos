@@ -108,6 +108,12 @@ else
    Mage::run('us', 'website');
 }
 
+
+$testingIP = $_GET['us-testing'];
+if($testingIP){
+     Mage::run('us', 'website');
+}
+
 function getCountryCodeByIp($ip)
 {
         $ipnum=ip2long($ip);
