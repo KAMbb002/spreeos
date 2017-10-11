@@ -105,21 +105,19 @@ if($c_code=='IN')
     $testingIP = $_GET['us-testing'];
 
     if($testingIP == 1){ 
-        $allowedIps = Mage::getStoreConfig('dev/restrict/allow_ips');   
-        //echo $allowedIps;exit;
-        $allowedIpsArray = explode(',', $allowedIps);
-        print_r($allowedIpsArray);
+        $allowedIps = Mage::getStoreConfig('dev/restrict/allow_ips');         
+        $allowedIpsArray = explode(',', $allowedIps);     
         $currentIp = $_SERVER['REMOTE_ADDR'];    
        if(in_array($currentIp, $allowedIpsArray))
         {
-          echo "Match found";
+          Mage::run('us', 'website');
         }
         else
         {
-          echo "Match not found";
+          Mage::run('base', 'website');
         }
 
-         Mage::run('us', 'website');
+         
     }else{
         Mage::run('base', 'website');
 
