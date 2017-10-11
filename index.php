@@ -106,9 +106,10 @@ if($c_code=='IN')
 
     if($testingIP == 1){ 
         $allowedIps = Mage::getStoreConfig('dev/restrict/allow_ips');   
-        $ipArray = array($allowedIps);
+        $allowedIpsArray = explode($allowedIps, ',')
+        //$ipArray = array($allowedIps);
         $currentIp = $_SERVER['REMOTE_ADDR'];    
-        if (in_array($currentIp, $ipArray))
+        if (in_array($currentIp, $allowedIpsArray))
           {
           echo "Match found";
           }
