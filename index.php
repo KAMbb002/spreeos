@@ -99,28 +99,19 @@ else
     //$_COOKIE['webCode'] = $c_code;
 }
 
-if($c_code=='IN')
+if($c_code == 'IN')
 {
-	
-    $testingIP = $_GET['us-testing'];
-
-    if($testingIP == 1){ 
-        $allowedIps = Mage::getStoreConfig('dev/restrict/allow_ips');         
-        $allowedIpsArray = explode(',', $allowedIps);     
-        $currentIp = $_SERVER['REMOTE_ADDR'];    
-       if(in_array($currentIp, $allowedIpsArray))
-        {
-          Mage::run('us', 'website');
-        }
-        else
-        {
-          Mage::run('base', 'website');
-        }
-
-         
-    }else{
-        Mage::run('base', 'website');
-
+	 
+    $allowedIps = Mage::getStoreConfig('dev/restrict/allow_ips');         
+    $allowedIpsArray = explode(',', $allowedIps);     
+    $currentIp = $_SERVER['REMOTE_ADDR'];    
+    if(in_array($currentIp, $allowedIpsArray))
+    {
+      Mage::run('us', 'website');
+    }
+    else
+    {
+      Mage::run('base', 'website');
     }
 
 }
