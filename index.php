@@ -103,9 +103,8 @@ if($c_code=='IN')
 {
 	
     $testingIP = $_GET['us-testing'];
-    
-    if($testingIP == 1){
-        echo "testing....";
+
+    if($testingIP == 1){        
          Mage::run('us', 'website');
     }else{
         Mage::run('base', 'website');
